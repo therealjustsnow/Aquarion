@@ -1,3 +1,4 @@
+@use '../index' as *;
 /* CONNECTION INFO POPOUT */
 %connectionDebugPopout {
   background-color: cv('bg.general.popout');

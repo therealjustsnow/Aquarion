@@ -1,8 +1,6 @@
 /*! HLJS Language Display by Zerthox */
 
-// IMPORTS
-@import 'src/mixins';
+// These remain as @import to preserve the %placeholder + @extend mechanism
+// between selectorPlaceholders.scss and codeLanguages.scss.
 @import 'lib/selectors/selectorPlaceholders';
-
-// IMPORT CODE LANGUAGES
 @import 'src/messages/codeLanguages';

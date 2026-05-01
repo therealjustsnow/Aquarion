@@ -1,28 +1,21 @@
-$version: '1.0.2';
+/* ### Aquarion v1.0.2 by Snow ### */
 
-/* ### Aquarion v#{$version} by Snow ### */
+// @use rules must precede @import rules.
+// defaultSettings and keyframes have no %placeholder definitions so they
+// can be loaded as proper modules.
+@use 'src/defaultSettings';
+@use 'src/keyframes';
+
+// All remaining files are loaded via @import to preserve the cross-file
+// %placeholder + @extend mechanism used throughout the theme.
+// Each component file now carries its own @use '../index' as * declaration
+// for explicit variable/mixin dependencies, making them self-contained.
 
 // SELECTORS
 @import 'lib/selectors/selectorPlaceholders';
 
-// DEFAULT SETTINGS
-@import 'src/defaultSettings';
-
-// FUNCTIONS
-@import 'src/functions';
-
-// VARIABLES
-@import 'src/variables';
-
-// MIXINS
-@import 'src/mixins';
-
-// KEYFRAMES
-@import 'src/keyframes';
-
 // APP
 @import 'src/app/app';
-
 @import 'src/app/notice';
 @import 'src/app/titlebar';
 
@@ -173,7 +166,7 @@ $version: '1.0.2';
 // FIXES
 @import 'src/fixespt2';
 
-// visual refresh
+// VISUAL REFRESH
 @import 'src/visualRefresh';
 
 // CUSTOM SCSS

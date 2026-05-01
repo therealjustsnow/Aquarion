@@ -1,3 +1,4 @@
+@use '../index' as *;
 //Voice Channel listening to or playing x game
 %voiceChannelListening {
   background: cv('bg.general.popout');

@@ -1,3 +1,4 @@
+@use '../index' as *;
 /* CHANNELS */
 html:not(%visualRefresh) %channelsSidebar:not(%channelsSidebarHidden) {
   width: cv('channels-width') !important;

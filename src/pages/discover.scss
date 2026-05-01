@@ -1,3 +1,4 @@
+@use '../index' as *;
 /* DISCOVER */
 %discover {
   background-color: rgba(0, 0, 0, calc($bg-shading * 0.4));
