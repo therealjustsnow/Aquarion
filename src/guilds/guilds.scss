@@ -1,13 +1,14 @@
+@use '../index' as *;
 /* GUILDS */
-%guildsWrapper {
+.wrapper_ef3116 {
   background-color: transparent;
   box-shadow: inset 0 0 20px rgba(0, 0, 0, calc($bg-shading * 0.3));
 }
-%platformOSX {
-  %guildUnreadMentionsTop {
+.platform-osx {
+  .unreadMentionsIndicatorTop_ef3116 {
     top: 24px;
   }
-  %guildsWrapper {
+  .wrapper_ef3116 {
     margin-top: 0;
     padding-top: 48px;
     &:before {
@@ -19,7 +20,7 @@
 }
 
 // HOME BUTTON
-%guildChildWrapper > svg {
+.childWrapper__6e9f8 > svg {
   width: 100%;
   height: 100%;
   background: cv('bg.home.icon') cv('bg.home.pos') / cv('bg.home.size') no-repeat;
@@ -29,25 +30,25 @@
 }
 
 // GUILD ICON
-%guildIcon {
+.icon__6e9f8 {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
 // GUILD LIST
-%guildsTree {
+.tree_ef3116 {
   outline: none;
 }
 
 // HOME & ACRONYM
-%guildChildWrapper {
+.childWrapper__6e9f8 {
   background-color: rgba(0, 0, 0, 0.3);
   color: hsla(0, 0%, 100%, 0.7);
   transition: all 0.3s ease-in-out;
 }
-%guildNav {
+.wrapper__6e9f8 {
   &:hover,
-  &%guildNavSelected {
-    %guildChildWrapper {
+  &.selected__6e9f8 {
+    .childWrapper__6e9f8 {
       background-color: $main-color;
       color: #fff;
     }
@@ -55,10 +56,10 @@
 }
 
 // PILL
-%guildPill {
+.pill_e5445c {
   overflow: visible;
 }
-%guildPillItem {
+.item__58105 {
   width: 12px;
   margin-left: -6px;
   border-radius: 20px;
@@ -70,59 +71,59 @@
 }
 
 // PLACEHOLDER
-%guildDragInner {
+.dragInner__87847 {
   background: hsla(0, 0%, 100%, 0.1);
 }
 
 // BADGE
-%guildBadge {
+.iconBadge__650eb {
   background: hsla(0, 0%, 0%, 0.7);
   box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.7);
-  %guildBadgeIcon {
+  .icon__2b1f5 {
     padding: 1px;
     color: $main-color;
     filter: drop-shadow(0 0 3px $main-color);
   }
-  &%guildBadgeConnected {
+  &.isCurrentUserConnected__650eb {
     background: $main-color;
     box-shadow: 0 0 0 1px $main-color;
-    %guildBadgeIcon {
+    .icon__2b1f5 {
       color: #fff;
     }
   }
 }
 
 // FOLDER
-%guildFolder {
+.folder__48112 {
   background-color: transparent;
   transition: all 0.3s ease-in-out;
-  &%guildFolderHover {
+  &.hover__48112 {
     background-color: hsla(0, 0%, 100%, 0.1);
   }
 }
-%guildFolderGuildNoIcon {
+.noIcon_f34534 {
   background: cv('bg.general.card');
 }
-%guildExpandedFolderBackground {
+.expandedFolderBackground__48112 {
   background: hsla(0, 0%, 100%, 0.07);
   border-radius: 16px 16px 24px 24px;
   transition: background-color 0.3s ease-in-out;
 }
 
 // CIRCLE ICON BUTTON
-%circleIconButton {
+.circleIconButton__5bc7e {
   background: rgba(0, 0, 0, 0.3);
   color: hsla(0, 0%, 100%, 0.7);
   transition: all 0.3s ease-in-out;
   &:hover,
-  &%circleIconButtonSelected {
+  &.selected__5bc7e {
     background: $main-color;
     color: #fff;
   }
 }
 
 // GUILDS ERROR
-%guildsError {
+.guildsError__32e67 {
   background: rgba(0, 0, 0, 0.5);
   border: 2px solid cv('colors.danger');
   color: #fff;
@@ -134,22 +135,22 @@
 }
 
 // SEPARATOR
-%guildSeparator {
+.guildSeparator__252b6 {
   background: hsla(0, 0%, 100%, 0.1);
 }
 
 // FOOTER
-%guildsFooter {
+.footer__214dc {
   background: transparent;
   margin: 0;
 }
 
 // TAB FOCUS
-%keyboardMode {
-  %guildFocusSimple {
+.keyboard-mode {
+  .simpleFocused_cc5dd2 {
     box-shadow: 0 0 0 4px cv('colors.focus');
   }
-  %guildFocus {
+  .focusStroke_cc5dd2 {
     stroke: cv('colors.focus');
     fill: transparent;
   }

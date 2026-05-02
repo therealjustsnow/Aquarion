@@ -1,5 +1,6 @@
+@use '../index' as *;
 /* CHAT CHANNEL TEXT AREA */
-%chatForm {
+.form_f75fb0 {
   margin-top: 1px;
   &:before,
   &:after {
@@ -9,38 +10,38 @@
     color: hsla(0, 0%, 100%, 0.3);
   }
 }
-%channelTextArea {
+.channelTextArea__74017 {
   background: rgba(0, 0, 0, 0.6);
   transition: all 0.15s ease-in-out;
   &:focus-within {
     box-shadow: 0 0 2px 2px $alt-color;
   }
 }
-%channelTextAreaScrollable {
+.scrollableContainer__74017 {
   background: transparent;
   border: 2px solid transparent;
 }
-%channelTextAreaAttachButton {
+.attachButton__0923f {
   padding: 10px 10px 10px 12px;
-  %channelTextAreaAttachButtonPlus {
+  .attachButtonPlus__0923f {
     color: hsla(0, 0%, 100%, 0.7);
     transition: all 0.15s ease-in-out;
   }
   &:hover {
-    %channelTextAreaAttachButtonPlus {
+    .attachButtonPlus__0923f {
       color: hsla(0, 0%, 100%, 0.9);
     }
   }
 }
-%textArea {
+.textArea__74017 {
   margin-left: 10px;
 }
-%textAreaPlaceholder {
+.placeholder__1b31f {
   color: hsla(0, 0%, 100%, 0.4) !important;
 }
 
 // BUTTONS
-%channelTextAreaButton {
+.button__24af7 {
   color: hsla(0, 0%, 100%, 0.7);
   transition: all 0.15s ease-in-out;
   &:hover {
@@ -49,9 +50,9 @@
 }
 
 // TYPING
-%channelTextAreaTyping {
+.typing_b88801 {
   background: transparent;
-  %channelTextAreaTypingText {
+  .text_b88801 {
     color: hsla(0, 0%, 100%, 0.5);
     > strong {
       color: hsla(0, 0%, 100%, 0.7);
@@ -61,96 +62,96 @@
 }
 
 // LINK
-%fakeLink {
+.fakeLink_ada32f {
   color: var(--url-color);
 }
 
 // FOLLOW CHANNEL
-%channelInfo {
+.wrapper__44df5 {
   background-color: hsla(0, 0%, 0%, 0.6);
 }
 
 // ATTACHED BARS
-%channelTextAreAttachedBar {
+.stackedBars__74017 {
   background: transparent;
 }
-%channelTextAreaStackedAttachedBar {
+.stackedAttachedBar_bdf0de {
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.07);
 }
 
 // REPLY
-%replyBar,
-%replySuggestion {
+.replyBar__841c8,
+.threadSuggestionBar__841c8 {
   background: transparent;
   border: 2px solid transparent;
   box-shadow: none;
 }
-%replyCloseButton {
+.closeButton_e876a8 {
   padding: 8px 16px 8px 4px;
   margin-left: 4px;
 }
-%replySeperator {
+.separator__841c8 {
   visibility: hidden;
   height: 0px;
   width: 0px;
 }
 
 // SLASH COMMANDS
-%themeDark {
-  %autocompleteOptionPill {
+.theme-dark {
+  .optionPill__1464f {
     background-color: hsla(0, 0%, 100%, 0.05);
     border-color: hsla(0, 0%, 100%, 0.07);
-    &%autocompleteOptionPillSelected {
+    &.selectedPill__1464f {
       border-color: $main-color !important;
     }
   }
-  %autocompleteOptionPillKey {
+  .optionPillKey__1464f {
     background-color: hsla(0, 0%, 100%, 0.07);
   }
 }
 
 // UPLOADER
-%channelTextAreaUpload {
+.upload_aa605f {
   background-color: transparent;
 }
 
 // TIMEOUT
-%timeoutBar {
+.spamBanner_a2eac3 {
   background: cv('bg.general.popout');
 }
-%timeoutPopup {
+.container__65338 {
   background: cv('bg.general.popout');
-  %timeoutIcon {
+  .iconContainer__65338 {
     background: rgba(0, 0, 0, 0.2);
   }
 }
 
 // INLINE CODE PREVIEW
-%inlineCodeBefore,
-%inlineCodeAfter {
+.before_inlineCode_ada32f,
+.after_inlineCode_ada32f {
   background: rgba(255, 255, 255, 0.05);
   padding: 3.5px 0.5px;
 }
-%inlineCode {
+.inlineCode_ada32f {
   background: rgba(255, 255, 255, 0.1);
   padding: 3.5px 0.5px;
 }
 
 // CHAT TOOLBAR
-%chatToolbar {
+.toolbar_bba883 {
   background-color: cv('bg.general.popout');
   &::before {
     border-top: 8px solid hsla(0, 0%, 0%, 0.8);
   }
 }
-%chatToolbarButton:hover {
+.button_bba883:hover {
   background-color: hsla(0, 0%, 100%, 0.05);
 }
-%chatToolbarIcon {
+.icon_bba883 {
   color: hsla(0, 0%, 100%, 0.7);
 }
 
 // Create thread
-%createThread {
+.createThreadButton__841c8 {
   color: var(--url-color) !important;
 }

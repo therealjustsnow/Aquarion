@@ -1,16 +1,17 @@
+@use '../index' as *;
 %messageReq, //main tab
 %messageReqSpam, //spam
-%messageReqActive%messageReqItem, 
-%messageReqItem:hover {
+.active_abb9ad.messageRequestItem_abb9ad,
+.messageRequestItem_abb9ad:hover {
   background: hsla(0, 100%, 100%, 0.15);
   animation: cv-fade-to-8 0.3s ease-in-out;
 }
 /*was it spam*/
-%messageReqSpamCheck {
+.hamBanner__6a41e {
   background: rgba(0, 0, 0, calc($bg-shading * 0.3));
 }
 
-%messageReqContent {
+.hovered__0263c {
   top: -2px;
   bottom: 0;
   right: 0;

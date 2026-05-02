@@ -1,22 +1,23 @@
+@use '../index' as *;
 /* MEMBERS */
-%membersContainer {
+.container_c8ffbb {
   background-color: transparent;
 }
-%membersWrap {
+.membersWrap_c8ffbb {
   min-width: auto;
   min-height: 100%;
   flex-basis: cv('members-width');
 }
-%members {
+.members_c8ffbb {
   width: cv('members-width');
   background: rgba(0, 0, 0, calc($bg-shading * 0.6));
 }
-%membersNotices {
+.membersListNotices__0bcb6 {
   width: cv('members-width');
 }
 
 // GROUP
-%membersGroup {
+.membersGroup_c8ffbb {
   padding-top: 20px;
   display: flex;
   align-items: center;
@@ -45,23 +46,23 @@
 }
 
 // MEMBER
-%member {
+.member__5d473 {
   max-width: calc(var(--members-width) - 16px);
   background: transparent;
   backface-visibility: hidden;
-  &%memberOffline {
-    %memberAvatar {
+  &.offline__5d473 {
+    .avatar__91a9d {
       filter: grayscale(100%) blur(1px);
       transition: all 0.5s ease-in-out;
     }
     &:hover {
-      %memberAvatar {
+      .avatar__91a9d {
         filter: none;
       }
     }
   }
 }
-%memberInner {
+.memberInner__5d473 {
   position: relative;
   padding: 0 16px 0 8px;
   width: unset;
@@ -73,7 +74,7 @@
     transform: scale(0.9);
   }
 }
-%memberUsernameInner {
+.username__703b9 {
   max-width: 100%;
   overflow: visible;
   transition: all 0.15s ease-in-out;
@@ -104,7 +105,7 @@
     }
   }
 }
-%memberActivityText {
+.activityText__5d473 {
   color: hsla(0, 0%, 100%, 0.4) !important;
   transition: all 0.15s ease-in-out;
   strong {
@@ -113,19 +114,16 @@
     transition: all 0.15s ease-in-out;
   }
 }
-%memberName {
+.name__91a9d {
   font-size: 14px;
   color: hsla(0, 0%, 100%, 0.6);
   transition: all 0.15s ease-in-out;
   overflow: hidden;
 }
-%member {
+.member__5d473 {
   // HOVER
-  &:is(:hover, %memberSelected) {
-    %memberChildContainer {
-      background: transparent;
-    }
-    %memberUsernameInner {
+  &:is(:hover, .selected__91a9d) {
+    .username__703b9 {
       &:before {
         opacity: 1;
       }
@@ -135,33 +133,30 @@
     }
   }
   // SELECTED
-  &%memberSelected {
-    %memberChildContainer {
-      background: transparent;
-    }
-    %memberUsernameInner {
+  &.selected__91a9d {
+    .username__703b9 {
       -webkit-text-fill-color: #fff;
       text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
       &:after {
         right: 0;
       }
     }
-    %memberActivityText {
+    .activityText__5d473 {
       text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
       color: hsla(0, 0%, 100%, 0.7) !important;
       strong {
         color: #fff;
       }
     }
-    %memberOwnerIcon,
-    %memberActivityIcon {
+    .ownerIcon__5d473,
+    .icon_c9d15c {
       filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.7));
     }
   }
 }
 
 // PLACEHOLDERS
-%memberGroupPlaceholder {
+.memberGroupsPlaceholder_c8ffbb {
   margin: 0 25%;
   display: flex;
   align-items: center;
@@ -185,18 +180,18 @@
     margin-left: calc(50% + 5px);
   }
 }
-%memberGroupPlaceholder,
-%memberPlaceholderAvatar,
-%memberPlaceholderUsername,
-%memberPlaceholderUsernameMultiple {
+.memberGroupsPlaceholder_c8ffbb,
+.placeholderAvatar__27cc6,
+.placeholderUsername__27cc6,
+.mulitplePlaceholderUsername__27cc6 {
   background: hsla(0, 0%, 100%, 0.3);
 }
-%addMembersIcon {
+.addMembersIcon_d9b498 {
   background-color: var(--background-overlay);
 }
 
 // THREAD EMPTY MEMBERS
-%threadMembersEmptyHeader {
+.emptyStateHeader__7641b {
   padding-top: 20px;
   display: flex;
   align-items: center;
@@ -222,13 +217,13 @@
     margin-left: 5px;
   }
 }
-%threadMembersEmptyIcon {
+.emptyStateIcon__7641b {
   background-color: $main-color;
   color: #fff;
 }
 
 // MEMBERS ACTIVITY SECTION (as opposed to just the text under members)
-%memberActivityContainer {
+.container__0f2e8 {
   background: rgba(0, 0, 0, calc($bg-shading * 0.4));
   border: 2px solid transparent;
   &:hover {
@@ -239,12 +234,12 @@
 
 // MEMBERS ACTIVITY POPOUT
 /*clicked in*/
-%memberActivityContentWrapper,
-%memberActivityInteractionsContainer {
+.popoutContentWrapper_af3b89,
+.interactionsContainer_af3b89 {
   background-color: cv('bg.general.popout');
 }
 /*clicked in icon*/
-%memberActivityShareToChannelButton {
+.shareToChannelButton_af3b89 {
   border-right: 1px solid hsla(0, 0%, 100%, 0.1);
   path {
     fill: #fff;

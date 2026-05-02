@@ -1,66 +1,68 @@
+@use '../index' as *;
 /* NITRO */
-%nitro {
+.applicationStore_f07d62 {
   background-color: transparent;
 }
-%nitroScroller,
-%nitroPremiumScroller {
+.scroller_c880e8,
+.mainPageScroller_ca1a02 {
   background-color: rgba(0, 0, 0, calc($bg-shading * 0.5));
   right: 0%;
   transition: all 0.5s ease-in-out;
-  &:has(+ %nitroPerksScroller%nitroPerksScrollerOpen) {
+  &:has(+ .allPerksScroller_ca1a02.open_ca1a02) {
     right: 100%;
   }
 }
-%nitroCard {
+.card_f8e6bf {
   background-color: cv('bg.general.card');
   &:hover {
     background-color: hsla(0, 0%, 0%, 0.6);
   }
 }
-%nitroSeePerksButton {
+.seeAllPerksButton_ca1a02 {
   background-color: hsla(0, 0%, 0%, 0.6);
 }
-%nitroGiftContainer {
+.giftNitro_ca1a02 {
   background-color: cv('bg.general.card');
 }
-%themeDark %nitroGiftTextContainer {
+.theme-dark .textContainer_da4aee {
   background-image: none;
 }
-%nitroFooterInnerWrapper {
+.innerWrapperV1__70f7f {
   background-color: hsla(0, 0%, 0%, 0.8);
 }
 
 // PERKS PAGE
-%nitroPerksScroller {
+.allPerksScroller_ca1a02 {
   background-color: rgba(0, 0, 0, calc($bg-shading * 0.6));
   transition: all 0.5s ease-in-out;
 }
-%nitroPerksBackButton {
+.backButton_b9abc5 {
   background-color: hsla(0, 0%, 0%, 0.6);
   &:hover {
     background-color: hsla(0, 0%, 0%, 0.8);
   }
 }
-%themeDark {
-  %nitroPerksArrows {
+.theme-dark {
+  .leftArrow__3cf14,
+  .rightArrow__3cf14 {
     background-color: hsla(0, 0%, 0%, 0.6);
   }
 }
-%nitroPerksArrowIcon {
+.arrowIcon__3cf14 {
   fill: hsla(0, 0%, 100%, 0.7);
 }
-%themeDark %nitroPerksArrowInactive {
+.theme-dark .inactiveArrow__3cf14 {
   background-color: cv('bg.general.card');
-  %nitroPerksArrowIcon {
+  .arrowIcon__3cf14 {
     fill: hsla(0, 0%, 100%, 0.3);
   }
 }
-%nitroPerksProgressBar {
+.cardProgressBar__3cf14 {
   background-color: hsla(0, 0%, 0%, 0.6);
 }
-%nitroPerksProgressDot {
+.dot__3cf14 {
   background-color: hsla(0, 0%, 100%, 0.5);
 }
-%nitroPerksProgressDotSelected {
+.selectedDot__3cf14 {
   background-color: #fff;
 }

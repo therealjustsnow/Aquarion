@@ -1,6 +1,7 @@
+@use '../index' as *;
 /* STATUS */
 /*status picker*/
-%statusPickerIcon {
+.status_a423bd {
   &[style*='rgb(128, 132, 142)'] {
     background-color: cv('colors.offline') !important;
   }
@@ -16,7 +17,7 @@
 }
 
 /*member list, profile*/
-%avatarMask rect {
+.mask__44b0c rect {
   &[fill*='#80848e'] {
     fill: cv('colors.offline');
   }

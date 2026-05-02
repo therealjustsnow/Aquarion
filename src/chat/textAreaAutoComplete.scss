@@ -1,75 +1,66 @@
+@use '../index' as *;
 /* CHAT CHANNEL TEXT AREA AUTOCOMPLETE */
-%themeDark {
-  %autocomplete {
+.theme-dark {
+  .autocomplete__13533 {
     background: transparent;
     overflow: hidden;
   }
 }
-%autocomplete {
-  %autocompleteInner {
+.autocomplete__13533 {
+  .autocompleteInner__13533 {
     background: cv('bg.general.popout');
     animation: cv-menu-slide-bottom 0.2s ease-in-out;
     transform-origin: 50% 100%;
   }
-  %autocompleteTitle {
+  .contentTitle__13533 {
     color: hsla(0, 0%, 100%, 0.5);
   }
-  %autocompleteContent {
-    color: hsla(0, 0%, 100%, 0.6);
-  }
-  %autocompleteDescription,
-  %autocompleteDescriptionUsername {
-    color: hsla(0, 0%, 100%, 0.3);
-  }
-  %autocompleteDescriptionDiscriminator {
-    color: hsla(0, 0%, 100%, 0.15);
-  }
-  %autocompleteSelectorSelected[aria-selected='true'] %autocompleteBase,
-  %autocompleteSelectorSelected[aria-disabled='false'] %autocompleteBase:hover {
+  .clickable__13533[aria-selected='true'] .base__13533,
+  .clickable__13533[aria-disabled='false'] .base__13533:hover {
     background: $main-color;
   }
-  %autocompleteBase {
-    %textExtraSmallMedium,
-    %textExtraSmallNormal {
+  .base__13533 {
+    .text-xs\/medium_cf4812,
+    .text-xs\/normal_cf4812 {
       color: #fff !important;
     }
   }
-  %autocompleteIconForeground {
+  .iconForeground__13533 {
     fill: hsla(0, 0%, 100%, 0.7);
   }
-  %autocompleteContentSecondary,
-  %autocompleteRowSubheading {
+  .autocompleteRowContentSecondary__13533,
+  .autocompleteRowSubheading__13533 {
     color: #fff;
   }
 }
 // SLASH COMMANDS AUTOCOMPLETE
-%autocompleteListWrapper,
-%autocompleteList,
-%autocompleteCategoryHeader {
+.wrapper_b1e4f3,
+.list_b1e4f3,
+.categoryHeader_d1405b {
   background-color: transparent;
 }
-%autocompleteListItemSelected {
+.selected__1a58a {
   background-color: $main-color;
   &:hover {
     background-color: $main-color;
   }
 }
-%themeDark %autocompleteOption {
+.theme-dark .option_a19535 {
   background-color: hsla(0, 0%, 0%, 0.5);
 }
-%autocompleteOptionals {
+.optionals__920ab {
   border: none;
 }
-%autocompleteOptionalCount {
+.optionalCount__920ab {
   color: hsla(0, 0%, 100%, 0.7);
 }
 // REMOVE AUTOCOMPLETE NITRO AD
-%autocompleteUpsellDividerContainer,
-%autocompleteUpsellEmoji,
-%autocompleteUpsellHeader {
+.nitroTopDividerContainer_b3fb5f,
+.premiumEmoji_d4ce86,
+.premiumHeader_f73c14 {
   display: none;
 }
 // REMOVE ENTIRE BOX IF ONLY CONTAINS NITRO AD
-%autocomplete:has(%autocompleteBase + %autocompleteUpsellDividerContainer) {
+.autocomplete__13533:has(.base__13533 + .nitroTopDividerContainer_b3fb5f) {
   display: none;
 }

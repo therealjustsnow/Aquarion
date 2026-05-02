@@ -1,22 +1,24 @@
+@use '../index' as *;
 /* USER ACTIVITY */
-%activity {
-  %activityNameNormal {
+.activityUserPopoutV2_c1d9fd,
+.activityProfileV2_c1d9fd {
+  .nameNormal__2ef49 {
     color: $main-color;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     font-weight: 600;
-    > %activityName {
+    > .activityName__2ef49 {
       color: inherit;
-      &%activityBodyLink:hover {
+      &.bodyLink__2ef49:hover {
         text-shadow:
           0 0 5px rgba(0, 0, 0, 0.5),
           0 0 1px;
       }
     }
   }
-  %activityTimestamp {
+  .timestamp__2ef49 {
     font-style: italic;
   }
-  %activityBodyLink {
+  .bodyLink__2ef49 {
     @include hover-shadow;
   }
 }

@@ -1,6 +1,7 @@
+@use '../index' as *;
 // NUMBER BADGE (AKA PINGS)
-%numberBadge,
-%textBadge {
+.numberBadge__2b1f5,
+.textBadge__2b1f5 {
   background: $main-color !important;
   box-shadow:
     0 0 10px -3px $main-color,
@@ -10,17 +11,17 @@
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
   transition: all 0.3s ease-in-out;
 }
-%numberBadge {
+.numberBadge__2b1f5 {
   font-size: 12px;
   line-height: 12px;
   margin-right: 5px;
   z-index: 1;
 }
-%channelWrapperSelected,
-%privateChannelInteractiveSelected,
-%tabBarItemSelected {
-  %numberBadge,
-  %textBadge {
+.modeSelected__2ea32,
+.interactiveSelected__972a0,
+.selected_b3f026 {
+  .numberBadge__2b1f5,
+  .textBadge__2b1f5 {
     background: #fff !important;
     box-shadow: none;
     color: $main-color;
@@ -29,34 +30,34 @@
 }
 
 // FLOWER STAR BADGE
-%flowerStarContainer {
+.flowerStarContainer__3e3b0 {
   color: $main-color;
-  %flowerStarIcon {
+  .icon__09691 {
     color: #fff;
   }
-  %flowerStarChild {
+  .childContainer__3e3b0 {
     > svg {
       color: #fff;
     }
   }
 }
 
-%gameVerifiedIcon > svg > path {
+.gameVerifiedIcon_cc46f0 > svg > path {
   fill: $main-color;
 }
 
 // COMMUNITY GUILD BADGE
-%guildIconChildContainer path[fill='var(--primary-500)'] {
+.redesignIconChildContainer__3e3b0 path[fill='var(--primary-500)'] {
   fill: hsla(0, 0%, 0%, 0.9);
 }
 
 // 1 MONTH FREE NITRO
-%nitroTrialBadge {
+.premiumTrialAcknowledgedBadge__4c1e4 {
   background-color: $main-color;
 }
 
 // HOME ICON BADGE
-%homeNumberBadge {
+.lowerBadge_cc5dd2 {
   margin-right: -5px;
   z-index: 1;
 }

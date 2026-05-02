@@ -1,180 +1,162 @@
-$version: '1.0.2';
+/* ### Aquarion v1.0.2 by Snow ### */
 
-/* ### Aquarion v#{$version} by Snow ### */
-
-// SELECTORS
-@import 'lib/selectors/selectorPlaceholders';
-
-// DEFAULT SETTINGS
-@import 'src/defaultSettings';
-
-// FUNCTIONS
-@import 'src/functions';
-
-// VARIABLES
-@import 'src/variables';
-
-// MIXINS
-@import 'src/mixins';
-
-// KEYFRAMES
-@import 'src/keyframes';
+@use 'src/defaultSettings';
+@use 'src/keyframes';
 
 // APP
-@import 'src/app/app';
-
-@import 'src/app/notice';
-@import 'src/app/titlebar';
+@use 'src/app/app';
+@use 'src/app/notice';
+@use 'src/app/titlebar';
 
 // CHANNEL
-@import 'src/channels/specialChannels';
-@import 'src/channels/channels';
-@import 'src/channels/category';
-@import 'src/channels/indicators';
-@import 'src/channels/panels';
-@import 'src/channels/privateChannels';
+@use 'src/channels/specialChannels';
+@use 'src/channels/channels';
+@use 'src/channels/category';
+@use 'src/channels/indicators';
+@use 'src/channels/panels';
+@use 'src/channels/privateChannels';
 
 // CHAT
-@import 'src/chat/chat';
-@import 'src/chat/bars';
-@import 'src/chat/call';
-@import 'src/chat/divider';
-@import 'src/chat/stageCall';
-@import 'src/chat/textArea';
-@import 'src/chat/textAreaAutoComplete';
-@import 'src/chat/modView';
+@use 'src/chat/chat';
+@use 'src/chat/bars';
+@use 'src/chat/call';
+@use 'src/chat/divider';
+@use 'src/chat/stageCall';
+@use 'src/chat/textArea';
+@use 'src/chat/textAreaAutoComplete';
+@use 'src/chat/modView';
 
 // GENERAL ELEMENTS
-@import 'src/general/badge';
-@import 'src/general/button';
-@import 'src/general/checkbox';
-@import 'src/general/input';
-@import 'src/general/pageControl';
-@import 'src/general/radioGroup';
-@import 'src/general/scrollbar';
-@import 'src/general/slider';
-@import 'src/general/spinner';
-@import 'src/general/switch';
-@import 'src/general/tabBar';
-@import 'src/general/tooltip';
+@use 'src/general/badge';
+@use 'src/general/button';
+@use 'src/general/checkbox';
+@use 'src/general/input';
+@use 'src/general/pageControl';
+@use 'src/general/radioGroup';
+@use 'src/general/scrollbar';
+@use 'src/general/slider';
+@use 'src/general/spinner';
+@use 'src/general/switch';
+@use 'src/general/tabBar';
+@use 'src/general/tooltip';
 
 // GUILDS
-@import 'src/guilds/guilds';
+@use 'src/guilds/guilds';
 
 // HEADER BAR
-@import 'src/headerBar/headerBar';
-@import 'src/headerBar/breadcrumbs';
-@import 'src/headerBar/searchBars';
-@import 'src/headerBar/toolbar';
+@use 'src/headerBar/headerBar';
+@use 'src/headerBar/breadcrumbs';
+@use 'src/headerBar/searchBars';
+@use 'src/headerBar/toolbar';
 
 // HOME
-@import 'src/home/friends';
-@import 'src/home/library';
-@import 'src/home/nitro';
-@import 'src/home/requests';
+@use 'src/home/friends';
+@use 'src/home/library';
+@use 'src/home/nitro';
+@use 'src/home/requests';
 
 // MEMBERS
-@import 'src/members/members';
-@import 'src/members/tags';
+@use 'src/members/members';
+@use 'src/members/tags';
 
 // MESSAGES
-@import 'src/messages/poll';
-@import 'src/messages/message';
-@import 'src/messages/activityInvite';
-@import 'src/messages/attachment';
-@import 'src/messages/blocked';
-@import 'src/messages/codeblock';
-@import 'src/messages/codeLanguages';
-@import 'src/messages/embed';
-@import 'src/messages/inviteLink';
-@import 'src/messages/mediaPlayer';
-@import 'src/messages/mention';
-@import 'src/messages/reaction';
-@import 'src/messages/textContainer';
+@use 'src/messages/poll';
+@use 'src/messages/message';
+@use 'src/messages/activityInvite';
+@use 'src/messages/attachment';
+@use 'src/messages/blocked';
+@use 'src/messages/codeblock';
+@use 'src/messages/codeLanguages';
+@use 'src/messages/embed';
+@use 'src/messages/inviteLink';
+@use 'src/messages/mediaPlayer';
+@use 'src/messages/mention';
+@use 'src/messages/reaction';
+@use 'src/messages/textContainer';
 
 // MODALS
-@import 'src/modals/modal';
-@import 'src/modals/eventModal';
-@import 'src/modals/addServerModal';
-@import 'src/modals/keyboardShortcuts';
-@import 'src/modals/payments';
-@import 'src/modals/screenshare';
-@import 'src/modals/threadModal';
+@use 'src/modals/modal';
+@use 'src/modals/eventModal';
+@use 'src/modals/addServerModal';
+@use 'src/modals/keyboardShortcuts';
+@use 'src/modals/payments';
+@use 'src/modals/screenshare';
+@use 'src/modals/threadModal';
 
 // PAGES
-@import 'src/pages/discordShop';
-@import 'src/pages/discover';
-@import 'src/pages/forums';
-@import 'src/pages/login';
-@import 'src/pages/previewServer';
-@import 'src/pages/serverBoost';
-@import 'src/pages/studentHub';
+@use 'src/pages/discordShop';
+@use 'src/pages/discover';
+@use 'src/pages/forums';
+@use 'src/pages/login';
+@use 'src/pages/previewServer';
+@use 'src/pages/serverBoost';
+@use 'src/pages/studentHub';
 
 // POPOUTS
-@import 'src/popouts/applicationPopout';
-@import 'src/popouts/connectionInfo';
-@import 'src/popouts/emojiPicker';
-@import 'src/popouts/gifPicker';
-@import 'src/popouts/groupInvite';
-@import 'src/popouts/mentionEveryone';
-@import 'src/popouts/menuPopout';
-@import 'src/popouts/regionSelectorPopout';
-@import 'src/popouts/inboxPopout';
-@import 'src/popouts/otherPopouts';
-@import 'src/popouts/searchPopout';
-@import 'src/popouts/soundboard';
-@import 'src/popouts/stickers';
-@import 'src/popouts/threadPopout';
-@import 'src/popouts/voiceChannelListeningTo';
+@use 'src/popouts/applicationPopout';
+@use 'src/popouts/connectionInfo';
+@use 'src/popouts/emojiPicker';
+@use 'src/popouts/gifPicker';
+@use 'src/popouts/groupInvite';
+@use 'src/popouts/mentionEveryone';
+@use 'src/popouts/menuPopout';
+@use 'src/popouts/regionSelectorPopout';
+@use 'src/popouts/inboxPopout';
+@use 'src/popouts/otherPopouts';
+@use 'src/popouts/searchPopout';
+@use 'src/popouts/soundboard';
+@use 'src/popouts/stickers';
+@use 'src/popouts/threadPopout';
+@use 'src/popouts/voiceChannelListeningTo';
 
 // PROFILES
-@import 'src/profiles/userProfiles';
+@use 'src/profiles/userProfiles';
 
 // SCREENS
-@import 'src/screens/crash';
-@import 'src/screens/loading';
+@use 'src/screens/crash';
+@use 'src/screens/loading';
 
 // SEARCH
-@import 'src/search/search';
+@use 'src/search/search';
 
 // SETTINGS
-@import 'src/settings/appConnections';
-@import 'src/settings/channelSettings';
-@import 'src/settings/content';
-@import 'src/settings/icons';
-@import 'src/settings/onboarding';
-@import 'src/settings/serverSettings';
-@import 'src/settings/sidebar';
-@import 'src/settings/userSettings';
+@use 'src/settings/appConnections';
+@use 'src/settings/channelSettings';
+@use 'src/settings/content';
+@use 'src/settings/icons' as settings-icons;
+@use 'src/settings/onboarding';
+@use 'src/settings/serverSettings';
+@use 'src/settings/sidebar' as settings-sidebar;
+@use 'src/settings/userSettings';
 
 // USERS
-@import 'src/users/activity';
-@import 'src/users/avatar';
-@import 'src/users/botTag';
-@import 'src/users/role';
-@import 'src/users/status';
+@use 'src/users/activity';
+@use 'src/users/avatar';
+@use 'src/users/botTag';
+@use 'src/users/role';
+@use 'src/users/status';
 
 // VENCORD
-@import 'src/injectors/ven/plugins';
-@import 'src/injectors/ven/venSettings';
-@import 'src/injectors/ven/icons';
+@use 'src/injectors/ven/plugins' as ven-plugins;
+@use 'src/injectors/ven/venSettings';
+@use 'src/injectors/ven/icons' as ven-icons;
 
 // REPLUGGED
-@import 'src/injectors/rp/rpSettings';
+@use 'src/injectors/rp/rpSettings';
 
 // BETTERDISCORD
-@import 'src/injectors/bd/bdSettings';
-@import 'src/injectors/bd/customCSS';
-@import 'src/injectors/bd/icons';
-@import 'src/injectors/bd/popouts';
-@import 'src/injectors/bd/sidebar';
-@import 'src/injectors/bd/plugins';
+@use 'src/injectors/bd/bdSettings';
+@use 'src/injectors/bd/customCSS';
+@use 'src/injectors/bd/icons';
+@use 'src/injectors/bd/popouts';
+@use 'src/injectors/bd/sidebar' as bd-sidebar;
+@use 'src/injectors/bd/plugins' as bd-plugins;
 
 // FIXES
-@import 'src/fixespt2';
+@use 'src/fixespt2';
 
-// visual refresh
-@import 'src/visualRefresh';
+// VISUAL REFRESH
+@use 'src/visualRefresh';
 
 // CUSTOM SCSS
-@import 'src/aquarion.scss';
+@use 'src/aquarion';

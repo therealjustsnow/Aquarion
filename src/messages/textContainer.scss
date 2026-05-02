@@ -1,38 +1,39 @@
+@use '../index' as *;
 @use 'sass:list';
 @use 'sass:map';
 @use 'sass:string';
 @use 'sass:meta';
 
 /* Text Container */
-%textContainer {
+.textContainer__4d95d {
   background-color: rgba(0, 0, 0, 0.42);
   border: 2px solid hsla(0, 0%, 100%, 0.05);
   border-radius: 8px 8px 0 0;
 }
-%textContainerFooter {
+.footer__4d95d {
   background-color: hsla(0, 0%, 100%, 0.1);
   border: none;
 }
-%attachmentName {
+.attachmentName__4d95d {
   color: hsla(0, 0%, 100%, 0.7);
   &:hover {
     color: hsla(0, 0%, 100%, 0.9);
   }
 }
-%attachmentSize {
+.formattedSize__4d95d {
   color: hsla(0, 0%, 100%, 0.5);
   margin: 0 5px;
   &:hover {
     color: hsla(0, 0%, 100%, 0.7);
   }
 }
-%textContainerModal {
+.modalTextContainer__4d95d {
   background-color: hsla(0, 0%, 0%, 0.5);
   border: none;
 }
 
 // CHANGE LANGUAGE POPOUT
-%textContainerLanguageSelector {
+.languageSelector__4d95d {
   background-color: cv('bg.general.popout');
 }
 
@@ -100,11 +101,11 @@ $presetListIDs: ':is(';
 }
 
 #{$presetListIDs} {
-  %textContainerParent {
+  .container__4d95d {
     border: none;
     background-color: transparent;
   }
-  %textContainer {
+  .textContainer__4d95d {
     &::before,
     &::after {
       content: '';
@@ -119,13 +120,13 @@ $presetListIDs: ':is(';
       background: var(--preview-overlay, url('https://clearvision.github.io/images/preview_overlay.png')) center/ cover no-repeat;
     }
   }
-  %textContainerFooter {
+  .footer__4d95d {
     width: 300px;
   }
-  %textContainerDownloadButton {
+  .downloadButton__4d95d {
     color: var(--local-color, inherit);
   }
-  :is(%textContainerToggleExpandSection, %attachmentName, %attachmentSize, %textContainerCodeIcon, pre) {
+  :is(.toggleExpandSection__4d95d, .attachmentName__4d95d, .formattedSize__4d95d, .codeIcon__4d95d, pre) {
     display: none;
   }
 }

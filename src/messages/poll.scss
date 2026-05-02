@@ -1,55 +1,56 @@
+@use '../index' as *;
 /* POLL */
-%poll {
+.container__0be77 {
   background: rgba(0, 0, 0, calc($bg-shading * 0.4));
 }
-%pollAnswerInner {
+.answerInner__4c520 {
   background-color: hsla(0, 0%, 100%, 0.07);
 }
-%pollAnswer {
-  %pollAnswerInner%pollAnswerCurrentlyVoting%pollAnswerSelected {
+.answer__4c520 {
+  .answerInner__4c520.currentlyVoting__4c520.selected__4c520 {
     outline: 2px solid $main-color;
   }
-  &:hover %pollAnswerInner%pollAnswerCurrentlyVoting {
+  &:hover .answerInner__4c520.currentlyVoting__4c520 {
     outline: 2px solid $hover-color;
   }
 }
-%pollCheckbox {
+.checkbox_f4f0eb {
   border: 2px solid hsla(0, 0%, 100%, 0.5);
-  &%pollCheckboxSelected {
+  &.checkboxSelected_f4f0eb {
     background-color: transparent;
     border: 2px solid $main-color;
   }
 }
-%pollSecondaryButton {
+.secondaryButtonPresentation__0be77 {
   background-color: $main-color;
   color: #fff;
 }
 
 // VIEW VOTES
-%pollVotesPopoutAnswerScroller,
-%pollVotesPopoutVoters {
+.scroller__01c8c,
+.voters__01c8c {
   background-color: transparent;
 }
 
 // CREATE POLL
-%pollCreatePopoutAnswerInputWrapper {
+.defaultTextInputWrapper__7b848 {
   background: none;
   border: none;
 }
-%pollCreatePopoutAddAnswer {
+.addAnswerButton_d97f89 {
   background-color: $main-color;
   &:hover {
     background-color: $hover-color;
   }
 }
-%pollCreatePopoutAddAnswerIcon {
+.addAnswerIconDefault_d97f89 {
   color: #fff;
 }
-%pollCreatePopoutAddAnswerLabel {
+.addAnswerButtonLabel_d97f89 {
   color: #fff !important;
 }
 
 // POLL ENDED
-%pollEndContainer {
+.container_f69538 {
   background-color: cv('bg.general.card');
 }

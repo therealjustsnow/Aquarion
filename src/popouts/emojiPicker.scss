@@ -1,37 +1,38 @@
+@use '../index' as *;
 /* EMOJI PICKER */
-%emojiPickerSizer {
+.drawerSizingWrapper__08434 {
   min-width: 430px;
 }
-%emojiPickerWrapper {
+.contentWrapper__08434 {
   background-color: cv('bg.general.popout');
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 // NAV BAR
-%emojiPickerNavButton {
+.navButtonActive__08434 {
   background-color: $main-color;
 }
-%emojiPickerHeader {
+.header_c0e32c {
   background-color: cv('bg.general.popout');
 }
-%emojiPicker {
+.emojiPicker_c0e32c {
   background-color: cv('bg.general.popout');
   min-width: 430px;
   border-radius: 0;
-  %emojiPickerHeader {
+  .header_c0e32c {
     background: transparent;
   }
 }
 
 // SEARCH BAR
-%emojiPickerSearchBar {
+.searchBar_c0e32c {
   background-color: hsla(0, 0%, 100%, 0.07);
   box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
   margin-top: 2px;
   &:focus-within {
     box-shadow: 0 0 2px 2px $main-color;
     transition: all 0.15s ease-in-out;
-    %popoutInput {
+    .input_fea832 {
       color: #fff;
       &::placeholder {
         color: hsla(0, 0%, 100%, 0.3);
@@ -41,16 +42,16 @@
 }
 
 // SUPER REACTION BUTTON
-%emojiPickerSuperReactionButton {
+.label__0d242 {
   background-color: transparent;
 }
 
 // DIVERSITY SELECTOR
-%emojiPickerDiversitySelectorPopout {
+.diversitySelectorOptions_a45a2a {
   border: none;
   padding: 2px;
   background-color: hsla(0, 0%, 0%, 0.8);
-  %emojiPickerDiversityItem {
+  .diversityEmojiItem_a45a2a {
     border-radius: 3px;
     transition: all 0.15s ease-in-out;
     &:hover {
@@ -60,58 +61,58 @@
 }
 
 // EMOJI ITEM
-%emojiPickerCategoryHeaderWrapper {
+.wrapper__14245 {
   background-color: transparent;
-  %emojiPickerCategoryHeader {
+  .header__14245 {
     color: #fff;
   }
 }
-%emojiPickerItem {
+.emojiItem_fc7141 {
   border-radius: 3px;
   transition:
     all 0.15s ease-in-out,
     filter 0s;
-  &%emojiPickerItemSelected {
+  &.emojiItemSelected_fc7141 {
     background-color: hsla(0, 0%, 100%, 0.07);
   }
-  &%emojiPickerItemDisabled {
+  &.emojiItemDisabled__843ea {
     filter: grayscale(1);
   }
 }
-%emojiPickerItemLoading {
-  %themeDark & {
+.imageLoading__1859b {
+  .theme-dark & {
     background-image: none;
   }
 }
-%emojiPickerInspector {
+.inspector_aeaaeb {
   background-color: transparent;
 }
 
 // CATEGORIES
-%emojiCategoryList,
-%emojiCategoryListWrapper {
+.categoryList_c0e32c,
+.wrapper__4e6ce {
   background-color: transparent;
 }
-%emojiCategoryItem {
+.categoryItem_b9ee0c {
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.07);
     border-radius: 4px;
   }
-  &%emojiCategoryItemSelected {
+  &.categoryItemDefaultCategorySelected_b9ee0c {
     background-color: hsla(0, 0%, 100%, 0.07);
     border-radius: 4px;
   }
 }
-%emojiCategoryItemIcon {
+.categoryIcon_b9ee0c {
   color: hsla(0, 0%, 100%, 0.7);
-  %emojiCategoryItemSelected & {
+  .categoryItemDefaultCategorySelected_b9ee0c & {
     color: #fff;
   }
 }
-%emojiCategoryGuildIcon {
+.guildIcon__0fa6d {
   background-color: transparent;
 }
-%emojiCategoryUnicodeShortcut {
+.unicodeShortcut_b9ee0c {
   background-color: $main-color;
   svg {
     color: hsla(0, 0%, 100%, 0.9);
@@ -125,31 +126,31 @@
 }
 
 // NO NITRO
-%emojiPickerPremiumPromo {
+.premiumPromo__3a1b6 {
   background-color: hsla(0, 0%, 0%, 0.9);
 }
-%emojiPickerPremiumPromoClose {
+.premiumPromoClose__3a1b6 {
   filter: brightness(0) invert(1);
   opacity: 0.6;
   &:hover {
     opacity: 0.8;
   }
 }
-%emojiPickerPremiumPromoTitle {
+.premiumPromoTitle__3a1b6 {
   color: #fff;
 }
-%emojiPickerPremiumUpsell {
+.upsell_ac65bb {
   background-color: transparent;
 }
-%emojiCategoryLockIconContainer {
+.categoryItemLockIconContainer__0fa6d {
   background: $main-color;
   border-color: $main-color;
 }
-%emojiPickerPremiumUpsellContainer {
+.upsellContainer_a3bc57 {
   background: var(--background-overlay);
   border: 2px solid $main-color;
 }
 // NITRO EXPIRING NOTICE
-%emojiPickerPremiumRetentionNotice {
+.premiumRetentionNotice_a606ef {
   background-color: hsla(0, 0%, 100%, 0.1);
 }

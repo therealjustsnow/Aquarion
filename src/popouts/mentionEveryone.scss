@@ -1,8 +1,9 @@
-%themeDark {
-  %everyoneWarningPopout {
+@use '../index' as *;
+.theme-dark {
+  .contentWarningPopout_be95d0 {
     background-color: cv('bg.general.popout');
   }
-  %everyoneWarningFooter {
+  .footer_be95d0 {
     background-color: transparent;
   }
 }

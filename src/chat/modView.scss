@@ -1,49 +1,50 @@
+@use '../index' as *;
 /* MOD VIEW */
 
 // HEADER
-%modViewHeader {
+.container__34940 {
   background-color: cv('bg.general.card');
 }
-%modViewHeaderTop,
-%modViewHeaderBottomAction {
+.topRow__34940,
+.bottomRowAction__34940 {
   background-color: transparent;
 }
-%modViewHeaderBottomActionInner {
+.innerBottomRowAction__34940 {
   background-color: hsla(0, 0%, 100%, 0.05);
 }
 
 // BODY
-%modViewBody {
+.container__3a5a1 {
   background-color: cv('bg.general.card');
 }
-%modViewBodyHeader {
+.header__3a5a1 {
   background-color: transparent;
   box-shadow: none;
 }
-%modViewBodyItem {
+.modInfoItem__96c0b {
   background-color: cv('bg.general.card');
 }
-%modViewBodyAction {
+.modInfoAction__96c0b {
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.05);
   }
 }
-%modViewPermissionChiplet,
-%modViewElevatedPermissionChiplet {
+.permissionChiplet__1ef77,
+.elevatedPermission__1ef77 {
   background-color: hsla(0, 0%, 100%, 0.07);
 }
 
 // SERVER ACTIVITY
-%modViewActivity {
+.innerContainer__39de8 {
   .container__02a39 .searchResult__02a39 {
     background-color: cv('bg.general.card') !important;
   }
 }
 
 // MOD PERMISSIONS
-%modViewPermissionItem {
+.permissionItemContainer__3f11f {
   background-color: cv('bg.general.card');
-  &%modViewElevatedPermissionItem {
+  &.elevatedPermission__3f11f {
     background-color: hsla(0, 0%, 0%, 0.6);
     border: 1px solid hsla(0, 0%, 100%, 0.05);
   }

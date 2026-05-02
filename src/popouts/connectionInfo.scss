@@ -1,13 +1,14 @@
+@use '../index' as *;
 /* CONNECTION INFO POPOUT */
-%connectionDebugPopout {
+.container__50387 {
   background-color: cv('bg.general.popout');
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-%connectionDebugText {
+.popoutText_effb26 {
   > strong {
     color: $main-color;
   }
-  &%connectionDebugTextDetails {
+  &.popoutTextDetails_effb26 {
     color: hsla(0, 0%, 100%, 0.5);
   }
 }

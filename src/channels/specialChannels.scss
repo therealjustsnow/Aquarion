@@ -1,152 +1,154 @@
+@use '../index' as *;
 // CUSTOMIZE CHANNELS
-%customizeChannelsHeader {
+.header__0b563 {
   background-color: rgba(0, 0, 0, calc($bg-shading * 0.6)) !important;
 }
-%customizeChannels {
+.container__0b563 {
   background-color: rgba(0, 0, 0, calc($bg-shading * 0.5)) !important;
 }
-%customizeChannelsTabBar {
+.tabBar__0b563 {
   border-bottom: none;
 }
-%customizeChannelsCard {
+.prompt__5d7c9 {
   background: cv('bg.general.card');
 }
-%customizeChannelsPill {
+.selectValuePill__05934 {
   background: rgba(0, 0, 0, 0.2);
   border: 1px solid $main-color;
 }
-%customizeChannelsOption {
+.optionButtonWrapper__270d7 {
   border: 2px solid $main-color;
   &:hover {
     border: 2px solid $hover-color;
   }
-  &%customizeChannelsSelected {
+  &.selected__270d7 {
     border: 2px solid var(--success-color);
     background: rgba(0, 0, 0, 0.2);
   }
 }
 /*profile card*/
-%customizeChannelsProfile {
+.profileCard__5d7c9 {
   background: cv('bg.general.card');
 }
-%customizeChannelsProfileRole {
+.role__5d7c9 {
   background: hsla(0, 0%, 100%, 0.1);
 }
 
 // BROWSE CHANNELS
-%browseChannels {
+.pageBody__41ed7 {
   background-color: transparent;
 }
-%browseChannelsTip {
+.container_bc0d35 {
   background-color: cv('bg.general.card');
 }
-%browseChannelsSelectAll {
-  %textExtraSmallMedium {
+.selectAll_e4503a {
+  .text-xs\/medium_cf4812 {
     color: hsla(0, 0%, 100%, 0.5) !important;
     transition: all 0.15s ease-in-out;
   }
 }
-%browseChannelsRow {
+.channelRow_e4503a {
   background-color: rgba(0, 0, 0, calc($bg-shading * 0.4));
   &:hover {
-    &:not(%browseChannelsDisabled) {
+    &:not(.disabled_e4503a) {
       background-color: rgba(0, 0, 0, calc($bg-shading * 0.6));
     }
   }
 }
 
 // MEMBERS LIST
-%membersChannelContainer {
+.mainTableContainer_dd2627,
+.mainTableContainer__09a38 {
   background: cv('bg.general.card');
   box-shadow: none;
 }
-%membersChannelNotice {
+.newMembersNotice_acdcc0 {
   background-color: $main-color;
   &:hover {
     background-color: $hover-color;
   }
 }
-%membersChannelButton {
+.button__71c22 {
   background: $main-color;
   color: #fff;
   &:hover {
     background: $hover-color;
   }
 }
-%membersChannelOtherRoles {
+.otherRoles__71c22 {
   background: hsla(0, 0%, 100%, 0.1);
 }
 
 // NOT IN CHANNEL LIST
-%channelNotInList {
+.chatHeaderBar_dc83f5 {
   background: transparent;
 }
 /* SERVER GUIDE */
-%homeContainer {
+.homeContainer__7449f {
   /*First msg*/
-  %serverGuideMessage {
+  .userProfileOuterThemed_c69a7b {
     background: transparent;
   }
-  %serverGuideMessageInner,
-  %serverGuideAvatar,
-  %serverGuideAction,
-  %serverGuideSidebarCard,
-  %serverGuideRow {
+  .userCardInner_c69a7b,
+  .avatarBackground__6f212,
+  .action_c66e86,
+  .sidebarCardWrapper__7449f,
+  .row_d13feb {
     background: rgba(0, 0, 0, calc($bg-shading * 0.4));
   }
-  %serverGuideAction:hover {
+  .action_c66e86:hover {
     background: $hover-color;
   }
-  %serverGuideIcon {
+  .headerIcon__553a5 {
     background: $main-color;
     border: 4px solid transparent;
   }
-  %guildFolderIcon {
+  .icon_f34534 {
     position: relative;
     background-clip: padding-box;
     background-color: none;
     background-position: center center;
     background-size: 100%100%;
   }
-  %serverGuideChannelIcon,
-  %serverGuideRulesIcon {
+  .channelIconContainer_c66e86,
+  .rulesIconContainer_c66e86 {
     background: $main-color;
     & > svg > path {
       fill: #fff;
     }
   }
-  %serverGuideActionCompleted > path {
+  .checkCircleCompleted_c66e86 > path {
     fill: var(--success-color);
   }
 }
 /*Cases where we get taken to channels*/
-%serverGuideChannelHintBanner {
+.banner__183e8 {
   background: rgba(0, 0, 0, calc($bg-shading * 0.4));
 }
-%serverGuideChannelHintIcon {
+.iconCircle__183e8 {
   background: $main-color;
 }
 
 /* SERVER SUBSCRIPTIONS */
-%serverSubscription {
+.scroller__808a1 {
   background: cv('bg.general.card');
 }
-%serverSubscriptionTier {
+.tierInfoContainer__3efc4 {
   background: cv('bg.general.card');
 }
-%serverSubscriptionPerk,
-%serverSubscriptionPreview {
+.subscriptionPerks__3efc4,
+.roleMessagePreview__3efc4 {
   background: rgba(0, 0, 0, 0.2);
 }
 
 /* CUSTOMIZE YOUR EXPERIENCE */
-%serverExperienceNav {
+.navButtons_fe70ca {
   background: cv('bg.general.card');
 }
-%serverExperiencePrompt,
-%serverExperienceTerms {
+.prompt_fe70ca,
+.termsFieldBody_fe70ca {
   background: cv('bg.general.card');
 }
-%serverExperienceGradient {
+.overlay_fe70ca {
   display: none;
 }

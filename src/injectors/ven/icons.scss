@@ -1,5 +1,5 @@
 /* Vencord SETTINGS SIDEBAR ICONS */
-%settingsSidebar {
+.sidebar__23e6b {
   // Vencord ICON MAP
   $ven: (
     // Settings
@@ -16,7 +16,7 @@
     'backup-restore': 'https://clearvision.github.io/icons/file_archive.svg'
   );
 
-  %tabBarItem {
+  .item_b3f026 {
     @each $i, $u in $ven {
       &.vc-#{$i}:before {
         background-image: url(#{$u});

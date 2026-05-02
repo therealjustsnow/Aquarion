@@ -1,20 +1,21 @@
+@use '../index' as *;
 /* DISCOVER */
-%discover {
+.scroller__23746 {
   background-color: rgba(0, 0, 0, calc($bg-shading * 0.4));
 }
-%discoverHeaderBackdrop {
+.backdrop__8a7fc {
   background-color: rgba($color: #0c1522, $alpha: 0.7);
   backdrop-filter: blur(5px);
 }
-%discoverTabSelected {
+.selected__65d41 {
   border-bottom-color: $main-color !important;
 }
 
 // SIDEBAR
-%discoverCategory {
+.container__551b0 {
   background-color: transparent;
 }
-%discoverCategoryItem {
+.navItem__551b0 {
   position: relative;
   z-index: 1;
   &:before {
@@ -41,7 +42,7 @@
       background: hsla(0, 0%, 100%, 0.1);
     }
   }
-  &%discoverCategoryItemSelected {
+  &.selected__551b0 {
     &:before {
       background: hsla(0, 0%, 100%, 0.1);
     }
@@ -51,58 +52,59 @@
       animation: cv-channel-select 0.3s ease-in-out;
     }
   }
-  &:is(%discoverCategoryItemSelected, :hover, :active) {
+  &:is(.selected__551b0, :hover, :active) {
     background-color: transparent;
   }
 }
 
 // GUILD LIST
-%themeDark {
-  :is(%discoverGuildCard, %discoverHubCard, %discoverGuildCardIcon) {
+.theme-dark {
+  :is(.card__84e3e, .container_a76561, .iconMask__4cb8a) {
     background-color: cv('bg.general.card');
     transition: all 0.15s ease-in-out;
     &:hover,
-    &:hover %discoverGuildCardIcon {
+    &:hover .iconMask__4cb8a {
       background-color: hsla(0, 0%, 0%, 0.6);
     }
   }
 }
-%discoverGuildCardLoading {
+.loading_e90879 {
   background-color: transparent;
 }
-%discoverGuildList {
-  %spinner {
+.guildList_c8c448 {
+  .spinner__0b5bb {
     background-color: hsla(0, 0%, 0%, 0.8);
   }
 }
-%discoverGuildMembersOnline {
+.presenceCountDot__4cb8a {
   background-color: cv('colors.online');
 }
-%discoverGuildMembersOffline {
+.memberCountDot__4cb8a {
   background-color: cv('colors.offline');
 }
-%discoverGuildLoading {
+.spinner__0b5bb {
   background-color: cv('bg.general.card');
 }
 
 // SEARCH RESULTS
-%discoverSearchHeader {
+.headerBar__8a7fc {
   background: rgba(0, 0, 0, calc($bg-shading * 0.6));
   box-shadow: 0 0 10px rgba(0, 0, 0, calc($bg-shading * 0.6));
 }
-%discoverSearch {
+.search_f69601,
+.container_cbd375 {
   background: rgba(0, 0, 0, calc($bg-shading * 0.5));
 }
-%discoverSearchBackButton {
+.iconButton__8a7fc {
   background-color: $main-color;
   &:hover {
     background-color: $hover-color;
   }
 }
-%discoverSearchEmpty {
+.container__74f3e {
   background-color: transparent;
 }
-%discoverSearchCategory {
+.category_fe77d6 {
   position: relative;
   z-index: 1;
   &:before {
@@ -129,7 +131,7 @@
       background: hsla(0, 0%, 100%, 0.1);
     }
   }
-  &%discoverSearchCategorySelected {
+  &.selected_fe77d6 {
     &:before {
       background: hsla(0, 0%, 100%, 0.1);
     }
@@ -139,53 +141,53 @@
       animation: cv-channel-select 0.3s ease-in-out;
     }
   }
-  %textSmallNormal {
+  .text-sm\/normal_cf4812 {
     color: hsla(0, 0%, 100%, 0.7) !important;
   }
 }
 
 // QUESTS
-%discoverQuestItem {
+.container_cec934 {
   background-color: cv('bg.general.card');
 }
-%discoverQuestItemGradient {
+.darkThemeGradient_b5b7aa {
   background: linear-gradient(0deg, hsla(0, 0%, 0%, 0.9) 10%, hsla(0, 0%, 0%, 0.6) 25%, transparent 35%);
 }
-%discoverQuestItemDescription {
+.container__956c6 {
   background-color: transparent;
 }
-%discoverQuestItemName {
+.questName__956c6 {
   color: $main-color !important;
 }
 
 // APPS
-%themeDark %discoverAppListAvatar {
+.theme-dark .avatar_f215b9 {
   background-color: cv('bg.general.card');
   border-color: transparent;
 }
-%discoverGuildCard %discoverAppListAvatar {
+.card__84e3e .avatar_f215b9 {
   background-color: hsla(0, 0%, 0%, 0.6);
   border-color: transparent;
 }
-%discoverAppAvatar {
+.avatar_efaad4 {
   background-color: cv('bg.general.card');
   border-color: transparent;
 }
-%discoverAppCategory {
+.category_ed45d7 {
   background-color: hsla(0, 0%, 100%, 0.1);
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.15);
   }
 }
-%discoverAppSupportServer,
-%discoverAppCommands,
-%discoverAppCommand,
-%discoverAppPermissionList,
-%discoverAppDataAccess {
+.card_c59071,
+.contentContainer_c6b177,
+.commandName_c6b177,
+.list__83c7c,
+.contentContainer__8f46b {
   background: cv('bg.general.card');
   border: none;
 }
-%discoverAppMoreApps {
+.appContainer__5a4b6 {
   background: cv('bg.general.card');
   border: none;
   &:focus,

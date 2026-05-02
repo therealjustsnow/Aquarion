@@ -1,38 +1,39 @@
+@use '../index' as *;
 /* STAGE CALL */
 
 // POPOUT
-%stageIconBackground {
+.iconBackground__0b34e {
   background-color: $main-color;
 }
 
 // STAGE
-%stageContainer {
+.container__722ff {
   background: rgba(0, 0, 0, calc($bg-shading * 0.5));
 }
-%stageCallContainer,
-%stageScroller {
+.callContainer__722ff,
+.scroller__56ccd {
   background-color: transparent;
 }
-%stageGradientContainer {
+.gradientContainer_bfe55a {
   background-image: none;
 }
-%stageSeparator {
+.separator__0b34e {
   background-color: $main-color;
 }
-%stageParticipants {
+.participants__9c309 {
   background-color: transparent;
 }
-%stageSpeakers {
+.rowContainer__8a920 {
   background: transparent;
 }
-%stageParticipant {
+.tileContainer__71eb2 {
   background-color: cv('bg.general.card');
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.05);
   }
 }
-%stageMessageToast {
-  %stageMessageToastWrapper {
+.toast_d3c698 {
+  .messageContentWrapper_d3c698 {
     background-color: hsla(0, 0%, 0%, 0.8);
     &:hover {
       background-color: hsla(0, 0%, 0%, 0.6);
@@ -41,34 +42,34 @@
 }
 
 // THE AUDIENCE CONTAINER IN VC CHANNELS
-%stageVoiceUser {
+.voiceUser__07f91 {
   padding-top: 4px;
 }
-%stageVoiceUserOverlap {
-  %stageVoiceUserAvatar {
+.overlap__07f91 {
+  .avatar__07f91 {
     border: none;
   }
 }
-%stageAudienceContainer {
+.audienceContainer__55bab {
   background-color: hsla(0, 0%, 0%, 0.8);
   border: hsla(0, 0%, 0%, 0.8);
-  %stageAudienceIconContainer {
+  .audienceIconContainer__55bab {
     background: $main-color;
   }
-  %stageAudienceIcon {
+  .audienceIcon__55bab {
     color: #fff;
   }
-  %textSmallMedium {
+  .text-sm\/medium_cf4812 {
     color: rgba(255, 255, 255, 0.9) !important;
   }
 }
-%stageOptionContainer {
+.container__6b38f {
   background: rgba(0, 0, 0, calc($bg-shading * 0.3));
   &:hover {
     background: rgba(0, 0, 0, calc($bg-shading * 0.6));
   }
 }
-%stageLeaveButton {
+.primaryButtonColor_fcb27c {
   background: $main-color;
   &:hover {
     background: $hover-color;
@@ -76,9 +77,9 @@
 }
 
 // ICON WHEN HOVERING SERVER
-%stageGuildListenerIcon {
+.stageListenerPill_b1f768 {
   background: $main-color;
-  %textExtraSmallNormal {
+  .text-xs\/normal_cf4812 {
     color: #fff !important;
   }
   > svg {
@@ -87,23 +88,23 @@
 }
 
 // STARTING A STAGE CALL
-%stageTopicForm {
-  %input {
+.topicFormItem__327b5 {
+  .input__0f084 {
     background: cv('bg.general.card');
     box-shadow: 0 0 0 2px $main-color;
   }
-  %stageTopicInput {
+  .textInput__327b5 {
     background: transparent;
   }
 }
 
 // REQUESTS
-%stageRequestContainer {
+.container__664ff {
   background-color: rgba(0, 0, 0, calc($bg-shading * 0.6));
 }
-%stageIconBigBackground {
+.background__506d9 {
   background-color: $main-color;
-  %stageIconBigForeground {
+  .foreground__506d9 {
     color: #fff;
   }
 }

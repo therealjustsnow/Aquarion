@@ -101,8 +101,10 @@ $tagged: (
 );
 
 // OUTPUT
-%messageContent > img {
-  & ~ %messageHeader %messageUsername::after {
+.contents_c19a55 > img,
+.messageContent_c19a55 > img,
+.messageContent_faa96b > img {
+  & ~ .header_c19a55 .username_c19a55::after {
     content: var(--tag, none);
     color: currentcolor;
     text-shadow: 0 0 2px currentcolor;
@@ -136,7 +138,7 @@ $tagged: (
     // and for single strings
     $k: '[src*="#{$user}"]';
   }
-  %avatarLarge#{$k} ~ %messageHeader {
+  .avatar_c19a55#{$k} ~ .header_c19a55 {
     --tag: '#{$group}';
   }
 }

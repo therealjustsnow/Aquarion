@@ -1,83 +1,84 @@
+@use '../index' as *;
 /* MESSAGE */
 
 // HEADER
-%messageAvatar {
+.avatar_c19a55 {
   transition:
     all 0.3s ease-in-out,
     transform 0.1s ease-in-out;
-  &%messageAvatarClickable:active {
+  &.clickable_c19a55:active {
     transform: scale(0.9);
   }
 }
-%message {
-  %messageTimestamp {
+.message__5126c {
+  .timestamp_c19a55 {
     color: hsla(0, 0%, 100%, 0.5);
-    &%messageTimestampAlt {
+    &.alt_c19a55 {
       color: hsla(0, 0%, 100%, 0.5);
     }
   }
 }
 // SYSTEM MESSAGE
-%messageSystemContainer {
+.container__235ca {
   color: hsla(0, 0%, 100%, 0.5);
 }
-%messageSystemContent {
-  %anchorAction {
+.content__235ca {
+  .actionAnchor__235ca {
     color: var(--url-color);
   }
 }
 
 // QUOTES
-%messageQuoteDivider {
+.blockquoteDivider__75297 {
   background: hsla(0, 0%, 100%, 0.2);
   border-radius: 0;
 }
 
 // GIFS/EMBEDS
-%messageInlineMediaEmbed {
+.inlineMediaEmbed__623de {
   max-width: max-content;
 }
 
 // SPOILER
-%messageSpoiler {
+.spoilerMarkdownContent__54ab5 {
   background-color: hsla(0, 0%, 0%, 0.8);
 }
 
 // LINKS
-%markup a,
-%anchor {
+.markup__75297 a,
+.anchor_edefb8 {
   color: var(--url-color) !important;
 }
 
 // INVALID GIFT
-%messageInvalidGift {
+.tile__72090 {
   background-color: cv('bg.general.card');
-  %themeDark &:hover {
+  .theme-dark &:hover {
     background-color: cv('bg.general.card');
   }
 }
 
 // REPLY
-%messageReplied {
+.repliedMessage_c19a55 {
   color: $text-normal;
 }
-%messageRepliedSpine {
+.repliedMessageClickableSpine_c19a55 {
   border-color: $main-color;
-  &%messageRepliedContentHovered {
+  &.repliedMessageContentHovered_c19a55 {
     border-color: $hover-color;
   }
 }
-%messageRepliedTextPreview {
+.repliedTextPreview_c19a55 {
   opacity: 0.7;
   max-height: unset;
-  &%messageRepliedSpineHovered {
+  &.repliedMessageClickableSpineHovered_c19a55 {
     opacity: 1;
   }
 }
 
 // EXECUTE COMMAND
-%messageExecutedCommand {
-  %messageExecutedCommandName {
+.executedCommand_c19a55 {
+  .appLauncherOnboardingCommandName_c19a55 {
     color: $main-color;
     background: transparent;
     &:hover {
@@ -88,16 +89,16 @@
 }
 
 // THREADS
-%message%messageHasThread:after {
+.message__5126c.hasThread_c19a55:after {
   border-color: $main-color;
 }
-%messageThreadEmbed {
+.container__9271d {
   background-color: cv('bg.general.card');
 }
-%messageThreadCTA {
+.cta__9271d {
   color: $main-color;
 }
-%messageThreadJumpButton {
+.jump__5126c {
   background-color: $main-color;
   color: #fff;
   &:hover {
@@ -107,12 +108,12 @@
 }
 
 // BUTTONS
-%messageButtonWrapper {
+.wrapper_f7ecac {
   background-color: transparent;
-  %messageButton {
+  .button_f7ecac {
     color: hsla(0, 0%, 100%, 0.7);
     &:hover,
-    &%messageButtonSelected {
+    &.selected_f7ecac {
       background-color: $hover-color;
       color: #fff;
     }
@@ -120,17 +121,17 @@
 }
 
 // EDITING
-%operations {
+.operations_bab751 {
   color: hsla(0, 0%, 100%, 0.5);
-  > %anchor {
+  > .anchor_edefb8 {
     color: $main-color;
   }
 }
 
 // REPLYING TO HIGHLIGHT
-%replyingToIndicator {
+.replying__5126c {
   background-color: hsla(0, 0%, 100%, 0.05);
-  %mouseModeFullMotion &:hover {
+  .mouse-mode.full-motion &:hover {
     background-color: hsla(0, 0%, 100%, 0.08);
   }
   &:before {
@@ -139,51 +140,51 @@
 }
 
 // BEGINNING DM WAVE
-%waveButton,
-%waveButtonDisabled {
+.compactButton__7ff28,
+.compactButtonDisabled__7ff28 {
   background-color: $main-color;
 }
-%waveButton:hover {
+.compactButton__7ff28:hover {
   background-color: $hover-color;
 }
 
 // PUBLISH TO FOLLOWERS
-%messagePublishBumpBox {
+.bumpBox_cacd02 {
   background: cv('bg.general.card');
 }
-%messagePublishIcon,
-%messagePublishTagline {
+.icon_cacd02,
+.tagline_cacd02 {
   color: #fff;
 }
-%messagePublishCloseIcon,
-%messagePublishPermanentHide {
+.closeIcon_cacd02,
+.hidePermanently_cacd02 {
   color: hsla(0, 0%, 100%, 0.4) !important;
 }
 
 // AUTOMOD MESSAGE
-%messageAutomodCard,
-%messageAutomodFooter {
+.embedCard__44492,
+.footerContainer__44492 {
   background-color: cv('bg.general.card');
 }
-%messageAutomodCard {
-  &%messageAutomodCardSelected {
+.embedCard__44492 {
+  &.selected__44492 {
     background-color: cv('bg.general.card');
   }
 }
-%messageAutomodFooterAction {
-  %textExtraSmallNormal {
+.footerAction__44492 {
+  .text-xs\/normal_cf4812 {
     color: $main-color !important;
   }
 }
-%messageAutomodFooterIcon path {
+.footerIcon__44492 path {
   fill: $main-color;
 }
 
 // free nitro trial...idk where to put this - Snow
-%nitroTrial {
+.tile_ff4e03 {
   background: cv('bg.general.card');
   box-shadow: none;
-  %themeDark &:hover {
+  .theme-dark &:hover {
     background-color: cv('bg.general.card');
   }
 }

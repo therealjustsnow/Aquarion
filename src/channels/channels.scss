@@ -1,25 +1,26 @@
+@use '../index' as *;
 /* CHANNELS */
-html:not(%visualRefresh) %channelsSidebar:not(%channelsSidebarHidden) {
+html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade) {
   width: cv('channels-width') !important;
   background: rgba(0, 0, 0, calc($bg-shading * 0.3));
 }
-%platformWin %channelsSidebar {
+.platform-win .sidebar_c48ade {
   border-radius: 0;
 }
-%themeDark %channelsContainer {
+.theme-dark .container__2637a {
   background: transparent;
 }
 
 // CHANNELS HEADER
-%channelsHeaderClickable,
-%channelsHeaderSelected {
-  %channelsHeader {
+.clickable_f37cb1,
+.selected_f37cb1 {
+  .header_f37cb1 {
     &:hover {
       background-color: hsla(0, 0%, 100%, 0.1);
     }
   }
 }
-%channelsHeaderContent {
+.headerContent_f37cb1 {
   color: var(--header-primary);
   font-family: cv('font.main');
   font-weight: 600;
@@ -27,31 +28,31 @@ html:not(%visualRefresh) %channelsSidebar:not(%channelsSidebarHidden) {
 }
 
 // GUILD BANNER
-%channelBannerAnimatedContainer {
+.animatedContainer_f37cb1 {
   background: transparent;
   box-shadow: none;
 }
-%channelBanner {
+.bannerImage_f37cb1 {
   width: cv('channels-width');
   mask: linear-gradient(to bottom, #000, transparent);
 }
-%channelBannerImage {
+.bannerImg_f37cb1 {
   width: cv('channels-width');
 }
-%threadChannelConnector {
+.spine__5b40b {
   color: $main-color;
 }
-%threadChannelSpine {
+.spineBorder__5b40b {
   background: $main-color;
 }
 
 // SERVER BOOST
-%themeDark %serverBoostProgressBar {
+.theme-dark .progressBarContainer_eff079 {
   background-color: cv('bg.general.card');
 }
 
 // CHANNEL CONTENT
-%channelLink {
+.link__2ea32 {
   position: relative;
   transition: all 0.15s ease-in-out;
   &:before {
@@ -72,64 +73,64 @@ html:not(%visualRefresh) %channelsSidebar:not(%channelsSidebarHidden) {
     border-radius: 4px;
   }
 }
-%channelIcon {
+.icon__2ea32 {
   width: 18px;
   height: 18px;
   margin-right: 3px;
   color: var(--channel-color);
   transition: all 0.15s ease-in-out;
 }
-%channelName {
+.name__2ea32 {
   color: var(--channel-color);
   transition: all 0.15s ease-in-out;
 }
-%channelButtons {
+.children__2ea32 {
   margin-left: 1px;
   animation: cv-fade-to-3 0.15s ease-in-out;
 }
-%channelActionIcon {
+.actionIcon_c69b6d {
   color: var(--channel-color);
   transition: all 0.15s ease-in-out;
   &:hover {
     color: var(--channel-hovered);
   }
 }
-%channelStatusText,
-%channelStatusPencilIcon {
+.statusText__5cda9,
+.pencilIcon__5cda9 {
   color: hsla(0, 0%, 100%, 0.7);
 }
-%channelWrapper {
+.wrapper__2ea32 {
   // HOVER
   &:hover {
-    %channelLink {
+    .link__2ea32 {
       background: var(--background-modifier-hover);
     }
-    :is(%channelName, %channelIcon) {
+    :is(.name__2ea32, .icon__2ea32) {
       color: var(--channel-hovered);
     }
   }
   // UNREAD
-  &%channelWrapperUnread {
-    %channelName {
+  &.modeUnreadImportant__2ea32 {
+    .name__2ea32 {
       color: var(--channel-unread);
       text-shadow: 0 0 3px;
     }
-    %channelIcon {
+    .icon__2ea32 {
       color: var(--channel-unread);
       filter: drop-shadow(0 0 3px);
     }
     &:hover {
-      :is(%channelName, %channelIcon) {
+      :is(.name__2ea32, .icon__2ea32) {
         color: var(--channel-selected);
       }
     }
   }
   // SELECTED
-  &%channelWrapperSelected {
-    :is(%channelName, %channelIcon) {
+  &.modeSelected__2ea32 {
+    :is(.name__2ea32, .icon__2ea32) {
       color: var(--channel-selected);
     }
-    %channelLink {
+    .link__2ea32 {
       background-color: transparent;
       &:before {
         background: hsla(0, 0%, 100%, 0.1);
@@ -140,30 +141,30 @@ html:not(%visualRefresh) %channelsSidebar:not(%channelsSidebarHidden) {
         animation: cv-channel-select 0.3s ease-in-out;
       }
     }
-    %textExtraSmallMedium,
-    %textExtraSmallNormal {
+    .text-xs\/medium_cf4812,
+    .text-xs\/normal_cf4812 {
       color: #fff !important;
     }
   }
 
   // CONNECTED
-  &%channelWrapperConnected {
-    %channelName {
+  &.modeConnected__2ea32 {
+    .name__2ea32 {
       color: var(--channel-unread);
       text-shadow: 0 0 3px;
     }
-    %channelIcon {
+    .icon__2ea32 {
       color: var(--channel-unread);
       filter: drop-shadow(0 0 3px);
     }
   }
   // MUTED
-  &%channelWrapperMuted {
-    :is(%channelName, %channelIcon) {
+  &.modeMuted__2ea32 {
+    :is(.name__2ea32, .icon__2ea32) {
       color: var(--channel-muted);
     }
     &:hover {
-      :is(%channelName, %channelIcon) {
+      :is(.name__2ea32, .icon__2ea32) {
         color: var(--channel-color);
       }
     }
@@ -171,29 +172,29 @@ html:not(%visualRefresh) %channelsSidebar:not(%channelsSidebarHidden) {
 }
 
 // UNREAD & MENTIONS INDICATION
-%channelUnreadPill {
+.unread__2ea32 {
   display: none;
 }
 
 // ICONS
-%channelIconLive {
+.live_a7acae {
   background-color: $main-color !important;
 }
 
 // USER LIMIT
-%channelUserLimitUsers,
-%channelUserLimitTotal {
+.users__260e1,
+.total__260e1 {
   width: 24px;
   color: hsla(0, 0%, 100%, 0.3);
   font-weight: 600;
   text-align: right;
   transition: all 0.15s ease-in-out;
 }
-%channelUserLimitUsers {
+.users__260e1 {
   padding: 0 4px 0 6px;
   background: rgba(0, 0, 0, 0.15);
 }
-%channelUserLimitTotal {
+.total__260e1 {
   padding: 0 6px 0 4px;
   background: hsla(0, 0%, 100%, 0.04);
   box-shadow: inset 1px 0 hsla(0, 0%, 100%, 0.07);
@@ -201,40 +202,32 @@ html:not(%visualRefresh) %channelsSidebar:not(%channelsSidebarHidden) {
     display: none;
   }
 }
-%channelWrapperConnected {
-  %channelUserLimitUsers {
+.modeConnected__2ea32 {
+  .users__260e1 {
     color: $main-color;
     text-shadow: 0 0 1px;
   }
 }
 
 // VOICE USER LIST
-%voiceUserList {
+.listDefault__07f91 {
   padding-left: 24px;
-  %voiceUserClickable:hover %voiceUserContent {
+  .clickable__07f91:hover .content__07f91 {
     background: rgba(0, 0, 0, 0.04);
   }
 }
 
-%voiceUser {
+.voiceUser__07f91 {
   z-index: 1;
-  %voiceUserContent {
+  .content__07f91 {
     border-radius: 3px;
     transition: all 0.15s ease-in-out;
   }
   &:hover,
   &:active,
-  &%voiceUserSelected {
-    %channels %voiceUserList & {
-      %voiceUserContent {
-        background: hsla(0, 0%, 100%, 0.04);
-      }
-      %voiceUserName {
-        color: hsla(0, 0%, 100%, 0.7);
-      }
-    }
+  &.selected__07f91 {
   }
-  %voiceUserAvatarSpeaking {
+  .avatarSpeaking__07f91 {
     position: relative;
     transition: all 0.1s ease-in-out;
     &:after {
@@ -253,7 +246,7 @@ html:not(%visualRefresh) %channelsSidebar:not(%channelsSidebarHidden) {
       border-bottom-right-radius: 0;
     }
   }
-  %voiceUserAvatarSpeaking {
+  .avatarSpeaking__07f91 {
     box-shadow:
       0 0 0 2px $main-color,
       inset 0 0 3px rgba(0, 0, 0, 0.5);
@@ -262,15 +255,15 @@ html:not(%visualRefresh) %channelsSidebar:not(%channelsSidebarHidden) {
       width: 150px;
     }
   }
-  %voiceUserName {
+  .username__07f91 {
     color: hsla(0, 0%, 100%, 0.5);
     transition: all 0.1s ease-in-out;
   }
-  %voiceUserNameSpeaking {
+  .usernameSpeaking__07f91 {
     color: #fff !important;
   }
 }
-%voiceChannelsButton {
+.voiceChannelsButton__29444 {
   border: 1px solid $main-color;
   &:hover {
     background: $hover-color;
@@ -280,28 +273,30 @@ html:not(%visualRefresh) %channelsSidebar:not(%channelsSidebarHidden) {
 }
 
 // USER SUMMARY
-%userSummaryIcon {
+.icon__183c2 {
   width: 18px;
   height: 18px;
   margin-right: 3px;
   color: hsla(0, 0%, 100%, 0.3);
 }
-%userSummaryMoreUsers {
+.moreUsers__183c2 {
   padding: 0 4px;
   background: rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
 
 // DRAG INDICATORS
-%categoryContainerDrag,
-%channelContainerDrag {
+.containerDragAfter__29444,
+.containerDragBefore__29444,
+.containerDragAfter_c69b6d,
+.containerDragBefore_c69b6d {
   &:before,
   &:after {
     background: $main-color;
     border-radius: 0;
   }
 }
-%channelContainerUserOver {
+.containerUserOver_c69b6d {
   &:after {
     background: $main-color;
     border-color: transparent;
@@ -310,14 +305,14 @@ html:not(%visualRefresh) %channelsSidebar:not(%channelsSidebarHidden) {
 }
 
 // VC STREAM POPOUT
-%themeDark {
-  %streamPopoutPreview {
+.theme-dark {
+  .streamPreview__6da2d {
     background-color: cv('bg.general.popout');
   }
-  %streamPopoutPreviewContainer {
+  .previewContainer__6da2d {
     background-color: transparent;
   }
-  %streamPopoutWatchButton {
+  .watchButton__6da2d {
     border-color: $main-color;
     color: hsla(0, 0%, 100%, 0.8);
     &:not([disabled]):hover {

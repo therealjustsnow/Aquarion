@@ -1,27 +1,28 @@
+@use '../index' as *;
 /* GAME LIBRARY */
 
 // BODY
-%libraryScroller {
+.scroller__4a84a {
   background: transparent;
 }
-%libraryTableHeader {
+.header_adb41f {
   background-color: transparent;
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.07);
-  > %libraryTableHeaderCell {
+  > .headerCell_adb41f {
     border-left-color: hsla(0, 0%, 100%, 0.07);
     color: hsla(0, 0%, 100%, 0.3);
     transition: all 0.3s ease-in-out;
     &:hover {
-      &:not(%libraryTableHeaderCellSorted) {
+      &:not(.headerCellSorted_adb41f) {
         color: hsla(0, 0%, 100%, 0.5);
       }
     }
   }
-  > %libraryTableHeaderCellSorted {
+  > .headerCellSorted_adb41f {
     color: hsla(0, 0%, 100%, 0.7);
   }
 }
-%libraryTableRowWrapper {
+.rowWrapper_adb41f {
   background-color: transparent;
   border-radius: 0;
   transition: all 0.15s ease-in-out;
@@ -29,8 +30,8 @@
   &:hover {
     margin: 0 20px;
     padding: 0;
-    + %libraryTableRowWrapper {
-      > %libraryTableRow {
+    + .rowWrapper_adb41f {
+      > .row_adb41f {
         margin-top: -1px;
         border-top: 1px solid hsla(0, 0%, 100%, 0.04);
       }
@@ -40,30 +41,30 @@
     background-color: rgba(0, 0, 0, 0.3);
   }
 }
-%libraryTableRow {
+.row_adb41f {
   margin: 0;
   color: hsla(0, 0%, 100%, 0.7);
-  %libraryTableActionsCell {
-    %button {
+  .actionsCell_adb41f {
+    .button__201d5 {
       background-color: hsla(0, 0%, 100%, 0.07);
       color: hsla(0, 0%, 100%, 0.7);
       transition: all 0.15s ease-in-out;
     }
     &:hover {
-      %button:hover {
+      .button__201d5:hover {
         background-color: $main-color;
         color: #fff;
       }
     }
   }
 }
-%libraryTableTextCell {
+.textCell_adb41f {
   color: hsla(0, 0%, 100%, 0.5);
 }
-%libraryTableLastPlayedCellNew {
+.lastPlayedCellNew_adb41f {
   color: $main-color;
 }
-%libraryTableSettingIcon {
+.settingIcon_adb41f {
   color: #fff;
   opacity: 0.5;
   transition: all 0.15s ease-in-out;
@@ -71,32 +72,32 @@
     opacity: 1;
   }
 }
-%libraryTableRowWrapperDim {
-  %libraryTableNameCell,
-  %libraryTableTextCell,
-  %libraryTableSettingIcon {
+.rowWrapperDim_adb41f {
+  .nameBodyCell_adb41f,
+  .textCell_adb41f,
+  .settingIcon_adb41f {
     transition: all 0.15s ease-in-out;
   }
 }
-%libraryGameDownloadContainer {
+.gameUpdates__49035 {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
 // SETTINGS
-%librarySettingsScroller {
+.scroller_fb04e1 {
   background: transparent;
 }
-%themeDark {
-  %libraryInstallationPath {
+.theme-dark {
+  .installationPath_a6f654 {
     box-shadow: 0 1px 0 0 hsla(0, 0%, 100%, 0.06);
   }
-  %libraryUsageBackground {
+  .background__27106 {
     stroke: hsla(0, 0%, 0%, 0.6);
   }
-  %libraryUsageForeground {
+  .foreground__27106 {
     stroke: $main-color;
   }
-  %libraryDefaultIndicator {
+  .defaultIndicator_a6f654 {
     background-color: $main-color;
   }
 }

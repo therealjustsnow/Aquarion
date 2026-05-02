@@ -1,43 +1,44 @@
+@use '../index' as *;
 /* MESSAGES POPOUT AKA. INBOX */
 
 /* MESSAGES POPOUT */
-%messagesPopoutWrap,
-%recentMentionsPopout {
+.messagesPopoutWrap__45690,
+.recentMentionsPopout__95796 {
   background-color: cv('bg.general.popout');
   animation: cv-menu-fold-y 0.2s cubic-bezier(0.2, 0.6, 0.5, 1.1);
   transform-origin: 50% 0;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-%messagesPopoutHeader,
-%messagesPopoutFooter {
+.header__45690,
+.footer__45690 {
   background-color: transparent;
 }
 
 // TAB BAR
-%themeDark %messagesPopoutHeader %messagesPopoutTabBar %messagesPopoutTab {
+.theme-dark .header__45690 .tabBar_ab6641 .tab_ab6641 {
   color: #fff;
-  &%messagesPopoutTabActive {
+  &.active_f0cd33 {
     background-color: $main-color;
   }
-  &:hover:not(%messagesPopoutTabActive) {
+  &:hover:not(.active_f0cd33) {
     background-color: hsla(0, 0%, 100%, 0.06);
     color: #fff;
   }
 }
 
 // CHANNEL HEADER
-%messagesPopoutChannelHeader {
+.channelHeader__35a7e {
   background: hsla(0, 0%, 0%, 0.8);
   padding-right: 10px;
   padding-left: 20px;
 }
-%messagesPopoutChannelHeaderIcon {
+.guildIcon__35a7e {
   background-color: transparent;
 }
 
 // PINNED MESSAGES
-%pinnedMessageGroupWrapper {
+.messageGroupWrapper__45690 {
   margin: 0;
   background-color: transparent;
   border: none;
@@ -47,11 +48,11 @@
   &:last-child {
     border-bottom: none;
   }
-  + %pinnedMessageGroupWrapper {
+  + .messageGroupWrapper__45690 {
     margin-top: -1px;
   }
 }
-%pinnedJumpButton {
+.jumpButton__45690 {
   background-color: $main-color;
   color: #fff;
   &:hover {
@@ -61,67 +62,68 @@
 }
 
 // RECENT MENTIONS MESSAGES
-%recentMentionsContainer {
+.container__95796 {
   margin: 0;
   background-color: transparent;
   border: none;
   border-bottom: solid 1px hsla(0, 0%, 100%, 0.08);
   border-radius: 0;
 }
-%recentMentionsMessagesContainer {
+.messageContainer__95796 {
   background: transparent;
   padding-right: 10px;
   padding-left: 20px;
 }
-%recentMentionsJumpButton {
+.jumpButton_ed0c8c {
   background-color: $main-color;
-  %recentMentionsJumpButtonText {
+  .text_ed0c8c {
     color: #fff;
   }
   &:hover {
     background-color: $hover-color;
-    %recentMentionsJumpButtonText {
+    .text_ed0c8c {
       color: #fff;
     }
   }
 }
-%recentMentionsIcon {
+.icon_d404a3 {
   background-color: $main-color;
   color: #fff;
 }
 
 // UNREAD MESSAGES
-%unreadTutorial {
+.tutorial__2692d {
   background: transparent;
   border-bottom: solid 1px hsla(0, 0%, 100%, 0.08);
 }
-%unreadTutorialIcon {
+.tutorialIcon__2692d {
   background-color: $main-color;
   color: #fff;
 }
-%unreadChannel {
+.channel__427f0 {
   margin: 0;
   background-color: transparent;
   border: none;
   border-bottom: solid 1px hsla(0, 0%, 100%, 0.08);
   border-radius: 0;
 }
-%unreadMessages {
+.messages__1ccd1,
+.barText__7aaec {
   background: transparent;
   padding-right: 10px;
   padding-left: 20px;
 }
-%unreadCollapseButton {
+.collapseButton__427f0 {
   padding-left: 9px;
 }
 
 // FOR YOU
-%forYouContainer {
+.container__0f711 {
   background: transparent;
 }
 
 // FRIENDS BUTTON
-%friendRequestsButton {
+.friendRequestsButton__523aa {
   background: $main-color;
   color: #fff;
   &:hover {
@@ -130,7 +132,7 @@
 }
 
 // FORUM POST
-%messagesPopoutThread {
+.forumPost__7d15e {
   background: rgba(0, 0, 0, 0.1);
   border: 2px solid $main-color;
   &:hover {
@@ -139,11 +141,11 @@
 }
 
 // INBOX UNREAD PILL
-%inboxPopoutPill {
+.unread__6fddf {
   background-color: $main-color;
 }
 
 // CHATTING ABOUT: TOPIC
-%inboxChattingAbout {
+.calloutContainer__6fddf {
   background-color: hsla(0, 0%, 30%, calc($bg-shading * 0.5));
 }

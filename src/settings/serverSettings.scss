@@ -1,20 +1,21 @@
+@use '../index' as *;
 /* SERVER SETTINGS */
 
 // OVERVIEW - server banner
-%guildFeatureAvailabilityIndicator {
+.availabilityIndicator__40463 {
   background-color: $main-color;
   color: #fff;
 }
 
 // ROLES
-%guildSettingsRoleDefaultPermissions {
+.container_d8f25b {
   background-color: $main-color;
   color: #fff;
   &:hover {
     background-color: $hover-color;
   }
 }
-%guildSettingsRoleSearch {
+.container_a45028 {
   background-color: hsla(0, 0%, 100%, 0.07);
   box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
   margin: 2px;
@@ -22,17 +23,17 @@
     box-shadow: 0 0 2px 2px $main-color;
   }
 }
-%guildSettingsRoleDefaultPermissionsIcon {
+.icon_d8f25b {
   background-color: hsla(0, 0%, 0%, 0.6);
 }
-%guildSettingsRoleRow {
+.roleRow_a930f1 {
   &:before,
   &:last-child:after {
     background-color: hsla(0, 0%, 100%, 0.1);
   }
-  &:hover:not(%guildSettingsRoleRowDisabled) {
+  &:hover:not(.roleRowDisableHover_a930f1) {
     background-color: rgba(255, 255, 255, 0.05);
-    %buttonCircle & {
+    .button__06eda & {
       background-color: hsla(0, 0%, 0%, 0.6);
       color: #fff;
       &:hover {
@@ -44,10 +45,10 @@
 }
 
 // ROLES - EDIT
-%guildSettingsRoleBackContainer {
+.titleContainer_e29cd7 {
   background-color: transparent;
 }
-%guildSettingsRoleHeader {
+.header_c6bf1b {
   background-color: transparent;
   &:before {
     content: '';
@@ -65,21 +66,21 @@
     background: cv('bg.app.overlay');
   }
 }
-%guildSettingsRoleList {
-  %guildSettingsRoleListRow {
+.list_e29cd7 {
+  .row_e29cd7 {
     &:hover {
-      &:not(%tabBarItemDisabled) {
+      &:not(.disabled_b3f026) {
         background-color: hsla(0, 0%, 100%, 0.07);
       }
     }
-    %roleCircle {
+    .roleCircle_dfa8b6 {
       &::before {
         background-color: transparent;
       }
     }
-    &%tabBarItemSelected {
+    &.selected_b3f026 {
       background-color: transparent;
-      %roleCircle {
+      .roleCircle_dfa8b6 {
         &::before {
           background-color: inherit;
         }
@@ -87,40 +88,40 @@
     }
   }
 }
-%guildSettingsRoleIconPreview {
+.previewContainer__05e8e {
   background-color: hsla(0, 0%, 0%, 0.6);
 }
 
 // View server as role selection bar
-%guildSettingsRoleViewAsDropdown {
+.container__09ccc {
   background-color: hsla(0, 0%, 0%, 0.8);
 }
 
 // EMOJI
-%themeDark {
-  %guildSettingsEmojiCard:before,
-  %guildSettingsEmojiRemove {
+.theme-dark {
+  .emojiRow_e7d73e:before,
+  .emojiRemove_e7d73e {
     background-color: cv('bg.general.card');
     &:hover {
       background-color: $hover-color;
     }
   }
 }
-%guildSettingsEmojiRow {
+.emojiRow_e7d73e {
   &:hover {
-    %guildSettingsEmojiAliasPlaceholder {
+    .emojiAliasPlaceholder_e7d73e {
       visibility: hidden;
     }
   }
-  %guildSettingsEmojiAliasInput {
-    %guildSettingsEmojiInput {
+  .emojiAliasInput_e7d73e {
+    .emojiInput_e7d73e {
       color: $text-normal;
       background-color: hsla(0, 0%, 100%, 0.07);
       border: none;
       box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
     }
-    &:has(%guildSettingsEmojiInput:focus-within) {
-      + %guildSettingsEmojiAliasPlaceholder {
+    &:has(.emojiInput_e7d73e:focus-within) {
+      + .emojiAliasPlaceholder_e7d73e {
         visibility: hidden;
       }
     }
@@ -128,68 +129,68 @@
 }
 
 // STICKERS
-%guildSettingsStickersUploadCard {
+.wrapper__83b1d {
   background-color: cv('bg.general.card');
   &:hover {
     background-color: $hover-color;
   }
 }
-%guildSettingsStickersTierLock {
+.tierLock_f15dca {
   color: #fff;
   opacity: 0.3;
 }
 
 // SAFETY SETUP
-%guildSettingsSafetyCollapseable {
+.collapseable__217b7 {
   background-color: cv('bg.general.card');
   &:active {
     background-color: hsla(0, 0%, 0%, 0.6);
   }
-  &%guildSettingsSafetyCollapseableToggled:active {
+  &.toggled__217b7:active {
     background-color: hsla(0, 0%, 0%, 0.6);
   }
 }
-%guildSettingsSafetyCollapsed,
-%guildSettingsSafetyCollapsedPointer,
-%guildSettingsSafetyRadio,
-%guildSettingsSafetyRadioClickable {
+.groupCollapsedContainer_b6a9f9,
+.pointer_b6a9f9,
+.container__6cd3a,
+.clickableContainer__6cd3a {
   background-color: transparent;
   border-color: transparent;
 }
-%guildSettingsSafetyRadioBG {
+.backgroundModifierContainer__6cd3a {
   background-color: hsla(0, 0%, 0%, 0.4);
-  &:hover:not(%guildSettingsSafetyRadioDisabled):not(%guildSettingsSafetyRadioNoAction) {
+  &:hover:not(.disabled__6cd3a):not(.noAction__6cd3a) {
     background-color: hsla(0, 0%, 0%, 0.4);
   }
-  &%guildSettingsSafetyRadioTransparent {
+  &.transparent__6cd3a {
     border-left: 3px solid var(--background-accent);
   }
-  &%guildSettingsSafetyRadioSelected {
-    &%guildSettingsSafetyRadioGreen {
+  &.selected__6cd3a {
+    &.statusGreen__6cd3a {
       background-color: var(--status-positive);
       &:hover {
         background-color: var(--status-positive);
       }
     }
-    &%guildSettingsSafetyRadioYellow {
+    &.statusYellow__6cd3a {
       background-color: var(--status-warning);
       &:hover {
         background-color: var(--status-warning);
       }
     }
-    &%guildSettingsSafetyRadioOrange {
+    &.statusOrange__6cd3a {
       background-color: var(--orange-360);
       &:hover {
         background-color: var(--orange-360);
       }
     }
-    &%guildSettingsSafetyRadioRed {
+    &.statusRed__6cd3a {
       background-color: var(--status-danger);
       &:hover {
         background-color: var(--status-danger);
       }
     }
-    &:is(%guildSettingsSafetyRadioAccent, %guildSettingsSafetyRadioTransparent) {
+    &:is(.accent__6cd3a, .transparent__6cd3a) {
       background-color: var(--background-accent);
       &:hover {
         background-color: var(--background-accent);
@@ -199,56 +200,58 @@
 }
 
 // SAFETY SETUP - COMMUNITY SERVER
-%guildSettingsSafetyChangeLog,
-%guildSettingsSafetyChecklist {
+.changelog_abe1fa,
+.safetyChecklist_eae0ef {
   background-color: cv('bg.general.card');
 }
-%guildSettingsSafetyPill {
+.valuePill__5dac8 {
   background-color: transparent;
   border: 2px solid $main-color;
 }
-%guildSettingsSafetyItemWrapper {
+.simpleItemWrapper__5dac8 {
   background-color: transparent;
 }
 
 // AUTOMOD
-%automodBadge {
+.textBadge__0034b {
   border: none;
   padding: 4px 6px;
 }
-%automodEditCard {
+.editCard_a25a68 {
   background-color: cv('bg.general.card');
 }
-%automodRuleIconContainer {
+.ruleIconContainer_c5e6a1 {
   background-color: $main-color;
 }
-%automodRuleIcon {
+.ruleIcon_c5e6a1 {
   color: #fff;
 }
-%automodActionTag {
+.actionContainer_bc4513 {
   background-color: transparent;
   border: 2px solid $main-color;
 }
-%automodActionIcon,
-%automodActionText {
+.actionIcon_bc4513,
+.actionTextHeader_bc4513 {
   color: #fff !important;
 }
-%automodStepIcon {
+.stepCountIcon_b6c6eb {
   background-color: hsla(0, 0%, 100%, 0.1);
 }
-%automodStepperCOntainer {
+.stepperContainer_ed9c90 {
   background-color: hsla(0, 0%, 100%, 0.1);
-  %input {
+  .input__0f084 {
     &:focus {
       box-shadow: none;
     }
   }
 }
-%automodContentCard {
+.mentionLimitContainer_ed9c90,
+.keywordListContainer__09e76,
+.actionContainer__6446f {
   background-color: cv('bg.general.card');
 }
-%automodKeywordsTextArea,
-%automodRegexTextArea {
+.keywordsTextArea__6a631,
+.textArea_c615b7 {
   color: $text-normal;
   background-color: hsla(0, 0%, 100%, 0.07);
   border: none;
@@ -260,94 +263,91 @@
     color: hsla(0, 0%, 100%, 0.3);
   }
 }
-%automodDropdown {
+.resultsListContainer__6ae25 {
   background-color: hsla(0, 0%, 0%, 0.8);
   border: 1px solid hsla(0, 0%, 100%, 0.07);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-%automodDropdownRowLabel {
+.searchRowLabel__6ae25 {
   background-color: hsla(0, 0%, 100%, 0.1);
 }
-%automodDropdownChannelIcon {
+.channelIcon__6ae25 {
   color: #fff;
 }
 
 // AUDIT LOG
-%themeDark {
-  %guildSettingsAuditLog {
+.theme-dark {
+  .auditLog__43dab {
     border-color: transparent;
   }
-  %guildSettingsAuditHeader {
+  .header__43dab {
     background-color: cv('bg.general.card');
   }
-  %guildSettingsAuditHeaderExpanded,
-  %guildSettingsAuditDivider,
-  %guildSettingsAuditChangeDetails {
+  .headerExpanded__43dab,
+  .divider__43dab,
+  .changeDetails__43dab {
     background-color: hsla(0, 0%, 0%, 0.6);
   }
 }
 
 // BANS
-%guildSettingsBanContainer {
+.scrollerContainer_cdb2b0 {
   background-color: cv('bg.general.card');
 }
-%guildSettingsBannedUser {
+.bannedUser_cdb2b0 {
   background-color: hsla(0, 0%, 100%, 0.07);
 }
 
 // SERVER TEMPLATE
-%guildSettingsTemplateDescription {
+.descriptionBox__981f7 {
   background-color: cv('bg.general.card');
 }
 
 // COMMUNITY OVERVIEW
-%guildSettingsCommunityUpsell {
+.upsellContainer__4cfe2 {
   background-color: cv('bg.general.card');
 }
-%guildSettingsCommunityUpsellFooter {
+.upsellFooter__4cfe2 {
   background-color: transparent;
 }
 // ONBOARDING
-%settingsContentRegion {
-  %guildSettingsOnboardingTestimonialContainer {
+.contentRegion__23e6b {
+  .testimonialHeroContainer__3e7e2 {
     background-color: transparent;
   }
-  %guildSettingsOnboardingTestimonialQuotes {
+  .quotes__3e7e2 {
     color: $main-color;
   }
-  %guildSettingsOnboardingTestimonial {
-    %textSmallMedium {
+  .testimonial__3e7e2 {
+    .text-sm\/medium_cf4812 {
       color: #fff !important;
     }
   }
-  %guildSettingsOnboardingUpsell {
+  .upsellPreview_d9161f {
     background-color: cv('bg.general.card');
   }
-  %guildSettingsOnboardingUpsellList {
+  .previewListItem_d9161f {
     background-color: transparent;
-    &%guildSettingsOnboardingUpsellListSelected {
+    &.selected_d9161f {
       background-color: hsla(0, 0%, 100%, 0.07);
     }
   }
-  %guildSettingsOnboardingUpsellCheckboxCircle {
+  .checkboxCircle_d9161f {
     background-color: $main-color;
   }
-  %guildSettingsOnboardingUpsellCheckbox {
-    &%guildSettingsOnboardingUpsellListSelected {
+  .checkbox_d9161f {
+    &.selected_d9161f {
       background-color: transparent;
       border-color: $main-color;
     }
   }
-  %serverGuideMessageInner {
-    background-color: cv('bg.general.card');
-    &%userPopoutInnerThemed {
-      background-color: transparent;
-    }
-  }
-  %serverGuideAction {
+  .userCardInner_c69a7b {
     background-color: cv('bg.general.card');
   }
-  %serverGuideChannelIcon {
+  .action_c66e86 {
+    background-color: cv('bg.general.card');
+  }
+  .channelIconContainer_c66e86 {
     background-color: $main-color;
     svg {
       color: #fff;
@@ -356,109 +356,103 @@
 }
 
 // SERVER INSIGHTS
-%guildSettingsInsightsAnalyticsCard {
+.analyticsCard__5931c {
   background-color: cv('bg.general.card');
 }
-%guildSettingsInsightsDeveloperPortal {
+.developerPortalCtaWrapper_bf485f {
   background-color: transparent;
 }
-%guildSettingsInsightsNotEnoughMembers {
+.notEnoughMembersError_bf485f {
   background-color: var(--info-warning-background);
 }
-%guildSettingsInsightsMemberInsights {
+.memberInsightsContainer_cfaf72 {
   background-color: transparent;
 }
-%guildSettingsInsightsActions {
+.insightsActions_cfaf72 {
   background-color: transparent;
 }
 
 // ENABLE COMMUNITY
-%guildSettingsCommunityGuildDetails {
+.guildDetails_bebc5b {
   background-color: cv('bg.general.card');
 }
-%guildSettingsCommunityFeatureCard,
-%guildSettingsCommunityFeatureIcon {
+.featureCard_bebc5b,
+.featureIcon_bebc5b {
   background-color: cv('bg.general.card');
 }
-%checkboxWrapper%guildSettingsCommunityRow {
+.checkboxWrapper_f525d3.row_f525d3 {
   background-color: transparent;
-  &%checkboxChecked {
+  &.checked_f525d3 {
     background-color: transparent;
   }
 }
 
 // DISCOVERY
-%guildSettingsDiscoveryChecklist {
+.checklist__5afba {
   background-color: cv('bg.general.card');
-  %guildSettingsDiscoveryHeader {
+  .header__812a7 {
     background-color: cv('bg.general.card');
   }
-  %guildSettingsDiscoverySeparator {
+  .separator__812a7 {
     background-color: hsla(0, 0%, 100%, 0.06);
   }
 }
 
 // WELCOME SCREEN
-%guildSettingsWelcomeEnable,
-%guildSettingsWelcomePreview {
+.enableContainer__5ea8c,
+.previewContainer__5579e {
   background-color: cv('bg.general.card');
 }
-%guildSettingsWelcomeEditCircle {
+.editCircle__5ea8c {
   background-color: $main-color;
   color: white;
 }
-%guildSettingsWelcomeChannel {
+.welcomeChannel__5579e {
   background-color: hsla(0, 0%, 100%, 0.05);
 }
-%guildSettingsWelcomeChannelIcon {
+.channelIcon__5579e {
   background-color: transparent;
 }
 
 // SERVER SUBSCRIPTIONS
-%guildSettingsSubsCard {
+.card_ea91d1 {
   background-color: cv('bg.general.card');
 }
-%guildSettingsSubsStepsContainer,
-%guildSettingsSubsStepsImageContainer {
+.howItWorksContainer_aa72d6,
+.howItWorksImageContainer_aa72d6 {
   background-color: transparent;
 }
-%guildSettingsSubsEarningsPreviewContainer,
-%guildSettingsSubsAvatarCard {
+.earningsPreviewContainer_da92c3,
+.avatarCard_da92c3 {
   background-color: hsla(0, 0%, 100%, 0.07) !important;
 }
-%guildSettingsSubsEmojisContainer {
+.emojisContainer_adff39 {
   background-color: transparent;
 }
-%guildSettingsSubsViewServerButton {
+.viewServerButton_adff39 {
   background-color: $main-color;
 }
 
 // SERVER BOOST STATUS
-%guildSettingsBoostBackground {
+.background_c44edb {
   color: cv('bg.general.card');
 }
-%guildSettingsBoostTierInProgress {
+.tierInProgress_c44edb {
   background-color: cv('bg.general.card');
   border: 3px solid var(--guild-boosting-pink);
 }
-%themeDark {
-  :is(%guildSettingsBoostTierLocked, %guildSettingsBoostTierUnlocked, %guildSettingsBoostTierBody) {
+.theme-dark {
+  :is(.tierHeaderLocked_f15dca, .tierHeaderUnlocked_f15dca, .tierBody_f15dca) {
     background-color: cv('bg.general.card');
   }
 }
 
 // INVITES PAGE
-%serverInvitesCancel {
-  background-color: cv('bg.general.card');
-  &:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-}
 
 // MEMBERS MANAGEMENT
-%guildSettingsMembersMoved {
+.movedTable_dd2627 {
   background-color: rgba(0, 0, 0, 0.6);
 }
-%guildSettingsShowMembersInChannelList {
+.bannerContainer__71cd5 {
   background: cv('bg.general.card');
 }

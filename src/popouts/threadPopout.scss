@@ -1,21 +1,22 @@
+@use '../index' as *;
 /* THREADS POPOUT */
-%popoutLayer %threadsPopoutContainer {
+.layer_da8173 .container_d9c882 {
   background-color: cv('bg.general.popout');
   animation: cv-menu-fold-y 0.2s cubic-bezier(0.2, 0.6, 0.5, 1.1);
   transform-origin: 50% 0;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-%threadsSearch {
+.searchBox_d9c882 {
   background: hsla(0, 0%, 100%, 0.07);
   &::placeholder {
     color: hsla(0, 0%, 100%, 0.3);
   }
 }
-%threadsPopoutHeader {
+.header_d9c882 {
   background-color: transparent;
 }
-%threadsPopoutIcon {
+.icon__1b24f {
   background-color: $main-color;
   color: #fff;
 }

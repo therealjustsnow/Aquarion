@@ -1,8 +1,9 @@
+@use '../index' as *;
 //Voice Channel listening to or playing x game
-%voiceChannelListening {
+.container__4e30a {
   background: cv('bg.general.popout');
 }
-%voiceChannelListeningIcon {
+.container_b1bfd4 {
   background: $main-color;
   > svg {
     color: #fff;

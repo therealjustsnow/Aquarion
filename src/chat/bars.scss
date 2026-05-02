@@ -1,6 +1,7 @@
+@use '../index' as *;
 /* CHAT BARS */
 // NEW MESSAGES BAR
-%newMessagesBar {
+.newMessagesBar__0f481 {
   background: transparent;
   transition: all 0.15s ease-in-out;
   &:before {
@@ -26,19 +27,20 @@
 }
 
 // JUMP TO PRESENT BAR
-%jumpToPresentBar {
+.jumpToPresentBar__0f481,
+.bottomBar__0f481 {
   background: rgba(0, 0, 0, 0.7);
   border-radius: 3px;
   transition: all 0.15s ease-in-out;
   padding-bottom: 0px;
   max-height: 24px;
-  %barbutton {
+  .barButtonBase__0f481 {
     color: hsla(0, 0%, 100%, 0.7);
     transition: inherit;
   }
   &:hover {
     background: $main-color;
-    %barbutton {
+    .barButtonBase__0f481 {
       color: #fff;
     }
   }
@@ -48,26 +50,9 @@
 }
 
 // HAS MORE BAR
-%messages {
-  %hasMore {
-    background: hsla(0, 0%, 100%, 0.07);
-    border: none;
-    border-radius: 3px;
-    box-shadow: none;
-    color: hsla(0, 0%, 100%, 0.7);
-    transition: all 0.15s ease-in-out;
-    &:hover {
-      background: $main-color;
-      color: #fff;
-    }
-    &:active {
-      transform: scale(0.99);
-    }
-  }
-}
 
 // MESSAGE ERROR BAR
-%messagesErrorBar {
+.messagesErrorBar__0f481 {
   background: cv('colors.danger');
   border-radius: 3px;
   transition: all 0.15s ease-in-out;
@@ -75,6 +60,6 @@
 }
 
 // BRAND
-%barBrand {
+.bar__7aaec {
   background-color: $main-color;
 }

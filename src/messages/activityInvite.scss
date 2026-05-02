@@ -1,36 +1,36 @@
 /* ACTIVITY INVITE */
-%themeDark {
-  %activityInvite {
+.theme-dark {
+  .invite__4d3fa {
     background: rgba(0, 0, 0, 0.3);
     border: none;
   }
 }
-%activityInvite {
-  %activityInviteHeader {
+.invite__4d3fa {
+  .header__4d3fa {
     color: hsla(0, 0%, 100%, 0.5);
   }
-  %activityInvitePartyStatus {
+  .partyStatus__4d3fa {
     color: #fff;
   }
-  %activityInviteHelpIcon {
+  .helpIcon__4d3fa {
     display: flex;
     background: hsla(0, 0%, 100%, 0.07);
     transition: all 0.15s ease-in-out;
     opacity: 0;
   }
   &:hover {
-    %activityInviteHelpIcon {
+    .helpIcon__4d3fa {
       opacity: 0.7;
       &:hover {
         opacity: 1;
       }
     }
   }
-  %activityInviteArtworkSessionEnded {
+  .artworkSpotifySessionEnded__4d3fa {
     filter: grayscale(1) brightness(2);
     opacity: 0.3;
   }
-  %activityInvitePartyMemberEmpty {
+  .partyMemberEmpty__4d3fa {
     background: hsla(0, 0%, 100%, 0.07);
   }
 }

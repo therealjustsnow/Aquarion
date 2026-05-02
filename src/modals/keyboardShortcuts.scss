@@ -1,13 +1,14 @@
+@use '../index' as *;
 /* KEYBOARD SHORTCUTS MODAL */
 
-%keyboardShortcutsModal {
+.keyboardShortcutsModal_f061f6 {
   background-color: cv('bg.general.modal');
 }
-%keybindGroup {
+.keybindGroup_f061f6 {
   background-color: transparent;
 }
-%keybindCombo {
-  %keybindShortcutKey {
+.combo_fcddc1 {
+  .key_fcddc1 {
     background: transparent;
     border: 1px solid $main-color;
     border-radius: 3px;

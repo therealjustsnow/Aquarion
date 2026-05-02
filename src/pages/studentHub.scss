@@ -1,100 +1,48 @@
+@use '../index' as *;
 /* STUDENT HUBS */
-%base {
-  %hubContainer {
+.base_c48ade {
+  .pageContainer__09fde {
     background: rgba(0, 0, 0, calc($bg-shading * 0.5));
   }
 }
 
 // HUB SIDEBAR
-%hubCategoryItem {
-  &%hubCategoryItemSelected {
-    %hubCategoryItemLayout {
+.optionItem__7394f {
+  &.selected__91a9d {
+    .layout__91a9d {
       background-color: $main-color;
     }
   }
 }
-%hubCategoryItemIcon > svg > path {
+.avatar__30fd0 > svg > path {
   fill: var(--interactive-active);
 }
 
 // SERVER LIST
-%hubTabBar {
+.tabBar_a7218d {
   margin-bottom: 0;
 }
-%hubCard {
+.card__0c0bf {
   background-color: cv('bg.general.card');
   transition: all 0.15s ease-in-out;
   &:hover {
     background-color: hsla(0, 0%, 0%, 0.6);
   }
-  %hubCardIconMask {
+  .iconMask__0c0bf {
     background-color: cv('bg.general.card');
     transition: all 0.15s ease-in-out;
   }
-  %hubCardIcon {
+  .icon__0c0bf {
     background-color: $main-color;
     color: #fff;
   }
 }
-%hubSplash {
+.splash__0c0bf {
   background: transparent;
 }
 
 // SEARCH BOX
-%hubHeader {
-  %searchBox {
-    background: hsl(247, 55%, 24%);
-    border: none;
-    box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
-    &:focus-within {
-      border: none;
-      box-shadow: 0 0 2px 2px $main-color;
-    }
-    %input {
-      border: none;
-      box-shadow: none;
-    }
-    %searchBoxInput {
-      color: $text-normal;
-      &::placeholder {
-        color: hsla(0, 0%, 100%, 0.3);
-      }
-    }
-    %searchBoxIconSearch {
-      color: $main-color;
-    }
-    %searchBoxCloseIcon {
-      color: $main-color;
-      &:hover {
-        color: $hover-color;
-      }
-    }
-  }
+.headerContent_a7218d {
 }
-%searchHubHeader {
-  %searchPageBox {
-    background: hsla(0, 0%, 100%, 0.07);
-    border: none;
-    box-shadow: 0 0 0 2px hsla(0, 0%, 100%, 0.09);
-    &:focus-within {
-      border: none;
-      box-shadow: 0 0 2px 2px $main-color;
-    }
-    %input {
-      border: none;
-      box-shadow: none;
-    }
-    %searchBoxInput {
-      color: $text-normal;
-      &::placeholder {
-        color: hsla(0, 0%, 100%, 0.3);
-      }
-    }
-    %searchBoxCloseIcon {
-      color: $main-color;
-      &:hover {
-        color: $hover-color;
-      }
-    }
-  }
+.searchHeader__83bd4 {
 }

@@ -1,3 +1,4 @@
+@use '../../index' as *;
 // MAGANE
 div#magane div.stickerWindow {
   border: 2px solid $main-color;
@@ -44,23 +45,6 @@ div#magane div.stickerWindow div.packs-toolbar {
   &:hover {
     background-color: $main-color !important;
   }
-  %messageGroup:not(:hover) & {
-    visibility: visible;
-    opacity: 0;
-  }
-}
-%messageGroup:hover {
-  .replyer {
-    opacity: 1;
-    animation: cv-fade-in 0.3s ease-in-out;
-  }
-  .btn-quote {
-    opacity: 1;
-  }
-  .citar-btn {
-    opacity: 0.8;
-    animation: cv-fade-to-8 0.3s ease-in-out;
-  }
 }
 // PLUGIN NOTICE
 #pluginNotice {
@@ -82,7 +66,7 @@ div#magane div.stickerWindow div.packs-toolbar {
     font-weight: 600;
     text-align: center;
   }
-  %membersGroup {
+  .membersGroup_c8ffbb {
     &:before,
     &:after {
       display: none;
@@ -92,16 +76,16 @@ div#magane div.stickerWindow div.packs-toolbar {
     width: var(--members-width);
   }
 }
-%membersWrap.hasCounter %members {
+.membersWrap_c8ffbb.hasCounter .members_c8ffbb {
   padding-top: 30px;
   margin-top: 0;
 }
-%members %membersGroup:has(.membercount-row) {
+.members_c8ffbb .membersGroup_c8ffbb:has(.membercount-row) {
   opacity: 1;
 }
 // COPY CODE - FINICALMIST
 // COPYBUTTON
-%codeHLJS {
+.hljs {
   .copybutton {
     background: hsla(0, 0%, 100%, 0.1) !important;
     color: hsla(0, 0%, 100%, 0.7) !important;
@@ -125,7 +109,7 @@ div#magane div.stickerWindow div.packs-toolbar {
 }
 // LINE NUMBERS - NOODLEBOX
 // LINE NUMBERS
-%codeHLJS > .kawaii-linenumbers {
+.hljs > .kawaii-linenumbers {
   list-style: none;
   counter-reset: linenumbers;
   border-left: 2.6ch solid hsla(0, 0%, 100%, 0.04);
@@ -164,7 +148,7 @@ div#magane div.stickerWindow div.packs-toolbar {
   margin-bottom: -2px;
 }
 // GAMEACTIVITYTOGGLE - DEVILBRO
-%themeDark %accountPanelAvatarWrapper:has(+ div > button:nth-child(4)) {
+.theme-dark .avatarWrapper__37e49:has(+ div > button:nth-child(4)) {
   min-width: 0px !important;
 }
 // OWNER TAG - DEVILBRO
@@ -179,11 +163,11 @@ div#magane div.stickerWindow div.packs-toolbar {
 }
 // DEVILBRO TOOLTIPS FIX
 .BDFDB-tooltip {
-  > %tooltipTop {
+  > .tooltipTop__382e7 {
     position: relative;
     margin-top: -36px;
   }
-  > %tooltipRight {
+  > .tooltipRight__382e7 {
     position: relative;
     margin-left: 10px;
   }

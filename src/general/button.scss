@@ -1,12 +1,13 @@
+@use '../index' as *;
 /* BUTTON */
-%button {
+.button__201d5 {
   border-radius: 3px;
   transition: background-color 0.3s ease-in-out;
 }
 
 // BUTTON FILLED
-%buttonFilled {
-  &:is(%buttonColorBrand, %buttonColorGreen, %buttonCallInvite, %buttonColorPrimary) {
+.lookFilled__201d5 {
+  &:is(.colorBrand__201d5, .colorGreen__201d5, .buttonColor__7b3e8, .colorPrimary__201d5) {
     background: $main-color;
     color: #fff;
     &:hover {
@@ -19,10 +20,10 @@
       background: cv('colors.success');
     }
   }
-  &%buttonColorRed {
+  &.colorRed__201d5 {
     background-color: cv('colors.danger');
   }
-  &:is(%buttonColorBrandInverted, &%buttonColorWhite) {
+  &:is(.colorBrandInverted__201d5, &.colorWhite__201d5) {
     background: #fff;
     color: $main-color;
     &:is(:hover, :active) {
@@ -34,8 +35,8 @@
     }
   }
   // EMBED BUTTON
-  %embedContainer & {
-    &%buttonColorGreen {
+  .container_b7e1cb & {
+    &.colorGreen__201d5 {
       background-color: cv('colors.success');
       &:hover,
       &:active {
@@ -46,8 +47,8 @@
 }
 
 // BUTTON OUTLINED
-%buttonOutlined {
-  &:is(%buttonColorWhite, %buttonColorPrimary, %buttonColorGreen, %buttonColorBrand) {
+.lookOutlined__201d5 {
+  &:is(.colorWhite__201d5, .colorPrimary__201d5, .colorGreen__201d5, .colorBrand__201d5) {
     border-color: $main-color;
     color: hsla(0, 0%, 100%, 0.8);
     &:hover {
@@ -56,7 +57,7 @@
       color: #fff;
     }
   }
-  &%buttonColorRed {
+  &.colorRed__201d5 {
     border-color: cv('colors.danger');
     color: hsla(0, 0%, 100%, 0.8);
     &:hover {
@@ -67,34 +68,34 @@
 }
 
 // BUTTON LINK
-%buttonLink {
-  &:is(%buttonColorWhite, %buttonColorPrimary) {
+.lookLink__201d5 {
+  &:is(.colorWhite__201d5, .colorPrimary__201d5) {
     color: #fff;
   }
-  &%buttonColorBrand {
+  &.colorBrand__201d5 {
     color: $main-color;
   }
-  &%buttonColorLink {
+  &.colorLink__201d5 {
     color: var(--url-color);
-    &:disabled:hover %buttonContents {
+    &:disabled:hover .contents__201d5 {
       text-decoration: none;
     }
   }
-  &%buttonColorRed {
+  &.colorRed__201d5 {
     color: cv('colors.danger');
   }
-  &:hover %buttonContents {
+  &:hover .contents__201d5 {
     background-image: none;
     text-decoration: underline;
   }
 }
 
 // CIRCLE
-%buttonCircle {
+.button__06eda {
   background-color: hsla(0, 0%, 0%, 0.6);
   color: #fff;
   &:hover {
-    &:not(%buttonCircleDisabled) {
+    &:not(.disabled__06eda) {
       background-color: $hover-color;
       color: #fff;
     }

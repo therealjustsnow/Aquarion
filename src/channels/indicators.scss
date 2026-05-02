@@ -1,6 +1,7 @@
+@use '../index' as *;
 /* CHANNEL INDICATORS */
-%channelsUnreadIndicator,
-%channelsMentionIndicator {
+.unread__3b95d,
+.mention__3b95d {
   position: relative;
   background: transparent;
   &:after {

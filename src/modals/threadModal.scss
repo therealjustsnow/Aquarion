@@ -1,23 +1,14 @@
+@use '../index' as *;
 /* THREAD MODAL */
-%threadModal {
+.modal__9a792 {
   background-color: cv('bg.general.modal') !important;
-  %threadsPopoutContainer {
+  .container_d9c882 {
     background-color: transparent;
   }
 }
 
-%themeDark %threadModalList %threadModalTabBar %threadModalTab {
-  color: #fff;
-  &%threadModalTabActive {
-    background-color: $main-color;
-  }
-  &:hover:not(%threadModalTabActive) {
-    background-color: hsla(0, 0%, 100%, 0.07);
-    color: #fff;
-  }
-}
 
-%threadPreview {
+.container__6764b {
   background-color: hsla(0, 0%, 0%, 0.3);
   border: 2px solid $main-color;
   &:hover {

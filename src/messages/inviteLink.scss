@@ -1,18 +1,19 @@
+@use '../index' as *;
 /* INVITE LINK */
-%inviteWrapper {
+.wrapper_d5f3cd {
   background: cv('bg.general.card');
 }
-%inviteTitle {
+.header_d5f3cd {
   color: hsla(0, 0%, 100%, 0.5);
 }
-%inviteGuildName {
+.guildName_d5f3cd {
   color: $main-color;
   @include hover-shadow;
 }
-%inviteGuildIcon {
+.guildIcon_d5f3cd {
   background-color: hsla(0, 0%, 100%, 0.07);
 }
-%inviteGuildIconExpired {
+.guildIconExpired_d5f3cd {
   position: relative;
   background-size: 0;
   background: hsla(0, 0%, 100%, 0.04);
@@ -34,17 +35,17 @@
     transform: translateX(-50%) rotate(-45deg);
   }
 }
-%inviteGuildDetail {
+.guildDetail_d5f3cd {
   color: hsla(0, 0%, 100%, 0.3);
 }
-%inviteStatusOnline {
+.statusOnline_d5f3cd {
   background: cv('colors.online');
 }
-%inviteStatusOffline {
+.statusOffline_d5f3cd {
   background: cv('colors.offline');
 }
-%inviteWrapper {
-  %buttonFilled%buttonColorGreen {
+.wrapper_d5f3cd {
+  .lookFilled__201d5.colorGreen__201d5 {
     background: transparent;
     border: 1px solid cv('colors.success');
     &:hover {
@@ -52,6 +53,6 @@
     }
   }
 }
-%inviteExpired {
+.inviteDestinationExpired_d5f3cd {
   color: cv('colors.danger');
 }

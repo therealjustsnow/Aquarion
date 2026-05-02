@@ -1,13 +1,14 @@
+@use '../index' as *;
 /* CHANNEL LIST PANELS */
-%panels {
+.panels_c48ade {
   background: transparent;
   > :first-child {
     box-shadow: 0 -2px 10px rgba(0, 0, 0, calc($bg-shading * 0.3));
   }
 }
-%themeDark {
-  %panel,
-  %panelContainer {
+.theme-dark {
+  .panel__5dec7,
+  .container__37e49 {
     background-color: transparent;
   }
 }
@@ -15,7 +16,7 @@
 // ACCOUNT & CONNECTION PANELS
 /* Account for account panel width scaling under
   new design */
-%themeDark %accountPanelAvatarWrapper {
+.theme-dark .avatarWrapper__37e49 {
   min-width: calc(var(--channels-width) - 120px);
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.1);
@@ -23,20 +24,20 @@
 }
 
 // BUTTONS
-%panelActionButtons {
+.actionButtons_e131a9 {
   grid-gap: 6px;
 }
-%panelActionButton {
-  &%panelActionButtonColor {
+.button_e131a9 {
+  &.buttonColor_e131a9 {
     padding: 0;
-    &%panelActionButtonActive {
+    &.buttonActive_e131a9 {
       background-color: #fff;
       color: $main-color;
       &:hover {
         background: hsla(0, 0%, 100%, 0.95);
         color: $hover-color;
       }
-      %panelActionButtonLottieIcon {
+      .lottieIcon__5eb9b {
         --__lottieIconColor: currentcolor !important;
       }
     }
@@ -44,11 +45,11 @@
 }
 
 // ACCOUNT PANEL
-%themeDark %panelContainer {
+.theme-dark .container__37e49 {
   position: relative;
   // SOME POSITIONING
-  %accountPanelTagButton,
-  %accountPanelTagless {
+  .withTagAsButton_b2ca13,
+  .withTagless_b2ca13 {
     min-width: calc(100% - 100px);
     width: auto;
     &:hover {
@@ -57,7 +58,7 @@
     }
   }
   // AVATAR
-  %accountPanelAvatar {
+  .avatar__37e49 {
     transition: all 0.15s ease-in-out;
     &:after {
       content: 'Status';
@@ -90,12 +91,12 @@
 }
 
 // CONNECTION PANEL
-%connectionPanel {
+.container_e131a9 {
   border-color: transparent;
   background: transparent;
-  %connectionPanelInner {
-    %rtcConnectionStatus {
-      %rtcConnectionPing {
+  .inner_e131a9 {
+    .rtcConnectionStatus_c0cb95 {
+      .ping_c0cb95 {
         width: 16px;
         height: 16px;
         margin-right: 3px;
@@ -103,7 +104,7 @@
       }
     }
   }
-  %connectionPanelChannel {
+  .channel_e131a9 {
     color: hsla(0, 0%, 100%, 0.3);
     opacity: 1;
     transition: all 0.15s ease-in-out;
@@ -115,9 +116,9 @@
 }
 
 // ACTIVITY PANEL
-%activityPanel {
+.activityPanel_c48ade {
   border-color: transparent;
-  %activityPanelActions {
+  .actions_bf1a22 {
     background: rgba(0, 0, 0, 0.3);
     border-radius: 15px;
     > :nth-child(n + 2) {
@@ -137,46 +138,47 @@
 }
 
 // VIDEO BADGE
-%panelLiveBadge {
+.liveBadge__8c6c2 {
   background-color: $main-color;
 }
 
 // NOISE CANCELLATION POPOUT
-%noiseCancellationPopout {
+.noiseCancellationPopout_e131a9 {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
 // QUEST PANEL
-%themeDark %questPanel {
+.theme-dark .wrapper__0d616 {
   background: transparent;
 }
-%questPanelAccepted {
+.contentWrapperAccepted__0d616 {
   background: transparent !important;
 }
-%questPanelAcceptedExpandedBackground {
+.postEnrollmentBackground__636a2 {
   background: transparent !important;
   border-top: 2px solid hsla(0, 0%, 100%, 0.05);
 }
-%questPanelContentExpanded {
+.contentExpanded__636a2 {
   background: rgba(0, 0, 0, 0.6);
   border-radius: 8px 8px 0 0;
 }
-%questPanelAcceptedExpandedContent {
+.questAcceptedContent__636a2 {
   visibility: hidden;
-  %questPanelExpanded & {
+  .contentWrapperExpanded__0d616 & {
     visibility: visible;
   }
 }
 
 // SPOTIFY/YT MUSIC MAYBE?/IDK
-%listeningAlongPanel {
+.listeningAlong_e0cf27 {
   background: transparent;
-  %panelTitle {
+  .title_b6c092 {
     color: $main-color;
   }
 }
 
 // DISPLAY USER PROFILE PANEL (IN DM'S)
-%userProfileInner%memberPanel {
+.inner_c0bea0.panel_c0bea0,
+.inner_ab8609.panel_c0bea0 {
   background-color: var(--card-color);
 }
