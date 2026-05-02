@@ -1,9 +1,9 @@
 @use '../index' as *;
 // PAGE CONTROL
-%themeDark {
-  %pageButton {
-    &%pageButtonActive,
-    &%pageButtonActive:hover {
+.theme-dark {
+  .pageButton_c15210 {
+    &.activeButton_c15210,
+    &.activeButton_c15210:hover {
       background-color: $main-color;
     }
     &:hover {
@@ -14,7 +14,7 @@
     }
   }
 }
-%pageButtonEnd {
+.endButton_c15210 {
   &:disabled {
     border-color: $main-color;
     color: #fff;

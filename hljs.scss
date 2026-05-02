@@ -1,6 +1,3 @@
 /*! HLJS Language Display by Zerthox */
 
-// These remain as @import to preserve the %placeholder + @extend mechanism
-// between selectorPlaceholders.scss and codeLanguages.scss.
-@import 'lib/selectors/selectorPlaceholders';
-@import 'src/messages/codeLanguages';
+@use 'src/messages/codeLanguages';

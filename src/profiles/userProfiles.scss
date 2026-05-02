@@ -2,16 +2,18 @@
 /* USER PROFILES */
 
 // FIXES POPOUT BG
-%fullMotion %popoutTranslate {
+.full-motion .translate_faf9c0 {
   transform: unset !important;
 }
 
 // NO CUSTOM PROFILE
-%userProfileOuter:not(%userProfileCustomTheme, %userSettingsProfilePreview) {
+.outer_c0bea0:not(.custom-profile-theme, .container__5a2c6),
+.outer_ab8609:not(.custom-profile-theme, .container__5a2c6) {
   background: transparent;
-  %userProfileInner {
+  .inner_c0bea0,
+  .inner_ab8609 {
     // POPOUT
-    &%userProfileSmall {
+    &.user-profile-popout {
       background: cv('bg.popout.overlay');
       &::before {
         content: '';
@@ -24,7 +26,7 @@
     }
 
     // MODAL
-    &%userProfileFull {
+    &.user-profile-modal {
       background: cv('bg.general.card');
       &::before {
         content: '';
@@ -39,7 +41,7 @@
   }
 
   // STATUS
-  %themeDark & %userProfileStatusBubbleOuter {
+  .theme-dark & .outer_ab8609 {
     background: hsla(0, 0%, 0%, 0.6);
     border-color: 1px solid $main-color;
     &::before {
@@ -53,33 +55,33 @@
       border-color: 1px solid $main-color;
     }
   }
-  %userProfileStatusBubble {
+  .inner_ab8609 {
     background: rgba(0, 0, 0, 0.6);
   }
 
   // BANNER
-  %userProfileBanner {
+  .banner__68edb {
     mask: linear-gradient(to bottom, #000, transparent 93%);
   }
 
   // CONTENT
-  %userProfileOverlay {
+  .overlay_c0bea0 {
     background-color: cv('bg.general.card');
   }
-  %userProfileBadgeList {
+  .container__8061a {
     background-color: transparent;
     border: transparent !important; // important needed for custom profiles.
   }
 
   // CONNECTED ACCOUNTS
-  %userProfileConnectedAccountContainer {
+  .connectedAccountContainer_e6abe8 {
     background: hsla(0, 0%, 100%, 0.04);
     border-color: transparent;
     border-radius: 5px;
   }
 
   // LIST
-  %userProfileListRow {
+  .listRow__9d78f {
     transition: all 0.15s ease-in-out;
     &:hover {
       background: linear-gradient(to right, hsla(0, 0%, 100%, 0.04) 10%, hsla(0, 0%, 100%, 0.04) 90%, transparent);
@@ -87,7 +89,7 @@
   }
 
   // NOTES
-  %userProfileNote {
+  .note_fcb628 {
     textarea:focus {
       background-color: hsla(0, 0%, 100%, 0.07);
     }
@@ -95,18 +97,18 @@
 }
 
 // CUSTOM PROFILE
-%userProfileCustomTheme {
-  %userProfileOverlayScroller {
+.custom-profile-theme {
+  .scroller_fcb628 {
     &::-webkit-scrollbar-thumb {
       background-color: (--profile-gradient-secondary-color);
     }
   }
-  %userProfileNote {
-    %input:focus {
+  .note_fcb628 {
+    .input__0f084:focus {
       box-shadow: 0 0 2px 2px var(--profile-gradient-primary-color);
     }
   }
-  %channelTextArea {
+  .channelTextArea__74017 {
     background: var(--input-background);
     &:focus-within {
       box-shadow: 0 0 2px 2px var(--profile-gradient-primary-color);
@@ -115,18 +117,18 @@
 }
 
 // upsell "AmP uP yOuR pRoFiLe" - discord lmao
-%ampUpYourProfileUpsell {
+.upsellContent__5997d {
   display: none;
 }
 
 // GENERAL
 // CONNECTED ACCOUNTS
-%userProfileConnectedAccountVerifiedIcon {
-  %flowerStar {
+.connectedAccountVerifiedIcon_e6abe8 {
+  .flowerStar__3e3b0 {
     opacity: 1;
   }
 }
-%userProfileConnectedAccountOpenIcon {
+.connectedAccountOpenIcon_e6abe8 {
   background: url(https://clearvision.github.io/icons/popout.svg) center/18px no-repeat;
   opacity: 0.3;
   transition: all 0.15s ease-in-out;
@@ -137,6 +139,6 @@
 }
 
 // MESSAGE USER
-html:not(%visualRefreshChatInput) %userProfileMessage {
+html:not(.visual-refresh-chat-input) .inner_a99829 {
   background: transparent;
 }

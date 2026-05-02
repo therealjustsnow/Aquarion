@@ -2,74 +2,74 @@
 /* COMMUNITY SERVER ONBOARDING */
 
 // POPOUT
-%onboardingEduPopout {
+.educationUpsell__4a4f2 {
   background-color: cv('bg.general.popout');
 }
-%onboardingEduPopoutArrow {
+.educationUpsellArrow__4a4f2 {
   border-bottom-color: cv('bg.general.card');
 }
 
 // PROGRESS
-%onboardingProgressBarContainer {
-  %onboardingProgressBar {
+.progressBarContainer__008b2 {
+  .progressBar__008b2 {
     background-color: hsla(0, 0%, 100%, 0.3);
-    + %textExtraSmallMedium {
+    + .text-xs\/medium_cf4812 {
       color: hsla(0, 0%, 100%, 0.3) !important;
     }
   }
-  %onboardingProgressBarCurrent {
+  .progressBarCurrent__008b2 {
     background-color: $main-color;
-    + %textExtraSmallMedium {
+    + .text-xs\/medium_cf4812 {
       color: $main-color !important;
     }
   }
   &:hover {
-    %onboardingProgressBar {
+    .progressBar__008b2 {
       background-color: $hover-color;
     }
   }
 }
 
 // LINKS
-%anchor {
-  %textSmallMedium {
+.anchor_edefb8 {
+  .text-sm\/medium_cf4812 {
     color: #fff !important;
   }
 }
 
 // FOOTER
-%onboardingFooterContainer {
+.container__4a4f2 {
   background-color: rgba(0, 0, 0, calc($bg-shading * 0.4)) !important;
   box-shadow: none;
 }
 
 // DEFAULT CHANNELS
-%onboardingChannelRow {
+.channelRow__1ea09 {
   background-color: cv('bg.general.card');
-  &:hover:not(%onboardingChannelRowDisabled) {
+  &:hover:not(.disabled__1ea09) {
     background-color: hsla(0, 0%, 100%, 0.05);
   }
 }
-%onboardingChannelRowSeparator {
+.separator__1ea09 {
   margin: -1px 0 0;
   background-color: hsla(0, 0%, 100%, 0.05);
 }
-%onboardingChannelListHeader,
-%onboardingChannelList {
+.header__75906,
+.channelList__75906 {
   background-color: cv('bg.general.card');
 }
-%onboardingChannelListHeaderContainer {
+.container_e9b3cb {
   background-color: transparent;
 }
-%onboardingChannelListHeader {
-  %textExtraSmallBold {
+.header__75906 {
+  .text-xs\/bold_cf4812 {
     color: $main-color !important ;
   }
 }
-%onboardingChannelListProgressBar {
+.progressBar__58525 {
   background-color: $main-color !important;
 }
-%onboardingChannelListProgressIcon {
+.icon_e9b3cb {
   path {
     &[fill='var(--background-accent)'] {
       fill: var(--danger-color);
@@ -79,125 +79,125 @@
     }
   }
 }
-%onboardingChannelChattableIndicator {
+.chattableIndicator__75906 {
   background-color: $main-color;
 }
 
 // CUSTOMISATION QUESTIONS
-%onboardingChannelCoverage {
+.channelCoverage_e34850 {
   background-color: cv('bg.general.card');
 }
-%onboardingChannelCoverageProgress {
+.coverageProgress_e34850 {
   background-color: $main-color !important;
 }
-%onboardingChannelCoverageDetails {
+.channelCoverageDetails_e34850 {
   background-color: transparent;
 }
-%onboardingChannelCoveragePill {
+.channelPill_e34850 {
   border-radius: 20px;
   background-color: cv('bg.general.card');
   border: 2px solid $main-color;
 }
-%onboardingAddQuestion {
+.addPrompt_e34850 {
   border-color: hsla(0, 0%, 100%, 0.3);
-  %onboardingAddQuestionIcon {
+  .plusIcon_e34850 {
     color: $main-color;
   }
-  %textMediumMedium {
+  .text-md\/medium_cf4812 {
     color: $main-color !important;
   }
   &:hover {
     border-color: $hover-color;
-    %onboardingAddQuestionIcon {
+    .plusIcon_e34850 {
       color: $hover-color;
     }
-    %textMediumMedium {
+    .text-md\/medium_cf4812 {
       color: $hover-color !important;
     }
   }
 }
-%onboardingQuestionContainer {
+.container__5d756 {
   background-color: cv('bg.general.card');
   border: 2px solid $main-color;
 }
-%onboardingQuestionExample {
+.example__5d756 {
   background-color: cv('bg.general.card');
   border-radius: 20px;
   border: 2px solid $main-color;
 }
-%onboardingQuestionDropdown {
+.resultsListContainer__6ae25 {
   background-color: cv('bg.general.popout');
   border: 1px solid hsla(0, 0%, 100%, 0.07);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 // SERVER GUIDE
-%onboardingActionExampleBadIcon {
+.badExampleIcon_d2b0e4 {
   background-color: $main-color;
   color: #fff;
 }
-%onboardingActionItem,
-%onboardingResourceChannel {
+.actionItem_d2b0e4,
+.resourceChannel_d2b0e4 {
   background-color: cv('bg.general.card');
 }
-%onboardingActionItemIcon {
+.actionItemEmojiWrapper_d2b0e4 {
   background-color: $main-color;
   color: #fff;
 }
-%onboardingActionAdd {
+.addActionItem_d2b0e4 {
   border-color: hsla(0, 0%, 100%, 0.3);
   color: $main-color;
-  %textMediumNormal {
+  .text-md\/normal_cf4812 {
     color: $main-color;
   }
   &:hover {
     background-color: transparent;
     border-color: $hover-color;
     color: $hover-color;
-    %textMediumNormal {
+    .text-md\/normal_cf4812 {
       color: $hover-color;
     }
   }
 }
-%onboardingActionPreviewPill {
+.pillContainer__9e06a {
   background-color: cv('bg.general.card');
-  %textSmallMedium {
+  .text-sm\/medium_cf4812 {
     color: #fff;
   }
 }
-%onboardingActionPreviewPillSelected {
+.pillItemSelected__9e06a {
   background-color: $main-color;
 }
 
 // REVIEW
-%onboardingReviewHeader,
-%onboardingReviewStepContainer {
+.reviewHeader_a9b452,
+.onboardingStepContainer__28e57 {
   background-color: cv('bg.general.card');
 }
-%onboardingReviewIconContainer {
+.iconContainer__28e57 {
   background-color: $main-color;
 }
-%onboardingReviewIcon {
+.channelIcon__28e57 {
   color: #fff;
 }
 
-%onboardingRecommendedDefaultChannels {
+.channelRow__514d8 {
   background-color: cv('bg.general.card');
 }
 
-%onboardingChannelPermissionsMenu {
+.deprivateTableBody_e6fa8e {
   background-color: cv('bg.general.card');
 }
 
-%onboardingChannelPermissionsItems {
+.selectableChannelRow_e6fa8e:hover {
   background-color: $hover-color;
 }
 
-%onboardingRecommendedReadOnly {
+.suggestedChannels_d2b0e4 {
   background-color: rgba(0, 0, 0, calc($bg-shading * 0.4));
 }
 
-%onboardingPickAnEmoji {
+.container_cd2100 {
   background-color: transparent;
   border: none;
   &:hover {
@@ -205,7 +205,7 @@
   }
 }
 
-%onboardingEnterRoles {
+.searchRowLabel__6ae25 {
   background-color: cv('bg.general.card');
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.05);

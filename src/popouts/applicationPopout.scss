@@ -1,6 +1,6 @@
 @use '../index' as *;
 // POPOUT BUTTON
-%appPopoutButton {
+.button_e6e74f {
   background-color: cv('bg.general.popout');
   border-radius: 8px;
   height: 48px;
@@ -8,27 +8,27 @@
 }
 
 // BACKGROUND
-%appPopoutWrapper {
+.contentWrapper__9c62c {
   background-color: cv('bg.general.popout');
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   box-shadow: none;
 }
-%appPopoutContainer {
+.container__927fc {
   background-color: transparent;
 }
 
 // ITEM
-%appPopoutItemLoading {
+.container_ccbbbb {
   background-color: transparent;
 }
-%appPopoutItem {
+.container_cb32c7 {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   &:hover,
   &:active {
     background-color: hsla(0, 0%, 100%, 0.07);
   }
-  &%appPopoutRowItem {
+  &.rowContainer_cb32c7 {
     background-color: transparent;
     &:hover,
     &:active {
@@ -37,41 +37,41 @@
     }
   }
 }
-%appPopoutRowItemUnderline {
+.rowDivider_cb32c7 {
   right: 4px;
 }
-%appPopoutViewMore {
-  %textMediumMedium {
+.viewMore__32c75 {
+  .text-md\/medium_cf4812 {
     color: $main-color !important;
   }
 }
 
 // APP DETAILS
-%appPopoutDetails {
+.container__7bdb0 {
   background-color: transparent;
 }
-%appPopoutDetailsBackButton {
+.clickable__8c853 {
   background-color: hsla(0, 0%, 0%, 0.3);
   &:hover {
     background-color: hsla(0, 0%, 0%, 0.5);
   }
 }
-%appPopoutStickyBanner {
+.stickyBanner__57d3f {
   visibility: hidden;
 }
-%appPopoutBanner {
+.bannerBackground__57d3f {
   mask: linear-gradient(to bottom, #000, transparent);
 }
-%appPopoutAppIcon {
+.appIcon__7bdb0 {
   background-color: hsla(0, 0%, 0%, 0.3);
   border-color: transparent;
 }
-%appPopoutAppOverview,
-%appPopoutAppOverviewWithVideo {
+.overviewContainerNoVideo__95856,
+.overviewContainerWithVideo__95856 {
   background-color: transparent;
 }
-%appPopoutAppOverviewShowMore {
-  %textSmallSemibold {
+.expandableDescriptionClickable__95856 {
+  .text-sm\/semibold_cf4812 {
     color: $main-color !important;
   }
   path {
@@ -80,35 +80,35 @@
 }
 
 // BOT APP DETAILS
-%appPopoutDropdown {
+.sortDropdown__27f60 {
   background-color: transparent;
 }
-%appPopoutCommandContainer {
+.commandContainer_c94584 {
   background-color: transparent;
 }
-%appPopoutCommand {
+.command_c94584 {
   background-color: transparent;
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.07);
   }
 }
-%appPopoutTag {
+.tagContainer__95856 {
   background-color: $main-color;
   path {
     fill: #fff;
   }
-  %textSmallSemibold {
+  .text-sm\/semibold_cf4812 {
     color: #fff;
   }
 }
 
 // LEARN MORE
-%appPopoutLearnMore {
+.container__19cf2 {
   background-color: transparent;
 }
 
 // SEARCH
-%appPopoutSearchItem {
+.clickable__761e5 {
   background-color: transparent;
   &:hover,
   &:active {
@@ -116,6 +116,6 @@
     border-radius: 3px;
   }
 }
-%appPopoutSearchItemUnderline {
+.underline__761e5 {
   right: 4px;
 }

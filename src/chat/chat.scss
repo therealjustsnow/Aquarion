@@ -1,20 +1,20 @@
 @use '../index' as *;
 /* CHAT */
-%base {
-  %chat {
+.base_c48ade {
+  .chat_f75fb0 {
     background: transparent;
   }
-  %page {
+  .page_c791b2 {
     background: transparent !important;
   }
 }
-%chatContent,
-%chatResize {
+.chatContent_f75fb0,
+.resizeHandle__01ae2 {
   background: rgba(0, 0, 0, calc($bg-shading * 0.5));
 }
-%chat {
+.chat_f75fb0 {
   // CONTENT
-  %chatContentWrapper {
+  .content_f75fb0 {
     background: transparent;
     &:before {
       box-shadow: none;
@@ -23,31 +23,31 @@
 }
 
 // GATED CHANNEL
-%chatContentWrapper > %scrollerWrap {
+.content_f75fb0 > .wrapper__28a87 {
   background: rgba(0, 0, 0, 0.5);
 }
-%chatGatedContent {
-  %chatGatedImage {
+.gatedContent__7184c {
+  .image__7184c {
     filter: hue-rotate(-47deg) saturate(2);
     opacity: 0.5;
   }
-  %chatGatedTitle {
+  .title__7184c {
     color: cv('colors.danger');
     font-weight: 600;
     text-shadow: 0 0 3px #000;
   }
-  %chatGatedDescription {
+  .description__7184c {
     color: hsla(0, 0%, 100%, 0.7);
   }
 }
 
 // EMPTY CHANNEL
-%emptyChannelIcon {
+.emptyChannelIcon__00de6 {
   background-color: $main-color;
 }
-%emptyChannelRole {
+.role_b4b2c3 {
   background: transparent;
-  %emptyChannelRoleColor {
+  .roleColor_b4b2c3 {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -59,47 +59,47 @@
   }
   &:hover {
     background-color: transparent;
-    %emptyChannelRoleColor {
+    .roleColor_b4b2c3 {
       opacity: 0.3;
     }
   }
 }
 
 // NO CHANNEL
-%base {
-  %noChannel {
+.base_c48ade {
+  .noChannel__01d5c {
     background: rgba(0, 0, 0, 0.5);
   }
 }
-%noChannel {
-  %noChannelImage {
+.noChannel__01d5c {
+  .image__33d12 {
     filter: grayscale(1) brightness(2);
     opacity: 0.3;
   }
-  %noChannelTitle {
+  .title__33d12 {
     color: hsla(0, 0%, 100%, 0.5);
   }
-  %noChannelText {
+  .text__33d12 {
     color: hsla(0, 0%, 100%, 0.3);
   }
 }
 
 // CHAT LOADING
-%chatLoadingWrapper,
-%chatLoadingWrapperCozy {
+.wrapper_d852db,
+.wrapper_fc8177 {
   background-color: transparent;
 }
 
 // REPLY MENTION TOGGLE
-div[aria-checked='true'] %replyMentionButton {
+div[aria-checked='true'] .mentionButton__841c8 {
   color: $main-color !important;
 }
 
 // THREAD
-%createThreadContainer {
+.container_fb64c9 {
   background: rgba(0, 0, 0, calc($bg-shading * 0.5));
 }
-%threadIconWrapper {
+.iconWrapper__54b20 {
   background-color: $main-color;
   path {
     fill: #fff;
@@ -107,12 +107,12 @@ div[aria-checked='true'] %replyMentionButton {
 }
 
 // UPLOAD DRAG DROP MODAL
-%uploadModalIn {
-  %uploadDropModal {
-    %uploadDropModalBgScale {
+.uploadModalIn_dbca3c {
+  .uploadDropModal_dbca3c {
+    .bgScale_dbca3c {
       background-color: $main-color;
     }
-    %uploadDropModalInner {
+    .inner_dbca3c {
       border: 2px dashed hsla(0, 0%, 100%, 0.5);
     }
   }

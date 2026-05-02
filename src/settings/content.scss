@@ -1,20 +1,20 @@
 @use '../index' as *;
 /* SETTINGS CONTENT */
-%standardSidebarView {
-  > %settingsContentRegion {
+.standardSidebarView__23e6b {
+  > .contentRegion__23e6b {
     background: transparent;
   }
 }
-%settingsContentRegion {
-  %settingsContentScroller,
-  %settingsContentSidebarScroller {
+.contentRegion__23e6b {
+  .contentRegionScroller__23e6b,
+  .scroller_ff90b2 {
     background: transparent;
   }
 }
 
 // CLOSE BUTTON
-%themeDark {
-  %settingsCloseButton {
+.theme-dark {
+  .closeButton_c2b141 {
     border-color: hsla(0, 0%, 100%, 0.4);
     color: hsla(0, 0%, 100%, 0.6);
     &:hover {
@@ -22,21 +22,21 @@
       background-color: transparent;
     }
   }
-  %settingsCloseButtonKeybind {
+  .keybind_c2b141 {
     color: hsla(0, 0%, 100%, 0.6);
   }
 }
 
 // UNSAVED CHANGES
-%settingsNoticeContainer {
+.container_fcf29c {
   background-color: hsla(0, 0%, 0%, 0.8) !important;
 }
 
 // AVATAR UPLOADER
-%settingsImageUploaderInner {
+.imageUploaderInner_e4d0bf {
   background-color: hsla(0, 0%, 100%, 0.05);
 }
-%themeDark %settingsImageUploaderIcon {
+.theme-dark .imageUploaderIcon_e4d0bf {
   background-color: $main-color;
   background-image: none;
   &:after {
@@ -55,53 +55,53 @@
 }
 
 // ITEM CARDS
-%settingsCard {
-  &:not(%settingsCardOutline),
-  &%settingsCardOutline {
+.card__73069 {
+  &:not(.outline__73069),
+  &.outline__73069 {
     background-color: cv('bg.general.card');
     border-color: hsla(0, 0%, 100%, 0.07);
   }
-  %anchor {
+  .anchor_edefb8 {
     color: var(--url-color);
   }
 }
 
 // COLOR PICKER
-%themeDark %settingsColorPickerCustom {
+.theme-dark .customColorPicker__459fb {
   background-color: cv('bg.general.popout');
   border-color: transparent;
   border-radius: 5px;
 }
 
 // WARNING SHAKE
-%shakeable[style*='transform'] {
+.app__160d8[style*='transform'] {
   transform: none !important;
-  %bg {
+  .bg__960e4 {
     animation: cv-shake 0.5s ease-in;
   }
 }
 
 // DROP DOWN
-%settingsLookFilled%settingsDropdownSelect {
+.lookFilled__3f413.select__3f413 {
   background-color: hsla(0, 0%, 100%, 0.07);
   border-color: hsla(0, 0%, 100%, 0.09);
 }
-%settingsDropdownPopout {
+.popout__3f413 {
   background-color: cv('bg.general.popout');
   border: none;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-%settingsDropdownOption {
+.option__3f413 {
   &:hover,
   &:focus,
-  &%settingsDropdownOptionFocused {
+  &.focused__3f413 {
     background-color: hsla(0, 0%, 100%, 0.05);
     border: hsla(0, 0%, 100%, 0.07);
   }
-  &[aria-selected='true']:not(%settingsDropdownOption%settingsDropdownMulti) {
+  &[aria-selected='true']:not(.option__3f413.multi__3f413) {
     background-color: $main-color;
-    %settingsDropdownOptionSelectedIcon {
+    .selectedIcon__3f413 {
       circle {
         fill: $main-color;
       }
@@ -113,7 +113,7 @@
 }
 
 // ohnyo
-%settingsAttendeeCTA:after {
+.attendeeCTA_ca5ce6:after {
   content: 'ClearVision easter egg, please visit our server for a headpat :)';
   position: absolute;
   width: 100%;

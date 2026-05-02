@@ -1,9 +1,9 @@
 @use '../index' as *;
 /* CHECKBOX */
 
-%checkbox {
+.checkbox_f525d3 {
   border-color: hsla(0, 0%, 100%, 0.5);
-  &%checkboxChecked {
+  &.checked_f525d3 {
     background-color: transparent !important;
     border-color: $main-color !important;
   }

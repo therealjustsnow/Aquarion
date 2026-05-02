@@ -1,25 +1,25 @@
 @use '../index' as *;
 /* SERVER BOOST */
-%serverBoost {
+.scroller__6fd0e {
   background-color: transparent;
 }
-%serverBoostNewBadge {
+.tierCardNewFeatureBadge_be48d0 {
   color: #fff;
 }
-%serverBoostHeaderWave {
+.headerWave__1dfae {
   color: rgba(0, 0, 0, 0.6);
 }
-%serverBoostBottomWave {
+.bodyWave__1dfae {
   display: none;
 }
-%serverBoostTopPerks,
-%serverBoostPerks,
-%serverBoostFAQ {
+.topPerksCard__3add8,
+.card__4d7bb,
+.wrapper__5b98e {
   background-color: cv('bg.general.card');
 }
-%serverBoostFooterInner {
+.innerWrapper_b4589b {
   background-color: cv('bg.general.popout');
 }
-%serverBoostFooterGuildIcon {
+.guildIcon_b4589b {
   background-color: transparent;
 }

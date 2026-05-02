@@ -13,33 +13,33 @@ $colours: (
   'YouTube': #ff0000,
 );
 
-%connections {
+.connection_c7f964 {
   background-color: cv('bg.general.card');
 }
-%connectionsHeader {
+.connectionHeader_c7f964 {
   background-color: transparent;
 }
 
-%connections {
+.connection_c7f964 {
   @each $i, $u in $colours {
-    &:has(%connectionsIcon[alt*='#{$i}']) {
+    &:has(.connectionIcon_c7f964[alt*='#{$i}']) {
       background-color: rgba($u, 0.5);
     }
   }
 }
-%connectionsHeader {
+.connectionHeader_c7f964 {
   @each $i, $u in $colours {
-    &:has(%connectionsIcon[alt*='#{$i}']) {
+    &:has(.connectionIcon_c7f964[alt*='#{$i}']) {
       background-color: rgba($u, 0.2);
     }
   }
 }
-%connectionsAccountLabel {
+.connectionAccountLabel_c7f964 {
   color: hsla(0, 0%, 100%, 0.7) !important;
 }
-%connectionsDelete {
+.connectionDelete_c7f964 {
   color: hsla(0, 0%, 100%, 0.7);
 }
-%connectionsMetadataContainer {
+.metadataContainer_c7f964 {
   background-color: hsla(0, 0%, 100%, 0.1);
 }

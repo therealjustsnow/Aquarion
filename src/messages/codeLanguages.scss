@@ -786,11 +786,11 @@ $lang: (
   }
 }
 // big undo for embeded text files
-%textContainer %codeHLJS {
+.textContainer__4d95d .hljs {
   --lang: none;
   transform: unset;
 }
-%codeHLJS::before {
+.hljs::before {
   content: var(--lang);
   position: absolute;
   top: 0.25rem;

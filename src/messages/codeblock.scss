@@ -1,8 +1,8 @@
 @use '../index' as *;
 /* CODEBLOCK */
-%markup {
+.markup__75297 {
   // INLINE CODE
-  code%codeInline {
+  code.inline {
     padding: 1px 5px;
     background-color: hsla(0, 0%, 100%, 0.1);
     border-radius: 3px;
@@ -13,7 +13,7 @@
       margin-top: -1px;
     }
   }
-  %codeActions {
+  .codeActions__75297 {
     z-index: 999;
   }
   code {
@@ -21,13 +21,13 @@
   }
 }
 // CODEBLOCK
-%codePre {
+pre {
   padding: 0;
   background: transparent;
   border: 2px solid hsla(0, 0%, 100%, 0.05);
   border-radius: 8px;
   font-family: cv('font.code');
-  %codeHLJS {
+  .hljs {
     position: relative;
     padding: 6px;
     background: rgba(0, 0, 0, 0.42);

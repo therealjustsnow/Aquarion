@@ -1,21 +1,21 @@
 @use '../index' as *;
 /* SLIDER */
-%slider {
-  %sliderBar {
+.slider_a562c8 {
+  .bar_a562c8 {
     background: hsla(0, 0%, 100%, 0.04);
     transition: all 0.15s ease-in-out;
   }
-  %sliderBarFill {
+  .barFill_a562c8 {
     background: $main-color;
   }
-  %sliderGrabber {
+  .grabber_a562c8 {
     background: #fff;
     border: none;
     border-radius: 50px;
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
   }
   &:focus {
-    %sliderGrabber {
+    .grabber_a562c8 {
       box-shadow: 0 0 1.5px 1.5px $hover-color;
     }
   }

@@ -2,28 +2,28 @@
 /* ADD SERVER MODAL */
 
 // MAIN PAGE
-%addServerOption {
+.container_eb2cd2 {
   background-color: $main-color;
   &:hover {
     background-color: $hover-color;
   }
-  %addServerOptionText {
+  .text_eb2cd2 {
     color: #fff;
   }
-  %addServerOptionArrow {
+  .arrow_eb2cd2 {
     filter: brightness(0) invert(1);
   }
 }
-%addServerOptionHeader {
+.optionHeader_c04f35 {
   color: hsla(0, 0%, 100%, 0.7) !important;
 }
 // CREATE SERVER
-%createServerIconContainer > svg > circle {
+.iconContainer__98cf7 > svg > circle {
   fill: $main-color;
 }
-%createServerOtherBackButton,
-%createServerBackButton {
-  %buttonContents {
+.backButton_b917ac,
+.backButton__78f69 {
+  .contents__201d5 {
     color: hsla(0, 0%, 100%, 0.7);
     &:hover {
       color: #fff;
@@ -33,22 +33,22 @@
 }
 
 // JOIN SERVER
-html:not(%visualRefresh) %joinServerInput {
+html:not(.visual-refresh) .input__991a0 {
   background-color: transparent;
 }
-%joinServerExample {
+.sampleLink__991a0 {
   color: $main-color;
   font-weight: 500;
 }
-%joinServerRow {
+.rowContainer__991a0 {
   background-color: $main-color;
   &:hover {
     background-color: $hover-color;
   }
-  %joinServerRowText {
+  .rowText__991a0 {
     color: #fff;
   }
-  %joinServerRowArrow {
+  .rowArrow__991a0 {
     filter: brightness(0) invert(1);
   }
 }

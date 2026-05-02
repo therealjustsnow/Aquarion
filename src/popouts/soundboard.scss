@@ -1,88 +1,86 @@
 @use '../index' as *;
 /* SOUNDBOARD */
 
-%soundboard {
+.picker__09f65 {
   background-color: cv('bg.general.popout');
 }
-%soundboardButton {
+.soundButton__9be63 {
   background: $main-color;
-  %soundboardSoundHover:hover {
+  .hoverActiveBackground__9be63:hover {
     background: $hover-color;
   }
 }
 
 // REDESIGN
-%soundboard%soundboardRefresh {
+.picker__09f65.refresh__09f65 {
   background-color: cv('bg.general.popout');
 }
-%soundboardButtonRefresh {
+.soundButtonRefresh__9be63 {
   background: transparent;
   border: 1px solid $main-color;
   box-shadow: inset 0 -4px $main-color;
   transition: all 0.15s ease-in-out;
-  &%soundboardSoundHover:hover {
+  &.hoverActiveBackground__9be63:hover {
     background: $hover-color;
   }
-  &%soundboardSoundHover:active:not(:focus-within) {
+  &.hoverActiveBackground__9be63:active:not(:focus-within) {
     background: $hover-color;
     border: 1px solid $main-color;
     box-shadow: inset 0 -2px $main-color;
-    %soundboardSoundNameRefresh {
+    .soundNameRefresh__9be63 {
       color: $text-normal;
     }
   }
 }
-%soundboardSoundNameRefresh,
-%soundboardAddTextRefresh,
-%soundboardSecondaryButtonRefresh {
+.soundNameRefresh__9be63,
+.soundAddTextRefresh_da9eb2 {
   color: $text-normal;
 }
 
-%visualRefresh {
+.visual-refresh {
   /* SOUNDBOARD */
 
-  %soundboard {
+  .picker__09f65 {
     background-color: cv('bg.general.popout');
   }
-  %soundboardButton {
+  .soundButton__9be63 {
     background: $main-color;
-    %soundboardSoundHover:hover {
+    .hoverActiveBackground__9be63:hover {
       background: $hover-color;
     }
   }
 
   // REDESIGN
-  %soundboard%soundboardRefresh {
+  .picker__09f65.refresh__09f65 {
     background-color: cv('bg.general.popout');
   }
-  %soundboardButtonRefresh {
+  .soundButtonRefresh__9be63 {
     background: transparent;
     border: 1px solid $main-color;
     box-shadow: inset 0 -4px $main-color;
     transition: all 0.15s ease-in-out;
-    &%soundboardSoundHover:hover {
+    &.hoverActiveBackground__9be63:hover {
       background: $hover-color;
     }
-    &%soundboardSoundHover:active:not(:focus-within) {
+    &.hoverActiveBackground__9be63:active:not(:focus-within) {
       background: $hover-color;
       border: 1px solid $main-color;
       box-shadow: inset 0 -2px $main-color;
-      %soundboardSoundNameRefresh {
+      .soundNameRefresh__9be63 {
         color: $text-normal;
       }
     }
   }
-  %soundboardSoundNameRefresh,
-  %soundboardAddTextRefresh,
-  %soundboardSecondaryButtonRefresh {
+  .soundNameRefresh__9be63,
+  .soundAddTextRefresh_da9eb2 {
     color: $text-normal;
   }
 
-  %soundBoardServers {
+  .categoryList_a1e0e0 {
     background-color: transparent !important;
   }
 
-  %soundboardShowAll {
+  .soundShowAllButton__6eb78 {
     background-color: $main-color;
     &:hover {
       background-color: $hover-color;

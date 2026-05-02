@@ -1,16 +1,16 @@
 @use '../index' as *;
 /* FRIENDS */
-%themeDark {
-  %friends {
+.theme-dark {
+  .container__133bf {
     background-color: transparent;
   }
 }
 
 // FRIENDS COLUMN
-%friendsColumn {
+.peopleColumn__133bf {
   background: rgba(0, 0, 0, calc($bg-shading * 0.4));
 }
-%friendsSearch {
+.searchBar__5ec2f {
   background-color: hsla(0, 0%, 100%, 0.07);
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.09);
   border: none;
@@ -18,22 +18,22 @@
     box-shadow: 0 0 2px 2px $main-color;
   }
 }
-%friendsItem {
+.peopleListItem_cc6179 {
   border-top: 1px solid hsla(0, 0%, 100%, 0.1);
   &:hover,
-  &%friendsItemActive {
+  &.active_cc6179 {
     background-color: hsla(0, 0%, 100%, 0.05);
   }
 }
 
-%friendActivity {
+.activity__19b6d {
   color: hsla(0, 0%, 100%, 0.5);
   strong {
     color: $main-color;
   }
 }
 
-%friendsDiscoverHint {
+.container_a14595 {
   background: hsla(0, 0%, 0%, 0.2);
   border: 2px solid $main-color;
   &:hover {
@@ -43,10 +43,10 @@
 }
 
 // ACTION BUTTON
-%friendActionButton {
+.actionButton_f8fa06 {
   background-color: hsla(0, 0%, 0%, 0.6);
   color: #fff;
-  &%friendActionButtonHighlight {
+  &.highlight_f8fa06 {
     background-color: hsla(0, 0%, 0%, 0.6);
     color: #fff;
   }
@@ -54,14 +54,14 @@
     background-color: $hover-color;
     color: #fff;
   }
-  &%friendActionAcceptButton {
+  &.actionAccept_f8fa06 {
     color: cv('colors.success');
     &:hover {
       background-color: cv('colors.success');
       color: #fff !important;
     }
   }
-  &%friendActionDenyButton {
+  &.actionDeny_f8fa06 {
     color: cv('colors.danger');
     &:hover {
       background-color: cv('colors.danger');
@@ -71,16 +71,16 @@
 }
 
 // ADD FRIENDS BUTTON
-%tabBarItem[aria-controls='add_friend-tab'][aria-selected='false'] {
+.item_b3f026[aria-controls='add_friend-tab'][aria-selected='false'] {
   background-color: cv('colors.success') !important;
   color: #fff !important;
 }
-%tabBarItem[aria-controls='add_friend-tab'][aria-selected='true'] {
+.item_b3f026[aria-controls='add_friend-tab'][aria-selected='true'] {
   background-color: transparent !important;
   color: cv('colors.success') !important;
   box-shadow: 0 0 0 1px var(--success-color) inset;
 }
-%tabBarItem[aria-controls='add_friend-tab'][aria-selected='true']:before {
+.item_b3f026[aria-controls='add_friend-tab'][aria-selected='true']:before {
   content: '';
   position: absolute;
   background-color: var(--success-color);
@@ -91,91 +91,81 @@
 }
 
 // ADD FRIENDS PAGE
-%friendsAddFriendInputWrapper {
+.addFriendInputWrapper__72ba7 {
   background-color: hsla(0, 0%, 100%, 0.07);
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.09);
   border: none;
   &:focus-within {
     box-shadow: 0 0 2px 2px $main-color;
   }
-  %input {
+  .input__0f084 {
     background-color: transparent;
     box-shadow: none;
     &:focus,
-    &%inputFocused {
+    &.focused__0f084 {
       box-shadow: none;
     }
   }
 }
-%friendsAddFriendInput {
+.addFriendInput__72ba7 {
   &::placeholder {
     color: hsla(0, 0%, 100%, 0.3);
   }
 }
-%friendsAddFriendHint {
+.addFriendHint__72ba7 {
   color: hsla(0, 0%, 100%, 0.3);
 }
 
 // NOW PLAYING
-%nowPlayingColumn {
+.nowPlayingColumn__133bf {
   background-color: rgba(0, 0, 0, calc($bg-shading * 0.6));
 }
-%nowPlayingColumnContainer {
+.container__7d20c {
   background-color: transparent;
 }
-%nowPlayingColumnScroller {
+.scroller__7d20c {
   border-left: none;
 }
 
 // ACTIVE NOW
-%themeDark {
-  %activeNowOuterCard {
+.theme-dark {
+  .outer_bf1984 {
     background-color: cv('bg.general.card');
     border: 1px solid transparent;
-    &%activeNowCardInteractive:hover,
-    &%activeNowCardActive {
+    &.interactive_bf1984:hover,
+    &.active_bf1984 {
       background-color: hsla(0, 0%, 0%, 0.6);
     }
   }
-  %activeNowCardInset {
+  .inset_bf1984 {
     background-color: cv('bg.general.card');
   }
-  %activeNowPartyOverflow {
+  .partyMemberOverflow_e45a82 {
     background-color: var(--background-overlay);
   }
 }
-%activeNowCardSection {
+.section__00943 {
   background-color: transparent;
 }
-%themeDark %activeNowStreamPreview {
+.theme-dark .applicationStreamingPreviewWrapper__00943 {
   background-color: transparent;
 }
 
 // IT'S QUIET FOR NOW...
-%emptyActiveNowCard {
+.emptyCard__7e549 {
   background-color: cv('bg.general.card');
 }
-%emptyActiveNowText {
+.emptyText__7e549 {
   color: hsla(0, 0%, 100%, 0.3);
 }
 
 // PROMOTED QUEST
-%promotedQuestActivity {
+.wrapper__960df {
   background-color: cv('bg.general.card');
 }
-%promotedQuestPill {
+.promotedTagBackground__1d868 {
   background-color: rgba(0, 0, 0, calc($bg-shading * 0.8));
   color: $text-normal;
 }
 
 // DM USER PROFILE
-%userProfileOuterUnthemed {
-  background-color: cv('bg.general.card');
-  %userProfileDMInnerThemed {
-    background: transparent;
-  }
-  %userModalDMBadgeList,
-  %userProfileDMOverlayBackground {
-    background: cv('bg.general.card');
-  }
-}

@@ -1,17 +1,17 @@
 @use '../index' as *;
 /* SEARCH */
-%chatContentWrapper %searchResultsWrap {
+.content_f75fb0 .searchResultsWrap_a9e706 {
   background-color: rgba(0, 0, 0, 0.6);
 }
-%searchResultsWrap {
+.searchResultsWrap_a9e706 {
   // HEADER
-  > %searchHeader {
+  > .searchHeader_f3b986 {
     background-color: rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
 
   // RESULT
-  %searchResult {
+  .searchResult__02a39 {
     padding-bottom: 10px;
     border-bottom: 1px solid hsla(0, 0%, 100%, 0.04);
     background-color: transparent;
@@ -19,11 +19,11 @@
     &:after {
       display: none;
     }
-    + %searchResult {
+    + .searchResult__02a39 {
       margin-top: -1px;
     }
   }
-  %searchResultJumpButton {
+  .button__02a39 {
     background-color: hsla(0, 0%, 100%, 0.04);
     color: hsla(0, 0%, 100%, 0.5);
     border-radius: 3px;
@@ -34,7 +34,7 @@
       transition-duration: 0.15s;
     }
   }
-  %searchResultHighlight {
+  .highlight {
     position: relative;
     padding: 0 2px;
     background-color: $hover-color;
@@ -45,7 +45,7 @@
 }
 
 // Search results, a blocked user was hidden from your results
-%searchResultBlocked {
+.resultsBlocked_c68065 {
   background-color: transparent;
   border: none;
 }

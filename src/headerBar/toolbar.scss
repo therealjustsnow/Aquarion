@@ -1,42 +1,42 @@
 @use '../index' as *;
 /* HEADER BAR TOOLBAR */
-%toolbar {
-  %headerBarIconWrapper {
+.toolbar__9293f {
+  .iconWrapper__9293f {
     border-radius: 3px;
     transition: all 0.3s ease-in-out;
-    %headerBarIcon {
+    .icon__9293f {
       color: #fff;
       opacity: 0.5;
       transition: all 0.15s ease-in-out;
     }
 
     // SELECTED & POPOUT OPEN
-    &%headerBarIconSelected {
+    &.selected__9293f {
       background: hsla(0, 0%, 100%, 0.1);
-      %headerBarIcon {
+      .icon__9293f {
         opacity: 0.7;
       }
     }
 
     // HOVER
-    &%headerBarIconClickable:hover {
-      %headerBarIcon {
+    &.clickable__9293f:hover {
+      .icon__9293f {
         opacity: 1;
       }
     }
 
     // UNREAD
-    > svg:not(%headerBarIcon) {
+    > svg:not(.icon__9293f) {
       color: $main-color;
       filter: drop-shadow(0 0 5px);
       transition: filter 0.3s ease-in-out;
     }
     &:hover {
-      > svg:not(%headerBarIcon) {
+      > svg:not(.icon__9293f) {
         filter: drop-shadow(0 0 5px) drop-shadow(0 0 10px);
       }
     }
-    %headerBarIconBadge {
+    .iconBadge__9293f {
       background-color: $main-color;
     }
   }

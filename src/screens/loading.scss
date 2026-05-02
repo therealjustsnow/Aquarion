@@ -1,9 +1,9 @@
 @use '../index' as *;
 /* LOADING SCREEN */
-%loadingScreen {
+.container_a2f514 {
   background: rgba(0, 0, 0, 0.9);
 }
-%loadingLinks {
+.links_a2f514 {
   color: $main-color;
   opacity: 1 !important;
   @include hover-shadow;

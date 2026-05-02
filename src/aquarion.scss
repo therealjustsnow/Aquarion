@@ -1,43 +1,48 @@
 @use 'index' as *;
-#app-mount .info__2debe %line:first-child:before {
+#app-mount .info__2debe .line__2debe:first-child:before {
   content: $version;
   display: block;
 }
 
-%nitroShopGiftNitro {
+.buttonWhite_b322b1 {
   color: white;
 }
-%forumTag,
-%forumIncreasedTag {
+.pill_a2c9e8,
+.increasedActivityPill__2620e {
   background: $bg-shading;
   border: $main-color;
 }
-%dividerUnread %dividerDate {
+.isUnread__908e2 .content__908e2 {
   color: $alt-color;
   margin-bottom: 2rem;
   margin-right: 3rem;
 }
-%divider:has(%dividerDate) {
+.divider__5126c:has(.content__908e2),
+.divider__908e2:has(.content__908e2) {
   background: transparent;
 }
-%divider%dividerUnread:has(%dividerDate) {
+.divider__5126c.isUnread__908e2:has(.content__908e2),
+.divider__908e2.isUnread__908e2:has(.content__908e2) {
   background: transparent;
 }
-%groupSpacing16 %divider%hasContent {
+.group-spacing-16 .divider__5126c.hasContent__5126c,
+.group-spacing-16 .divider__908e2.hasContent__5126c {
   border: none;
   background: none;
 }
-%divider {
+.divider__5126c,
+.divider__908e2 {
   border: none;
   background: none;
 }
-%groupSpacing16 %divider {
+.group-spacing-16 .divider__5126c,
+.group-spacing-16 .divider__908e2 {
   border: none;
   margin: 10px;
   margin-bottom: 20px;
   background: none;
 }
-%unreadPill {
+.unreadPill__908e2 {
   background-color: $alt-color;
   height: 25px;
   width: 55px;
@@ -48,35 +53,38 @@
   padding-left: 6px;
   color: black;
 }
-%unreadPillCap {
+.unreadPillCap__908e2 {
   display: none;
 }
-%unreadPillCapStroke {
+.unreadPillCapStroke__908e2 {
   fill: $alt-color;
   color: $alt-color;
 }
-%groupSpacing16 %divider%beforeGroup {
+.group-spacing-16 .divider__5126c.beforeGroup__5126c,
+.group-spacing-16 .divider__908e2.beforeGroup__5126c {
   border-radius: unset;
   margin-top: 45px;
   margin-bottom: 50px;
 }
-%groupSpacing16 %divider%hasContent %unreadPill {
+.group-spacing-16 .divider__5126c.hasContent__5126c .unreadPill__908e2,
+.group-spacing-16 .divider__908e2.hasContent__5126c .unreadPill__908e2 {
   display: none;
   margin-top: 50px;
   margin-bottom: 50px;
 }
-%divider%dividerUnread {
+.divider__5126c.isUnread__908e2,
+.divider__908e2.isUnread__908e2 {
   background: transparent;
   margin: 1rem;
 }
 
-%newBoostPerksText {
+.text__83f66 {
   color: #fff;
 }
-%newBoostPerksContainer {
+.container__83f66 {
   background-color: rgba(0, 0, 0, 0.8);
 }
-%adoptTagContainer {
+.container_cdb3b1 {
   background-color: $popout-color;
 }
 .song-tIdBpF {
@@ -88,39 +96,40 @@
   font-size: 14px;
   color: $alt-color;
 }
-%members %member %memberActivityText {
+.members_c8ffbb .member__5d473 .activityText__5d473 {
   color: $alt-color;
   transition: all 0.3s ease-in-out;
 }
-%members %member %memberActivityText strong {
-  color: $alt-color;
-  font-weight: 700;
-  transition: all 0.3s ease-in-out;
-}
-%privateChannels %privateChannel %privateChannelInteractive %privateChannelActivityText strong {
+.members_c8ffbb .member__5d473 .activityText__5d473 strong {
   color: $alt-color;
   font-weight: 700;
   transition: all 0.3s ease-in-out;
 }
-%privateChannelActivity {
+.privateChannels__35e86 .channel__972a0 .interactive__972a0 .text__8ac07 strong,
+.privateChannels__35e86 .channel__972a0 .interactive__972a0 .text_c9d15c strong {
+  color: $alt-color;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+.activity__972a0 {
   color: $alt-color;
 }
 //remove borders from friends list
-%friendsItem {
+.peopleListItem_cc6179 {
   border-top: transparent;
 }
 // Message bar
-html:not(.visual-refresh-chat-input) %channelTextArea:focus-within {
+html:not(.visual-refresh-chat-input) .channelTextArea__74017:focus-within {
   box-shadow: 0 0 2px 2px $alt-color;
 }
-%channelTextArea {
+.channelTextArea__74017 {
   box-shadow: 0 0 2px 2px hsla(0, 0%, 51%, 0.5);
 }
-html:not(.visual-refresh-chat-input) %channelTextAreaScrollable:focus-within {
+html:not(.visual-refresh-chat-input) .scrollableContainer__74017:focus-within {
   box-shadow: 0 0 2px 2px $alt-color;
 }
 
-%voiceChannelsButton {
+.voiceChannelsButton__29444 {
   border: 2px solid $main-color;
   &:hover {
     border: 2px solid $hover-color;
@@ -131,19 +140,19 @@ html:not(.visual-refresh-chat-input) %channelTextAreaScrollable:focus-within {
   color: var(--url-color);
 }
 // Make most buttons round
-%button {
+.button__201d5 {
   border-radius: 50px;
 }
 // Remove annoying border around second nitro option.
-%tier2ColumnOuter {
+.tier2ColumnOuter_e4ef5c {
   display: none;
 }
-%tier0ColumnOuter,
-%tier2ColumnOuter {
+.tier0ColumnOuter_e4ef5c,
+.tier2ColumnOuter_e4ef5c {
   display: none;
 }
 
-%titlebarWin {
+.typeWindows__421ed {
   height: 18px;
   width: 100vw;
   margin: 0;
@@ -151,7 +160,7 @@ html:not(.visual-refresh-chat-input) %channelTextAreaScrollable:focus-within {
   background: rgba(0, 0, 0, calc($bg-shading * 0.6));
   box-shadow: 0 0 20px rgba(0, 0, 0, calc($bg-shading * 0.6));
 
-  > %titlebarWordmark {
+  > .wordmark__421ed {
     position: static;
     margin-right: auto;
     display: flex;
@@ -187,7 +196,7 @@ html:not(.visual-refresh-chat-input) %channelTextAreaScrollable:focus-within {
     }
   }
 
-  > %titlebarWordmark > svg {
+  > .wordmark__421ed > svg {
     color: $alt-color;
     filter: unset;
 
@@ -197,7 +206,7 @@ html:not(.visual-refresh-chat-input) %channelTextAreaScrollable:focus-within {
   }
 }
 
-%toolbar %headerBarIconWrapper > svg:not(%headerBarIcon) {
+.toolbar__9293f .iconWrapper__9293f > svg:not(.icon__9293f) {
   color: #fff;
   filter: unset;
   transition: unset;
@@ -207,121 +216,126 @@ html:not(.visual-refresh-chat-input) %channelTextAreaScrollable:focus-within {
     color: unset;
   }
 }
-button%panelButton%panelButtonEnabled:hover {
+button.button__67645.enabled__67645:hover {
   color: #fff;
   background-color: hsla(0, 0%, 30%, 0.5);
 }
-%panelButton %panelButtonEnabled %button %buttonBlank %inviteButtonExpired %grow %panelButton:hover {
-  color: #fff;
-  background-color: hsla(0, 0%, 30%, 0.5);
-}
-%forumListOpen,
-%forumIncreasedOpenCard,
-%mainCard%forumListOpen,
-%mainCard%forumIncreasedOpenCard {
+.isOpen_faa96b,
+.isOpen__036bf,
+.mainCard_f369db.isOpen_faa96b,
+.mainCard_f369db.isOpen__036bf {
   background-color: rgba(0, 0, 0, 0.4);
 }
-%newMessagesBar:before {
+.newMessagesBar__0f481:before {
   opacity: 0.3;
   background: $main-color;
 }
-%containerWrapper {
+.containerWrapper_e18107 {
   background: var(--background-overlay);
   border: 2px solid $main-color;
 }
 // Role Names in member sidebar
-%members %membersGroup {
+.members_c8ffbb .membersGroup_c8ffbb {
   color: $alt-color;
   opacity: 1;
   text-shadow: 0 0 2px;
 }
 // The lines that go to either side of the role names on the members sidebar
-%members %membersGroup:before,
-%members %membersGroup:after {
+.members_c8ffbb .membersGroup_c8ffbb:before,
+.members_c8ffbb .membersGroup_c8ffbb:after {
   background: linear-gradient(to left, $main-color 50%, transparent);
 }
-%username {
+.username__0a06e {
   color: $alt-color;
 }
-%text {
+.text__19b6d {
   color: $alt-color;
 }
-%friendActivity {
+.activity__19b6d {
   color: $alt-color;
 }
-%friendActivity strong {
+.activity__19b6d strong {
   color: $alt-color;
 }
-%message %messageTimestamp {
+.message__5126c .timestamp_c19a55 {
   color: #fff;
   font-weight: bolder;
 }
-%memberActivityIcon {
+.icon_c9d15c {
   color: $alt-color;
 }
-%dividerDate {
+.content__908e2 {
   color: $alt-color;
 }
 // Channel Catagory Names
-%channelsSidebar :is(%categoryContainerDefault, %categoryContainerDragAfter, %categoryContainerDrag, %categoryContainer) %categoryWrapper %categoryName {
+.sidebar_c48ade :is(.containerDefault__29444, .containerDragAfter__29444, .containerDragAfter__29444, .containerDefault__29444) .wrapper__29444 .name__29444,
+.sidebar_c48ade :is(.containerDefault__29444, .containerDragAfter__29444, .containerDragAfter__29444, .containerDragAfter__29444) .wrapper__29444 .name__29444,
+.sidebar_c48ade :is(.containerDefault__29444, .containerDragAfter__29444, .containerDragAfter__29444, .containerDragBefore__29444) .wrapper__29444 .name__29444,
+.sidebar_c48ade :is(.containerDefault__29444, .containerDragAfter__29444, .containerDragAfter__29444, .containerUserOver__91b97) .wrapper__29444 .name__29444,
+.sidebar_c48ade :is(.containerDefault__29444, .containerDragAfter__29444, .containerDragBefore__29444, .containerDefault__29444) .wrapper__29444 .name__29444,
+.sidebar_c48ade :is(.containerDefault__29444, .containerDragAfter__29444, .containerDragBefore__29444, .containerDragAfter__29444) .wrapper__29444 .name__29444,
+.sidebar_c48ade :is(.containerDefault__29444, .containerDragAfter__29444, .containerDragBefore__29444, .containerDragBefore__29444) .wrapper__29444 .name__29444,
+.sidebar_c48ade :is(.containerDefault__29444, .containerDragAfter__29444, .containerDragBefore__29444, .containerUserOver__91b97) .wrapper__29444 .name__29444 {
   color: $alt-color;
   text-shadow: none;
   opacity: 2;
 }
 
 // for the text in settings, important needed because some have inline style.
-%standardSidebarView,
-%standardSidebarView * {
+.standardSidebarView__23e6b,
+.standardSidebarView__23e6b * {
   color: #fff;
 }
 
 // Voice Channel, full view background. Important needed because discord used inline style.
-%voiceChatBackground {
+.background_fb62e2 {
   background-color: rgba(0, 0, 0, 0.6) !important;
 }
 
 // Voice Channel chat upload
-%voiceChannelUpload {
+.uploadArea_dbca3c {
   background: transparent;
 }
 
-%privateChannelsHeaderText {
+.headerText__99e7c {
   overflow: visible;
 }
-%chatLoadingCozy %chatLoadingWrapper {
+.cozy_fc8177 .wrapper_d852db,
+.cozy_fc8177 .wrapper_fc8177 {
   background: rgba(0, 0, 0, calc($bg-shading * 0.4));
 }
 
-%chatLoadingWrapper {
+.wrapper_d852db,
+.wrapper_fc8177 {
   background: transparent;
 }
 
-%messageListItem[id*='chat-messages-212324635356692500']:has(img[src*='704368256017891348']) {
+.messageListItem__5126c[id*='chat-messages-212324635356692500']:has(img[src*='704368256017891348']) {
   display: none;
 }
 // userSettingsPremium
-%userSettingsNitroPerkCard {
+.perkCard_b62c4e {
   background-color: rgba(0, 0, 0, calc($bg-shading * 0.4));
   border: 2px solid $main-color;
 }
-%themeDark %tooltipGrey {
+.theme-dark .tooltipGrey__382e7 {
   background-color: $main-color;
 }
-%streamPreview {
+.streamPreview__2f4f7 {
   background: rgba(0, 0, 0, calc($bg-shading * 0.7));
 }
-%selectedScreen {
+.selectedScreen__2f4f7 {
   background-color: rgba(0, 0, 0, calc($bg-shading * 0.7));
 }
-%userPopoutInner::before {
+.userPopoutInner_c69a7b::before {
   display: none;
 }
 // Settings
-%standardSidebarView %settingsSidebar %tabBarSide %tabBarItem {
+.standardSidebarView__23e6b .sidebar__23e6b .side_b3f026 .item_b3f026 {
   color: #fff;
 }
 
-%nitroTOS {
+.finePrint_df7724 {
   color: #fff !important;
 }
 // BD Real All
@@ -335,7 +349,7 @@ button%panelButton%panelButtonEnabled:hover {
   }
 }
 // Vencord Read All
-button.vc-ranb-button%button%buttonFilled%sizeMin%grow {
+button.vc-ranb-button.button__201d5.lookFilled__201d5.sizeMin__201d5.grow__201d5 {
   position: static;
   background: rgba(0, 0, 0, 0.4);
   border-radius: 50px;
@@ -350,39 +364,39 @@ button.vc-ranb-button%button%buttonFilled%sizeMin%grow {
   }
 }
 // Vencord Versioning Info
-%line {
+.line__2debe {
   color: #fff !important;
 }
 .vc-rdb-modal-footer .vc-rdb-input {
   background: rgba(0, 0, 0, 0.4);
 }
-%userPopoutInner::before {
+.userPopoutInner_c69a7b::before {
   display: none;
 }
-%eyebrow {
+.eyebrow_cf4812 {
   overflow: hidden !important;
 }
-%input%inputFocused,
-%input:focus {
+.input__0f084.focused__0f084,
+.input__0f084:focus {
   border: none;
   background-color: transparent;
   box-shadow: none;
 }
-%input:focus,
-%input%inputFocused {
+.input__0f084:focus,
+.input__0f084.focused__0f084 {
   box-shadow: none;
 }
-%input {
+.input__0f084 {
   background-color: transparent;
   box-shadow: none;
 }
-%input%flexCenter {
+.input__0f084.flexCenter_abf706 {
   box-shadow: 0 0 2px 2px $main-color;
   &:hover {
     box-shadow: 0 0 2px 2px $hover-color;
   }
 }
-%buttonFilled%buttonColorWhite {
+.lookFilled__201d5.colorWhite__201d5 {
   color: #fff !important;
   background: transparent !important;
   border: 1px solid $main-color !important;
@@ -393,54 +407,56 @@ button.vc-ranb-button%button%buttonFilled%sizeMin%grow {
     transition: border 0.5s ease-in-out !important;
   }
 }
-%shineContainer%buttonShine%guildBoostCtaBoostShine {
+.shineContainer_a985a2.buttonShine_fb742e.guildBoostCtaBoostShine_f9f04c,
+.shineContainer_a985a2.shine__6a443.guildBoostCtaBoostShine_f9f04c {
   display: none !important;
 }
 // Mod View
-%serverGuideMessage,
-%serverGuideMessage%userProfileOuter {
+.userProfileOuterThemed_c69a7b,
+.userProfileOuterThemed_c69a7b.outer_c0bea0,
+.userProfileOuterThemed_c69a7b.outer_ab8609 {
   background: transparent !important;
 }
 //Inside messageble channel
-%channelTextArea {
+.channelTextArea__74017 {
   background: rgba(0, 0, 0, calc($bg-shading * 0.1));
 }
-%wrapper:hover %childWrapper,
-%wrapper%selected %childWrapper {
+.wrapper__8436d:hover .childWrapper_a6ce15,
+.wrapper__8436d.selected_ae80f7 .childWrapper_a6ce15 {
   background-color: rgba(0, 0, 0, calc($bg-shading * 0));
   transform: scale(1.5);
 }
 // Okay so this is a weird one but it's like the popout for statuses
-%menuPopoutSeparator {
+.separator_c1e9c4 {
   display: none;
 }
 // Vencord Plugin Descriptions?
-%inviteTitle,
-%label,
-%legend {
+.header_d5f3cd,
+.label_b717a1,
+.legend_b717a1 {
   color: #fff;
 }
 // Some kinda boxes. So far only seen on vencord plugins
-%themeDark %modal,
-%themeDark %modalRoot {
+.theme-dark .modal__487be,
+.theme-dark .root__49fc1 {
   background: rgba(0, 0, 0, 0.8);
 }
 // home -> shop mosiac background on top
-%root {
+.root__52b47 {
   display: none;
 }
 // Summaries in chat BETA
-%topicsPillContainer {
+.topicsPillContainer__0f481 {
   background: rgba(0, 0, 0, 0.6);
   &:hover {
     background: rgba(0, 0, 0, 0.8);
   }
 }
-%newTopicsBarContainer {
+.newTopicsBarContainer__0f481 {
   background-color: $main-color;
   opacity: 0.5;
 }
-%topicsPillCaret {
+.topicsPillCaret__0f481 {
   background: $main-color;
   color: #fff;
   &:hover {
@@ -448,23 +464,23 @@ button.vc-ranb-button%button%buttonFilled%sizeMin%grow {
     color: #fff;
   }
 }
-%topicsPillTextSelected {
+.topicsPillTextSelected__0f481 {
   background: rgba(0, 0, 0, 0.8);
 }
-%topicsDropdownHeading {
+.topicsDropdownHeading__0f481 {
   background: rgba(0, 0, 0, 0.8);
 }
-%topicsScroller {
+.topicsScroller__0f481 {
   background: rgba(0, 0, 0, 0.8);
 }
-%thumbIcon {
+.thumbIcon_e97453 {
   color: #fff;
   background: $main-color;
 }
-%summaryFeedbackWrapper {
+.summaryFeedbackWrapper__3aab5 {
   display: none;
 }
-%summaryEndIcon {
+.summaryEndIcon__3aab5 {
   color: $alt-color;
   background: transparent;
   margin-right: 93.5%;
@@ -474,7 +490,7 @@ button.vc-ranb-button%button%buttonFilled%sizeMin%grow {
   margin-top: auto;
   margin-bottom: auto;
 }
-%summaryStartIcon {
+.summaryStartIcon__3aab5 {
   color: $alt-color;
   width: 2.5rem;
   height: 3rem;
@@ -482,80 +498,85 @@ button.vc-ranb-button%button%buttonFilled%sizeMin%grow {
   margin-left: 42px;
 }
 // Home Icon Parent
-%guildNav:hover %guildChildWrapper,
-%guildNav%guildNavSelected %guildChildWrapper {
+.wrapper__6e9f8:hover .childWrapper__6e9f8,
+.wrapper__6e9f8.selected__6e9f8 .childWrapper__6e9f8 {
   background-color: transparent;
   color: #fff;
 }
 // Home Icon Background
-%guildChildWrapper {
+.childWrapper__6e9f8 {
   background-color: transparent;
 }
 
-%subEnabledServers {
+.integrationWrapper_c7f964 {
   background: var(--backdrop-image);
 }
 // Add a status - full profile view
 // Grouping all :before rules that require display: none
-%themeDark %statusBubbleOuter:before,
-%userProfileOuter:before,
-%statusBubbleOuter:before,
-%userProfileCustomTheme %themeDark %userProfileStatusBubbleOuter:before {
+.theme-dark .statusBubbleOuter_a82ccc:before,
+.outer_c0bea0:before,
+.outer_ab8609:before,
+.statusBubbleOuter_a82ccc:before,
+.custom-profile-theme .theme-dark .outer_ab8609:before {
   display: none;
 }
 // Grouping all :after rules that require display: none
-%userProfileOuter:after,
-%statusBubbleOuter:after,
-%themeDark %statusBubbleOuter:after,
-%userProfileCustomTheme %themeDark %userProfileStatusBubbleOuter:after {
+.outer_c0bea0:after,
+.outer_ab8609:after,
+.statusBubbleOuter_a82ccc:after,
+.theme-dark .statusBubbleOuter_a82ccc:after,
+.custom-profile-theme .theme-dark .outer_ab8609:after {
   display: none;
 }
-%userProfileCustomTheme %background {
+.custom-profile-theme .background_a82ccc,
+.custom-profile-theme .background_af9888 {
   --custom-status-bubble-background-coloor: transparent;
 }
 // Grouping all border rules that use 1px solid $main-color
-%statusBubble,
-%themeDark %statusBubbleOuter,
-%themeDark %userProfileOuter,
-%userProfileCustomTheme %themeDark %statusBubbleOuter,
-%userProfileStatusBubble,
-%userProfileCustomTheme %themeDark %userProfileStatusBubbleOuter,
-%userProfileCustomTheme %themeDark %userProfileOuter {
+.statusBubble_a82ccc,
+.theme-dark .statusBubbleOuter_a82ccc,
+.theme-dark .outer_c0bea0,
+.theme-dark .outer_ab8609,
+.custom-profile-theme .theme-dark .statusBubbleOuter_a82ccc,
+.inner_ab8609,
+.custom-profile-theme .theme-dark .outer_ab8609,
+.custom-profile-theme .theme-dark .outer_c0bea0 {
   border: 1px solid $main-color;
 }
 // Specific rules that aren't merged with others
-%statusBubble {
+.statusBubble_a82ccc {
   background: rgba(0, 0, 0, 0.8);
 }
-%statusText {
+.statusText_a82ccc,
+.statusText_ab8609 {
   color: #fff;
 }
-%statusBubbleShape {
+.statusBubbleShape_a82ccc {
   border-radius: 16px;
 }
-%statusBubbleOuter {
+.statusBubbleOuter_a82ccc {
   background: transparent;
 }
 
-%themeDark %userProfileStatusBubbleOuter {
+.theme-dark .outer_ab8609 {
   background: rgba(0, 0, 0, 0.6);
 }
 // Bots...why are they different??????
-%userProfileStatusBubbleOuter::before {
+.outer_ab8609::before {
   display: none;
 }
-%userProfileStatusBubbleOuter::after {
+.outer_ab8609::after {
   display: none;
 }
 // Status in user settings
-%userProfileStatusBubbleOuter:before {
+.outer_ab8609:before {
   display: none;
 }
-%userProfileStatusBubbleOuter:after {
+.outer_ab8609:after {
   display: none;
 }
 // Gift in chat
-%themeDark %giftCardButton {
+.theme-dark .giftCardButton_da4aee {
   border-color: $main-color;
   color: #fff;
   &:hover {
@@ -563,186 +584,179 @@ button.vc-ranb-button%button%buttonFilled%sizeMin%grow {
     color: #fff;
   }
 }
-%themeDark %giftCardButton:hover {
+.theme-dark .giftCardButton_da4aee:hover {
   border-color: $hover-color;
   color: #fff;
 }
-%giftCardButton {
+.giftCardButton_da4aee {
   background-color: rgba(0, 0, 0, calc($bg-shading * 0.6));
 }
-%settingsHeaderText {
+.headerText_b3f026 {
   overflow: hidden;
 }
 // Send voice message vencord plugin
 .vc-vmsg-preview {
   background: rgba(0, 0, 0, 0.4);
 }
-%panelActionButton%panelActionButtonColor%panelActionButtonActive:hover {
+.button_e131a9.buttonColor_e131a9.buttonActive_e131a9:hover {
   background: $hover-color;
   color: #fff;
 }
-%panelActionButtonLottieIcon svg {
+.lottieIcon__5eb9b svg {
   fill: #fff;
   transform: unset;
 }
-%panelActionButton%panelActionButtonColor%panelActionButtonActive {
+.button_e131a9.buttonColor_e131a9.buttonActive_e131a9 {
   background-color: $hover-color;
 }
 // Voice chat count
-%channelUserLimitUsers {
+.users__260e1 {
   color: $text-normal;
   background: rgba(0, 0, 0, 0.5);
 }
-%channelUserLimitTotal {
+.total__260e1 {
   color: $text-normal;
   background: hsla(0, 0%, 100%, 0.2);
   box-shadow: inset 1px 0 hsla(0, 0%, 100%, 0.4);
 }
-%channelWrapperSelected %numberBadge,
-%channelWrapperSelected %textBadge,
-%privateChannelInteractiveSelected %numberBadge,
-%privateChannelInteractiveSelected %textBadge,
-%tabBarItemSelected %numberBadge,
-%tabBarItemSelected %textBadge {
+.modeSelected__2ea32 .numberBadge__2b1f5,
+.modeSelected__2ea32 .textBadge__2b1f5,
+.interactiveSelected__972a0 .numberBadge__2b1f5,
+.interactiveSelected__972a0 .textBadge__2b1f5,
+.selected_b3f026 .numberBadge__2b1f5,
+.selected_b3f026 .textBadge__2b1f5 {
   background-color: $hover-color !important;
   color: #fff !important;
 }
-%buttonFilled%buttonColorBrandInverted,
-%buttonFilled%buttonColorWhite {
+.lookFilled__201d5.colorBrandInverted__201d5,
+.lookFilled__201d5.colorWhite__201d5 {
   background: transparent;
   color: #fff;
   border: 1px solid $main-color !important;
 }
-%imageContainer {
+.imageContainer_f69538 {
   background: transparent;
 }
 // Spotify on User profile
-%customProfile %themeColor%primary {
-  background: $main-color;
-  color: #fff;
-  transition: background 0.3s ease-in-out;
-  &:hover {
-    background: $hover-color;
-    color: #fff;
-  }
-}
 // Guild Folder Expanded background
-%guildExpandedFolderBackground {
+.expandedFolderBackground__48112 {
   background-color: $main-color;
   opacity: 0.5;
 }
 
 // Server Settings > members
-%guildSettingsRoleRow:hover:not(%guildSettingsRoleRowDisabled) %circleButton {
+.roleRow_a930f1:hover:not(.roleRowDisableHover_a930f1) .circleButton_a930f1 {
   background: $hover-color;
 }
 // Game sharing screen icon
-%badge {
+.badge_a629d4 {
   color: $main-color;
 }
 // server context menu -> boost this server
-%guildBoostMural {
+.header__6fd0e {
   background: transparent;
 }
-%boostThisServerButton {
+.guildBoostCtaBoostContent_f9f04c {
   color: #fff;
 }
 // Button shine
-%buttonShineInner {
+.shineInner__6a443 {
   background-color: $alt-color;
 }
-%buttonShine {
+.buttonShine_fb742e,
+.shine__6a443 {
   background-color: $alt-color;
 }
-%motion %buttonShine {
+.full-motion .buttonShine_fb742e,
+.full-motion .shine__6a443 {
   animation-duration: 4s;
 }
 // Reply
-%replySpine {
+.repliedMessageClickableSpine_c19a55 {
   border-color: $alt-color;
 }
 // user settings, server boost
-%boostNewHome {
+.unappliedBoostSlots__99020 {
   background-color: rgba(0, 0, 0, 0.4);
 }
-%freeBoost {
+.header__99020 {
   border-radius: 8px 8px 0 0;
 }
-%lookingForBlocked {
+.blockedIgnoredSettingsNotice__6811a {
   background: rgba(0, 0, 0, 0.6);
 }
-%gamesLastPlayedTime {
+.lastPlayed_cc46f0 {
   color: $text-normal;
 }
-%voiceMessagePlaying %voiceMessagePlayButtonContainer {
+.playing_a8e786 .playButtonContainer_a8e786 {
   background: $hover-color;
 }
-%keybindRecordingContainer%keybindRecordingActive %keybindAdd {
+.recorderContainer__2636e.recording__2636e .addKeybindButton__2636e {
   color: $text-normal;
 }
 // poll results
-%pollEndContainer {
+.container_f69538 {
   background-color: rgba(0, 0, 0, 0.8);
 }
-%privateChannelInteractive%privateChannelInteractiveSelected %privateChannelIcon,
-%privateChannelInteractive%privateChannelInteractiveSelected %privateChannelName {
+.interactive__972a0.interactiveSelected__972a0 .linkButtonIcon__972a0,
+.interactive__972a0.interactiveSelected__972a0 .name__20a53 {
   color: #fff;
 }
-%dmStatusText {
+.text__8ac07 {
   color: $alt-color !important;
 }
-%privateChannelSubText {
+.subText__20a53 {
   color: #fff;
 }
 
-%activityContainer {
+.container_c44293 {
   background: rgba(0, 0, 0, 0.6);
 }
 
-%embed %embedTitleLink {
+.embed__623de .embedTitleLink__623de {
   color: $alt-color !important;
   &:hover {
     color: var(--url-color) !important;
   }
 }
 
-%friendsWhoPlay {
+.friends_b37a75 {
   background-color: var(--card-color);
 }
 
-%questInfoWrapper {
+.wrapper_b76891 {
   background-color: var(--card-color);
 }
 
-%questVideoPopout {
+.modalContent_de2fa0 {
   background-color: $popout-color;
 }
 
-%pollAnswerFill {
+.radioForeground_f4f0eb {
   color: $main-color;
 }
 
-%clipsEnabledIcon > path {
+.clipBadgeIcon__8c88a > path {
   fill: $main-color;
   border-radius: 25px;
   margin-right: 3px;
 }
 
 // important needed to override discord doing inline styling of -6? Makes it go out of the box, stupid af.
-%accountStandingPoints {
+.marker_d878e7 {
   background-color: rgba(0, 0, 0, 0.4);
   margin-right: 6px !important;
 }
 
 
-%guildProfilePreview {
+.profilePreview_dbba93 {
   background-color: rgba(0, 0, 0, 0.4);
 }
 // .header_ is the class of an element containing the username, timestamp and if the pronoun exists,
 // it contains an element with the class .vc-pronoundb-compact but not on the last child. The DOM is something like .header > [username, timestamp+vc-pronound-compact, timestamp]
 @supports selector(a:has(+ a)) {
-  %messageHeader:has(.vc-pronoundb-compact) %timestampInline:last-child,
-  [class*='compact'] %header .vc-pronoundb-compact:last-child {
+  .header_c19a55:has(.vc-pronoundb-compact) .timestampInline_c19a55:last-child,
+  [class*='compact'] .header_39b23 .vc-pronoundb-compact:last-child {
     color: $alt-color;
   }
 }

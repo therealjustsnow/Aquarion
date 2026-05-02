@@ -1,9 +1,9 @@
 @use '../index' as *;
 /* CRASH SCREEN */
-%errorPage {
+.errorPage_a57b28 {
   background: transparent;
   box-shadow: inset 0 0 50vmin 10px cv('colors.danger');
-  %buttonContents {
+  .contents__201d5 {
     height: 16px;
     font-size: 0;
     &:after {
@@ -12,10 +12,10 @@
     }
   }
 }
-%errorPageImage {
+.image__61a6b {
   display: none;
 }
-%errorPageText {
+.text__61a6b {
   width: auto;
   color: hsla(0, 0%, 100%, 0.7);
   h4 {
@@ -33,12 +33,12 @@
       font-size: 150px;
     }
   }
-  %errorPageNote {
+  .note__61a6b {
     font-size: 0;
     white-space: pre-line;
   }
 }
-%errorPageNote {
+.note__61a6b {
   > div {
     > p {
       margin: 0;

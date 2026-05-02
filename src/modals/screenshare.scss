@@ -1,30 +1,30 @@
 @use '../index' as *;
 /* SCREEN SHARE */
-%screenshareSegmentControlOption {
+.segmentControlOption_a2de16 {
   color: hsla(0, 0%, 100%, 0.7);
-  %themeDark &%screenshareSegmentControlSelected {
+  .theme-dark &.tabItemSelected__9e06a {
     color: $main-color;
     border-bottom: 2px solid $main-color;
   }
 }
-%screenshareTile {
+.tile_a2de16 {
   &:hover {
-    %screenshareSourceThumbnail {
+    .sourceThumbnail_a2de16 {
       box-shadow: inset 0 0 0 2px $hover-color;
     }
   }
-  %screenshareSourceThumbnail {
-    &%screenshareSourceSelected {
+  .sourceThumbnail_a2de16 {
+    &.selected_a2de16 {
       box-shadow: inset 0 0 0 2px $main-color;
     }
   }
 }
-%screenshareCard {
+.card__4bb93 {
   background-color: hsla(0, 0%, 100%, 0.07);
   border: 2px solid hsla(0, 0%, 100%, 0.09);
 }
-%themeDark {
-  %screenshareSettingsSelector {
+.theme-dark {
+  .selectorButton_c6d3dc {
     background-color: hsla(0, 0%, 100%, 0.07);
     border-color: hsla(0, 0%, 100%, 0.09);
     &:before {
@@ -33,65 +33,65 @@
     &:hover {
       background-color: $hover-color;
     }
-    &%screenshareSettingsSelected {
+    &.selectorButtonSelected_c6d3dc {
       background-color: $main-color;
     }
-    &%screenshareSettingsUpsell {
+    &.premiumUpsell_c6d3dc {
       &:hover {
         background-color: #c269c3;
-        %screenshareSettingsUpsellText {
+        .enhancedSelectorNitroText_c6d3dc {
           color: #fff;
         }
       }
     }
   }
 }
-%screenshareUpsell {
+.enhancedBanner__39bd2 {
   background: transparent;
 }
 
 // CLIPS
-%takeClipsDirectlyReminder {
+.containerEnabled__81977 {
   background: cv('bg.general.popout');
 }
 
-%clipsShareTo {
+.channelRow__1db97 {
   background: cv('bg.general.card');
   &:hover {
     background: $hover-color;
     opacity: 0.8;
   }
 }
-%clipsUploadModal {
+.upload_aa605f.sizeClip_aa605f {
   background-color: transparent;
 }
-%clipsUploadGame {
+.gameIcon_b52e4f {
   color: $main-color;
 }
-%clipsUploadTitle {
+.text-md-semibold__8664f {
   color: #fff !important; //Important needed because discord used element style - Snow
 }
-%clipsInterfaceOptionsModal {
+.clipForm__54978 {
   background: transparent;
 }
-%clipsInterfaceGeneralInfo {
+.root_a77292 {
   background: transparent;
 }
-%clipsInterfaceParticipants {
+.root_f90ef0 {
   background: transparent;
 }
-%clipsInterfaceParticipantsCounter {
+.userCountPill_f90ef0 {
   background-color: rgba(0, 0, 0, 0.8);
 }
-%clipsInterfaceTimeScroller {
+.timePillBackground__10841 {
   background-color: $main-color;
 }
-%clipsInterfacePlayPause {
+.playPauseButtonWrapper__10841 {
   background-color: rgba(0, 0, 0, 0.8);
 }
-%clipsInterfaceDragHandles {
+.dragHandle__10841 {
   background-color: $main-color;
 }
-%clipInChatFooter {
+.container_b9f75c {
   background: rgba(0, 0, 0, 0.8);
 }

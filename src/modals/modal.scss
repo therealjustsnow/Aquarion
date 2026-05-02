@@ -1,11 +1,11 @@
 @use '../index' as *;
 /* MODAL */
-%themeDark {
-  %modal,
-  %modalRoot {
+.theme-dark {
+  .modal__487be,
+  .root__49fc1 {
     background: cv('bg.general.modal');
     box-shadow: none;
-    %modalFooter {
+    .footer__49fc1 {
       background: transparent;
       box-shadow: none;
     }
@@ -13,19 +13,19 @@
 }
 
 // IMAGE MODAL
-%imageModalActionButtons {
+.actionButtons_cc1819 {
   background-color: cv('bg.general.modal');
   border: 1px solid $main-color;
 }
 
 // MESSAGE DELETION CONFIRMATION
-%themeDark %messageDeleteModal {
+.theme-dark .message__89466 {
   background-color: transparent;
   box-shadow: 0 0 2px 2px $main-color;
 }
 
 // REPORT MESSAGE
-%messageReportOption {
+.childButton__3ed08 {
   background-color: $main-color;
   &:hover {
     background-color: $hover-color;
@@ -33,39 +33,39 @@
 }
 
 // QUICKSWITCHER
-%quickswitcher {
+.quickswitcher_ac6cb0 {
   background-color: cv('bg.general.modal');
 }
-%quickswitcherInput {
+.input_ac6cb0 {
   background-color: rgba(255, 255, 255, 0.07);
 }
-%quickswitcherScroller {
+.scroller_ac6cb0 {
   background-color: transparent;
   margin-top: 10px;
   &::-webkit-scrollbar-track {
     background-color: transparent !important;
   }
 }
-%quickswitcherResult[aria-selected='true'] {
+.result__71961[aria-selected='true'] {
   background: var(--background-modifier-hover);
 }
-%quickswitcherPing {
+.wrapper_dc0b29 {
   background: $main-color;
 }
 
 // TIMEOUT
 /*timeout duration item*/
-%timeoutModalItem%timeoutModalSelected {
+.item__3d4a0.selectorButtonSelected__0907c {
   background: $main-color;
   border-color: $main-color;
 }
-%timeoutModalItem:not(%timeoutModalSelected) {
+.item__3d4a0:not(.selectorButtonSelected__0907c) {
   background: cv('bg.general.card');
   border-color: $main-color;
 }
 
 // BAN MODAL
-%banReasonOther {
+.banReasonOtherClickable__837b7 {
   background-color: cv('bg.general.modal');
   border: 2px solid transparent;
   transition: all 0.15s ease-in-out;
@@ -78,67 +78,67 @@
 }
 
 // SWITCH ACCOUNTS
-%themeDark %modalRoot {
-  %loginAuthBox,
-  %addAccountFooter {
+.theme-dark .root__49fc1 {
+  .authBox__921c5,
+  .navRow__86e92 {
     background-color: transparent;
   }
 }
 
 // ACTIVITIES
-%activityModalHeader,
-%activityModalDivider {
+.modalHeader__52f07,
+.modalDivider__52f07 {
   background: cv('bg.general.card');
 }
-%activityTag {
+.activityTag__18da2 {
   background-color: rgba(0, 0, 0, calc($bg-shading * 0.5));
 }
-%activityItem {
+.activityItem__18da2 {
   background: cv('bg.general.card');
   border: 2px solid $main-color;
   &:hover {
     background: cv('bg.general.card');
     border: 2px solid $hover-color;
   }
-  &%activityItemDisabled {
+  &.disabled__18da2 {
     background: cv('bg.general.card');
   }
 }
-%activitiesScroller {
+.scrollTierBackground__35455 {
   background: transparent;
 }
 
 // INVITE BOT
-%botInviteModalContent {
+.contentBackground__3d3b0 {
   background-color: hsla(0, 0%, 100%, 0.05);
 }
 
 // AUTH MODAL
-%authModal {
+.authorize__3d3b0 {
   background-color: transparent;
   border-radius: 5px;
-  &%authModalInApp {
+  &.inApp_c5a065 {
     background-color: transparent;
   }
 }
-%authModalScopeTimes {
+.iconWrapper_cf14a8 {
   background-color: hsla(0, 0%, 100%, 0.15);
 }
-%authModalFooter {
+.footer__3d3b0 {
   background-color: transparent;
 }
 
 // YOU MUST COMPLETE A FEW MORE STEPS BEFORE YOU CAN TALK
 /*before you talk here popup*/
-%beforeTalkRuleContainer {
+.modal_b962dc {
   background: transparent;
 }
 /*border color for terms of acceptance*/
-%beforeTalkRule {
+.termsRow_d48a51 {
   border-color: $main-color;
 }
 /*agree to rules*/
-%beforeTalkRulesBackground {
+.fieldBackground_d48a51 {
   background: var(--background-overlay);
   border-color: $main-color;
   &:hover:not(:focus) {
@@ -148,33 +148,33 @@
 }
 
 // Webhook previews
-%webhookFooter {
+.footer__51eb2 {
   background-color: transparent;
 }
-%themeDark %webhookPopout {
+.theme-dark .guildPopout__51eb2 {
   background-color: rgba(0, 0, 0, 0.8);
 }
-%webhookEmojiRow {
+.emojiCounter__51eb2 {
   background-color: $main-color;
   color: $text-normal !important;
 }
-%webhookBackground:after {
+.layer_da8173:after {
   background: var(--background-overlay);
 }
 
 // INVITE FROM WEB BROWSER
-%themeDark %webInviteModalContentWrapper {
+.theme-dark .contentWrapper__9b0f4 {
   background: cv('bg.general.modal');
 }
-%webInviteModalOnline {
+.pillIconOnline__921c5 {
   background-color: cv('colors.online');
 }
-%webInviteModalTotal {
+.pillIconTotal__921c5 {
   background-color: cv('colors.offline');
 }
 
 // NITRO 1 month discount
-%nitroDiscount {
+.body__996b0 {
   background-color: cv('bg.general.modal');
 }
 .churnFooterContent__64988 {

@@ -2,58 +2,58 @@
 /* PREVIEW SERVER */
 
 // WELCOME MODAL
-%previewServerOptionContainer {
+.optionContainer__949ab {
   background-color: $main-color;
   &:hover {
     background-color: $hover-color;
   }
-  %previewServerChannelOptionArrow {
+  .optionArrow__949ab {
     color: #fff;
   }
   span {
     color: #fff;
   }
 }
-%previewServerChannelIcon,
-%previewServerChannelTitleIcon {
+.channelIcon__949ab,
+.channelTitleIcon__949ab {
   color: #fff;
 }
-%previewServerNotice {
+.notice_c5cd6a {
   background-color: rgba(0, 0, 0, calc($bg-shading * 0.6));
 }
 
-%previewServerContainer {
+.container__7e919 {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
 // TOP BAR JOIN AND BACK BUTTON
-%previewServerBackButton:hover {
+.button_c5cd6a:hover {
   background-color: $hover-color;
 }
 
 // WELCOME TO SERVER CARDS
-%serverWelcomeCards {
+.card_aae012 {
   background-color: cv('bg.general.card');
 }
-%serverInviteTick {
+.checkmark_aae012 {
   background-color: $main-color;
 }
 
 // SERVER STATUS (E.G. PUBLIC OR PRIVATE)
-%previewServerStatus {
+.communityInfoPill_f37cb1 {
   background: rgba(0, 0, 0, 0.6);
 }
 
 // Nyx's fixes
-%previewServerHomeContainer,
-%previewServerHomeContainerInner {
+.container_c68a2c,
+.container__29699 {
   background: transparent;
 }
-%previewServerHomeIcon {
+.icon_ac2d0d {
   border: 4px solid transparent;
 }
-%previewServerHomeInteractiveCard {
-  &%previewServerHomeInteractiveCardSelected {
+.interactiveCard_d92364 {
+  &.selected__142a3 {
     border: 1px solid $main-color;
   }
   &:hover {
@@ -63,21 +63,21 @@
     border: 1px solid $hover-color;
   }
 }
-%previewServerHomeCard {
+.card_d4f6c7 {
   background: cv('bg.general.card');
 }
-%previewServerIconContainer {
+.iconContainer__1b9f0 {
   background: $main-color;
   color: #fff;
 }
-%previewServerConversation:hover {
+.container__55cc1:hover {
   background: $hover-color;
 }
-%previewServerConversationRoot:after,
-%previewServerConversationReply {
+.conversationRoot_bed0b3:after,
+.replySpine__081f6 {
   border-left: 2px solid $main-color;
 }
-%previewServerConversationMessage:after {
+.conversationMessage__3c425:after {
   border-left: 2px solid $main-color;
   border-bottom: 2px solid $main-color;
 }

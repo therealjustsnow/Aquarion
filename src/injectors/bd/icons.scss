@@ -1,5 +1,5 @@
 /* BD SETTINGS SIDEBAR ICONS */
-%settingsSidebar {
+.sidebar__23e6b {
   // BD ICON MAP
   $bd: (
     // Settings
@@ -15,7 +15,7 @@
   );
 
   // BD ICON STYLES
-  %tabBarItem {
+  .item_b3f026 {
     @each $i, $u in $bd {
       &.bd-#{$i}-tab:before {
         background-image: url(#{$u});

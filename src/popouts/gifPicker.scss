@@ -1,14 +1,14 @@
 @use '../index' as *;
 /* GIF PICKER */
-%gifPickerContainer {
+.container_fed6d3 {
   background-color: transparent;
 }
 
 // HEADER
-%gifPickerHeader {
+.header_fed6d3 {
   background-color: transparent;
 }
-%gifPickerSearch {
+.searchBar_fed6d3 {
   background-color: rgba(255, 255, 255, 0.07);
   border: none;
   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.09);
@@ -18,22 +18,22 @@
     transition: all 0.15s ease-in-out;
   }
 }
-%gifPickerSearchInput::placeholder {
+.input_a45028::placeholder {
   color: hsla(0, 0%, 100%, 0.3);
 }
 
-%gifPickerContent {
+.content_fed6d3 {
   // CATEGORIES
-  %gifPickerCategoryFade,
-  %gifPickerCategoryFadeBlurple {
+  .categoryFade_d02962,
+  .categoryFadeBlurple_d02962 {
     transition: all 0.15s ease-in-out;
   }
-  %gifPickerCategoryFade {
+  .categoryFade_d02962 {
     &:hover {
       background: rgba(0, 0, 0, 0.7);
     }
   }
-  %gifPickerCategoryFadeBlurple {
+  .categoryFadeBlurple_d02962 {
     background: transparent;
     &:hover {
       background: transparent;
@@ -48,14 +48,14 @@
       opacity: 0.7;
     }
   }
-  %gifPickerCategoryText {
+  .categoryText_d02962 {
     color: #fff;
     filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.7));
   }
 }
 
 // RESULTS
-%gifPickerResult {
+.result__2dc39 {
   &:after {
     transition: all 0.15s ease-in-out;
   }
@@ -67,23 +67,23 @@
     }
   }
 }
-%gifFavoriteButton {
+.gifFavoriteButton__43deb {
   background-color: hsla(0, 0%, 0%, 0.6);
 }
 
 // ARROW KEY FOCUS SELECTION OUTLINE
-%gifPickerResult[data-focused='true'] {
+.result__2dc39[data-focused='true'] {
   box-shadow: 0 0 0 2px cv('colors.focus');
 }
 
 // HINT CARD
-%gifPickerEmptyHintCard {
+.emptyHintCard__2dc39 {
   background: hsla(0, 0%, 100%, 0.04);
   color: hsla(0, 0%, 100%, 0.5);
 }
 
 // END CONTAINER
-%gifPickerEndContainer {
+.endContainer__2dc39 {
   &:after {
     filter: grayscale(1) brightness(0.7);
     opacity: 0.3;
@@ -91,6 +91,6 @@
 }
 
 //Search Suggestion
-%gifPickerSearchSuggestion {
+.searchSuggestion_e94b8c {
   background: hsla(0, 0%, 100%, 0.04);
 }

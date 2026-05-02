@@ -1,6 +1,6 @@
 @use '../index' as *;
 /* USER ROLE */
-%role {
+.role_dfa8b6 {
   position: relative;
   flex-direction: row-reverse;
   border-radius: 3px;
@@ -9,32 +9,32 @@
   border-color: transparent;
   cursor: default;
 
-  %roleName {
+  .roleName_dfa8b6 {
     margin-right: 0;
     margin-left: 4px;
     color: hsla(0, 0%, 100%, 0.9);
     transition: all 0.1s ease-in-out;
   }
   &:hover {
-    %roleCircle {
+    .roleCircle_dfa8b6 {
       &:before {
         opacity: 0.3;
       }
     }
   }
 }
-%roleRemoveButton {
+.roleRemoveButton_dfa8b6 {
   position: static;
 }
-%roleRemoveIcon > path {
+.roleRemoveIcon_dfa8b6 > path {
   margin-left: 2px;
   fill: #fff;
 }
-%roleRemoveIcon {
+.roleRemoveIcon_dfa8b6 {
   left: calc(100% - 7px);
 }
-%roleCircle {
-  %role & {
+.roleCircle_dfa8b6 {
+  .role_dfa8b6 & {
     width: 0;
     height: 0;
     &:not(:empty) {
@@ -52,7 +52,7 @@
     }
   }
 }
-%roleAddButton {
+.button__7d7f7 {
   background: hsla(0, 0%, 100%, 0.1);
   transition: all 0.1s ease-in-out;
   cursor: pointer;
@@ -70,7 +70,7 @@
   }
 }
 /*assign roles popout*/
-%roleAssignPopout {
+.container__3dde2 {
   background-color: hsla(0, 0%, 0%, 0.8);
   border: none;
 }

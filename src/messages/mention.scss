@@ -1,6 +1,6 @@
 @use '../index' as *;
 /* MENTIONS */
-%mentionWrapper {
+.wrapper_f61d60 {
   padding: 1px 4px;
   border-radius: 5px;
   line-height: 22px;
@@ -11,15 +11,15 @@
   &:hover {
     background-color: $hover-color;
   }
-  &%mentionIcon {
+  &.icon_b52c3f {
     padding-left: 1.2rem;
   }
 }
 // BACKGROUND
-%message%mentioned {
+.message__5126c.mentioned__5126c {
   background-color: hsla(0, 0%, 100%, 0.05);
-  &%messageSelected,
-  %mouseModeFullMotion &:hover {
+  &.selected__5126c,
+  .mouse-mode.full-motion &:hover {
     background-color: hsla(0, 0%, 100%, 0.08);
   }
   &::before {
@@ -28,6 +28,6 @@
 }
 
 // ICON
-%mentionIcon path {
+.icon_b52c3f path {
   fill: #fff;
 }

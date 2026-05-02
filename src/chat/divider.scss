@@ -3,41 +3,42 @@
 
 // UNREAD
 // -6px is to account for the 1px height of the divider
-%dividerUnread %dividerDate {
+.isUnread__908e2 .content__908e2 {
   color: $alt-color;
 }
-%unreadPill {
+.unreadPill__908e2 {
   background-color: $main-color;
   top: -6px;
 }
-%unreadPillCapStroke {
+.unreadPillCapStroke__908e2 {
   fill: $main-color;
   color: $main-color;
 }
 // DATE
-%dividerDate {
+.content__908e2 {
   background: transparent;
   color: $alt-color;
 }
 // change to no border / bg system
-%divider {
+.divider__5126c,
+.divider__908e2 {
   border: none;
   height: 1px;
   background: var(--background-modifier-accent);
   // change color for when read
-  &%dividerUnread {
+  &.isUnread__908e2 {
     border: none;
     height: 1px;
     background: $alt-color;
     // create gap when date is there
-    &:has(%dividerDate) {
+    &:has(.content__908e2) {
       border: none;
       height: 1px;
       background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0) 55px, $alt-color 55px);
     }
   }
   // create gap when date is there
-  &:has(%dividerDate) {
+  &:has(.content__908e2) {
     border: none;
     height: 1px;
     background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0) 55px, var(--background-modifier-accent) 55px);

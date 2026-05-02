@@ -1,42 +1,45 @@
 @use '../index' as *;
 /* DISCORD SHOP */
-%shopPreview {
+.shop__08415 {
   background: transparent;
 }
-%popularPicksShopAll {
+.shopAll__08415 {
   background: $main-color;
   &:hover {
     background: $hover-color;
   }
 }
-%shopAll {
+.shop__6db1d {
   background-color: transparent;
 }
-%shopBackground {
+.shopScroll__6db1d {
   background-color: rgba(0, 0, 0, calc($bg-shading * 0.4));
 }
-%shopPageWrapper {
+.pageWrapper__6db1d {
   background-color: transparent;
 }
-%shopHeader {
+.headerBar__80679 {
   background-color: transparent !important;
 }
 
 // LOADING
-%shopLoadingSkeleton {
+.skeleton__72fa0 {
   background-color: hsla(0, 0%, 100%, 0.07);
 }
-%shopLoadingBanner,
-%shopLoadingCard {
+.bannerBody__72fa0,
+.cardBody__72fa0 {
   background-color: cv('bg.general.card');
 }
-%shopLoadingCardContent {
+.cardAvatar__72fa0,
+.cardTitle__72fa0,
+.cardDescription__72fa0,
+.cardSummary__72fa0 {
   background-color: hsla(0, 0%, 100%, 0.07);
 }
 
 // CARD
-%shopCardNitro,
-%shopCard {
+.shopCard_b37971,
+.shopCard_c3d04b {
   background-color: cv('bg.general.card');
   border-color: $main-color;
   &:hover {
@@ -44,27 +47,27 @@
     border-color: $hover-color;
   }
 }
-%shopCardDarkBackgroundNitro,
-%shopCardDarkBackground {
+.darkCardBackground_b37971,
+.darkCardBackground_c3d04b {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
 // PREVIEW
-%shopPreviewInfo {
+.collectibleInfoContainer_c50f62 {
   background-color: transparent;
 }
-%shopChatPreview {
+.chatPreview_c50f62 {
   left: 0;
   bottom: 0;
   margin: 10px auto 0 auto;
 }
-%shopMockInput {
+.mockInput_c50f62 {
   background-color: hsla(0, 0%, 100%, 0.07);
 }
 
 // SERVER SHOP
 /* intro container */
-%serverShopIntro {
+.container_adb50a {
   background: var(--background-overlay);
   border: 2px solid $main-color;
   &:hover {
@@ -73,12 +76,12 @@
   }
 }
 /* support the server perks */
-%serverShopSelected {
+.selected_d804ff {
   background: $main-color;
 }
 
 // Buy Nitro
-%nitroShopGiftNitro {
+.buttonWhite_b322b1 {
   color: $text-normal !important;
   background-color: $main-color !important;
   border-color: transparent !important;
@@ -89,21 +92,13 @@
 }
 
 // Subscribe button
-%buttonInverted%buttonColorBrand {
-  background: $main-color;
-  color: $text-normal;
-  &:hover {
-    background: $hover-color;
-    color: $text-normal;
-  }
-}
 
 // Shop new pill
-%shopNewPill {
+.shyButton_a25714 {
   background: radial-gradient(ellipse at 120%200%, $main-color 10%, transparent 70%);
 }
 
 // Shop what's new
-%shopWhatsNew {
+.whatsNewSectionBackground_c880e8 {
   background-color: rgba(0, 0, 0, calc($bg-shading * 0.8));
 }

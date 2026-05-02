@@ -1,22 +1,22 @@
 @use '../index' as *;
 /* SETTINGS SIDEBAR */
-%standardSidebarView {
+.standardSidebarView__23e6b {
   background: transparent;
 }
-%settingsSidebarScroller {
+.sidebarRegionScroller__23e6b {
   margin: 30px 8px 30px 0;
   background: transparent;
   mask-image: linear-gradient(to bottom, transparent, #000 5%, #000 95%, transparent);
 }
-%settingsSidebar {
+.sidebar__23e6b {
   height: 100%;
   width: 260px;
   padding: 0px 6px 0px 20px;
-  %tabBarSide {
+  .side_b3f026 {
     padding: 30px 0;
   }
 }
-%settingsHeader {
+.header_b3f026 {
   color: $main-color;
   font-weight: 700;
   padding-top: 20px;
@@ -38,16 +38,16 @@
     margin-left: 5px;
   }
 }
-%settingsSeparator {
+.separator_b3f026 {
   background: hsla(0, 0%, 100%, 0.07);
-  &:has(+ %settingsHeader) {
+  &:has(+ .header_b3f026) {
     display: none;
   }
 }
 
-%settingsSidebar {
-  %tabBarSide {
-    %tabBarItem {
+.sidebar__23e6b {
+  .side_b3f026 {
+    .item_b3f026 {
       position: relative;
       padding: 8px 20px;
       margin: 0;
@@ -69,7 +69,7 @@
       }
 
       // SELECTED
-      &%tabBarItemSelected {
+      &.selected_b3f026 {
         background: transparent;
         transition:
           all 0.15s ease-in-out,
@@ -83,22 +83,22 @@
       }
 
       // ONBOARDING STEP COUNTER
-      %textMediumNormal {
+      .text-md\/normal_cf4812 {
         color: #fff !important;
       }
     }
   }
 }
-%settingsSidebarNitroSelected {
+.selectedBackground_e681d1 {
   background-color: transparent;
 }
-%settingsSidebarServerBoost[aria-selected='true'] {
+.serverBoostTabItem_cbe0b4[aria-selected='true'] {
   background-color: transparent !important;
 }
 
 // SOCIAL LINKS
-%settingsSocialLinks {
-  %settingsSocialLink {
+.socialLinks__7df54 {
+  .link__7df54 {
     color: hsla(0, 0%, 100%, 0.4);
     &:hover {
       color: hsla(0, 0%, 100%, 0.7);

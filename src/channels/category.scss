@@ -1,17 +1,20 @@
 @use '../index' as *;
 /* CHANNEL CATEGORY */
-%categoryContainer {
+.containerDefault__29444,
+.containerDragAfter__29444,
+.containerDragBefore__29444,
+.containerUserOver__91b97 {
   padding-top: 16px;
 }
-%categoryWrapper {
+.wrapper__29444 {
   padding-left: 10px;
   padding-right: 0;
   transition: all 0.3s ease-in-out;
 }
-%categoryIcon {
+.icon__29444 {
   display: none;
 }
-%categoryName {
+.name__29444 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,8 +41,8 @@
 }
 
 // COLLAPSED
-%categoryWrapperCollapsed {
-  %categoryName {
+.collapsed__29444 {
+  .name__29444 {
     &:before,
     &:after {
       flex-grow: 0;
@@ -48,29 +51,29 @@
 }
 
 // HOVER
-%categoryWrapper:hover %categoryName {
+.wrapper__29444:hover .name__29444 {
   color: $main-color;
 }
-%categoryMain:hover %categoryName {
+.mainContent__29444:hover .name__29444 {
   opacity: 1;
 }
 
 // MUTED
-%categoryWrapper%categoryWrapperMuted {
+.wrapper__29444.muted__29444 {
   opacity: 0.5;
-  %categoryName {
+  .name__29444 {
     color: $main-color;
   }
-  &:hover %categoryName {
+  &:hover .name__29444 {
     color: $hover-color;
   }
 }
 
 // ADD CHANNEL ICON
-%categoryButtons {
+.children__29444 {
   margin-left: 3px;
 }
-%categoryAddIcon {
+.addButtonIcon__29444 {
   color: $main-color;
   opacity: 0.7;
   transition: all 0.3s ease-in-out;
@@ -81,7 +84,7 @@
 }
 
 // New Channel
-%categoryNewChannel,
-%categoryNewChannelIcon {
+.button__6e3f1,
+.buttonIcon__6e3f1 {
   color: var(--url-color);
 }

@@ -1,54 +1,53 @@
 @use '../index' as *;
 /* EMBED */
-%embed {
-  %embedAuthorName,
-  %embedFieldName,
-  %embedTitle {
+.embed__623de {
+  .embedFieldName__623de,
+  .embedTitle__623de {
     color: #fff !important;
   }
-  %embedProvider {
+  .embedProvider__623de {
     color: hsla(0, 0%, 100%, 0.7) !important;
   }
-  %embedDescription,
-  %embedFieldValue {
+  .embedDescription__623de,
+  .embedFieldValue__623de {
     color: hsla(0, 0%, 100%, 0.7);
   }
-  %embedLink {
+  .embedLink__623de {
     color: $main-color;
     @include hover-shadow;
   }
-  %embedTitleLink {
+  .embedTitleLink__623de {
     color: $main-color !important;
   }
 
   // VIDEO ACTIONS
-  %embedVideoActions {
-    %embedVideoActionsButtonWrapper {
+  .embedVideoActions__623de {
+    .wrapper__926d7 {
       background: rgba(0, 0, 0, 0.5);
       color: #fff;
       box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
     }
   }
   a > code {
-    &%codeInline {
+    &.inline {
       color: $main-color;
     }
   }
 
   // FOOTER
-  %embedFooterText {
+  .embedFooterText__623de {
     color: hsla(0, 0%, 100%, 0.5);
   }
-  %embedFooterSeparator {
+  .embedFooterSeparator__623de {
     color: hsla(0, 0%, 100%, 0.07);
   }
 }
-%embedFull {
+.embedFull__623de {
   background: hsla(0, 0%, 0%, 0.3);
 }
 
 // IMAGE ERROR
-%imageError {
+.imageError_af017a {
   filter: grayscale(1) brightness(2);
   opacity: 0.3;
 }

@@ -1,7 +1,7 @@
 @use '../index' as *;
 /* TITLEBAR */
 // TITLEBAR WINDOWS
-%titlebarWin {
+.typeWindows__421ed {
   height: 18px;
   width: 100vw;
   margin: 0;
@@ -9,7 +9,7 @@
   padding-bottom: 2px;
   background: rgba(0, 0, 0, calc($bg-shading * 0.6));
   box-shadow: 0 0 20px rgba(0, 0, 0, calc($bg-shading * 0.6));
-  > %titlebarWordmark {
+  > .wordmark__421ed {
     position: static;
     margin-right: auto;
     display: flex;
@@ -63,7 +63,7 @@
       }
     }
   }
-  > %titlebarWinButton {
+  > .winButton__421ed {
     top: -2px;
     opacity: 0.7;
     transition: all 0.15s ease-in-out;
@@ -72,7 +72,7 @@
       opacity: 1;
     }
   }
-  > %titlebarWinButtonClose {
+  > .winButtonClose__421ed {
     &:hover {
       background: cv('colors.danger');
     }
@@ -80,15 +80,15 @@
 }
 
 // TITLEBAR OSX
-%titlebarMac {
+.typeMacOS__421ed {
   width: 70px;
   height: 48px;
-  &%titlebarUnfocused {
-    %titlebarMacButton {
+  &.unfocused__421ed {
+    .macButton__421ed {
       background: hsla(0, 0%, 100%, 0.7);
     }
   }
-  > %titlebarMacButtons {
+  > .macButtons__421ed {
     padding: 0 10px;
   }
   display: flex;

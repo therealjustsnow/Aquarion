@@ -1,12 +1,12 @@
 @use '../index' as *;
 /* TAB BAR */
-%tabBarTop {
-  %tabBarBrand {
-    &%tabBarItem {
+.top_b3f026 {
+  .brand_b3f026 {
+    &.item_b3f026 {
       &:hover {
         border-bottom-color: $hover-color;
       }
-      &%tabBarItemSelected,
+      &.selected_b3f026,
       &:active {
         border-bottom-color: $main-color;
       }
@@ -15,22 +15,22 @@
 }
 
 // PILL
-%tabBarTopPill,
-%tabBarSide {
-  %tabBarThemed {
-    &%tabBarItem {
+.topPill_b3f026,
+.side_b3f026 {
+  .themed_b3f026 {
+    &.item_b3f026 {
       color: hsla(0, 0%, 100%, 0.5);
       transition: all 0.3s ease-in-out;
-      &:hover:not(%tabBarItemDisabled) {
+      &:hover:not(.disabled_b3f026) {
         background-color: hsla(0, 0%, 100%, 0.1);
         color: hsla(0, 0%, 100%, 0.7);
       }
     }
-    &%tabBarItemSelected {
-      &%tabBarItem {
+    &.selected_b3f026 {
+      &.item_b3f026 {
         background-color: $main-color;
         color: #fff;
-        &:hover:not(%tabBarItemDisabled) {
+        &:hover:not(.disabled_b3f026) {
           background-color: $main-color;
           color: #fff;
         }

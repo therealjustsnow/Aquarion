@@ -1,5 +1,5 @@
 /* BOT TAG */
-%botTag {
+.botTag__82f07 {
   padding: 1px 2px;
   background: hsla(0, 0%, 100%, 0.1);
   color: hsla(0, 0%, 100%, 0.6);
@@ -7,20 +7,13 @@
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
   border-radius: 3px;
 }
-%botTagInvert {
+.botTagInvert__82f07 {
   padding: 2px 3px;
   background: rgba(0, 0, 0, 0.3);
   color: hsla(0, 0%, 100%, 0.8);
 }
-%member {
-  %botTag {
+.member__5d473 {
+  .botTag__82f07 {
     transition: all 0.15s ease-in-out;
-  }
-  &%memberPopoutOpen {
-    %botTag {
-      background: hsla(0, 0%, 100%, 0.3);
-      color: #fff;
-      text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
-    }
   }
 }

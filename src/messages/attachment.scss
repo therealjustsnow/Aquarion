@@ -1,10 +1,10 @@
 @use '../index' as *;
 /* MESSAGE ATTACHMENT */
-%themeDark %attachment {
+.theme-dark .fileWrapper__0ccae {
   background: hsla(0, 0%, 100%, 0.06);
   border-color: hsla(0, 0%, 100%, 0.08);
 }
-%attachmentIcon {
+.icon__0ccae {
   width: 30px;
   height: 30px;
   box-sizing: border-box;
@@ -14,7 +14,7 @@
   background-size: 100%;
   background-repeat: no-repeat;
   opacity: 0.5;
-  :not(%attachmentEmbedWrapper) > &[title='unknown'] {
+  :not(.embedWrapper_b7e1cb) > &[title='unknown'] {
     background-image: url(https://clearvision.github.io/icons/file_upload.svg);
   }
   &[title='document'] {
@@ -45,35 +45,36 @@
     background-image: url(https://clearvision.github.io/icons/file_pdf.svg);
   }
 }
-%fileNameLink {
+.fileNameLink__0ccae {
   color: $main-color;
   @include hover-shadow;
 }
-%attachmentButton {
+.downloadButton__3fb6d,
+.cancelButton__0ccae {
   color: hsla(0, 0%, 100%, 0.3);
   transition: all 0.15s ease-in-out;
   &:hover {
     color: hsla(0, 0%, 100%, 0.5);
   }
 }
-%fileMetadata {
+.metadata__0ccae {
   color: hsla(0, 0%, 100%, 0.3);
 }
 
 // UPLOADING
-%fileUploading {
+.file__0ccae {
   background: hsla(0, 0%, 100%, 0.06);
   border-color: hsla(0, 0%, 100%, 0.08);
 }
-%fileName {
+.filename__0ccae {
   color: hsla(0, 0%, 100%, 0.7);
 }
-%fileSize {
+.size__0ccae {
   color: hsla(0, 0%, 100%, 0.3);
 }
-%fileProgress {
+.progress__89dcd {
   background: hsla(0, 0%, 100%, 0.04) !important;
 }
-%fileProgressBar {
+.progressBar__89dcd {
   background: $main-color !important;
 }
